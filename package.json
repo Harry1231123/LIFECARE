@@ -1,0 +1,9 @@
+{
+  "name": "lifecare-frontend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "node serve.mjs",
+    "screenshot": "node screenshot.mjs"
+  }
+}
