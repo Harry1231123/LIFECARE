@@ -52,11 +52,30 @@ const filePath = path.join(outputDir, fileName);
 
 const browser = await puppeteer.launch({
   headless: true,
+  executablePath: 'C:\\Users\\olive\\.cache\\puppeteer\\chrome\\win64-148.0.7778.97\\chrome-win64\\chrome.exe',
   args: ['--no-sandbox', '--disable-setuid-sandbox'],
 });
 const page = await browser.newPage();
 await page.setViewport({ width: 1600, height: 1000 });
 await page.goto(url, { waitUntil: 'networkidle2' });
+
+// Scroll through the page to trigger IntersectionObserver scroll-reveal animations,
+// then return to top before capturing.
+await page.evaluate(async () => {
+  await new Promise(resolve => {
+    const distance = 400;
+    const timer = setInterval(() => {
+      window.scrollBy(0, distance);
+      if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+        clearInterval(timer);
+        window.scrollTo(0, 0);
+        resolve();
+      }
+    }, 40);
+  });
+});
+await new Promise(r => setTimeout(r, 600)); // Let reveal transitions complete
+
 await page.screenshot({ path: filePath, fullPage: true });
 await browser.close();
 
