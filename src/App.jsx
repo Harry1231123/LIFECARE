@@ -8,6 +8,7 @@ import Services from './pages/Services'
 import Pricing  from './pages/Pricing'
 import Contact  from './pages/Contact'
 import Blog     from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 import Booking  from './pages/Booking'
 
 function ScrollToTop() {
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/pricing"  element={<Pricing />} />
           <Route path="/contact"  element={<Contact />} />
           <Route path="/blog"     element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/booking"  element={<Booking />} />
         </Routes>
       </main>

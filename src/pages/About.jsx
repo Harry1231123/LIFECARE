@@ -14,7 +14,7 @@ function Label({ children }) {
 function Btn({ to, href, children, variant = 'primary' }) {
   const base = 'inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold font-display text-sm transition-[background-color,box-shadow,transform] duration-150 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2'
   const v = {
-    primary: `bg-brand text-white hover:bg-brand-dark shadow-cta hover:shadow-[0_6px_24px_rgba(212,44,44,0.45)] focus-visible:outline-brand`,
+    primary: `bg-brand text-white hover:bg-brand-dark shadow-cta hover:shadow-[0_6px_24px_rgba(210,74,37,0.45)] focus-visible:outline-brand`,
     outline: `border-2 border-brand text-brand hover:bg-brand hover:text-white focus-visible:outline-brand`,
     ghost:   `border-2 border-white/40 text-white hover:bg-white/15 focus-visible:outline-white`,
   }
@@ -76,7 +76,7 @@ export default function About() {
       {/* ── PAGE HERO ─────────────────────────────────────────────── */}
       <section className="relative bg-dark py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/assets/team.webp" alt="" aria-hidden className="w-full h-full object-cover opacity-20" />
+          <img src="/assets/hero.webp" alt="" aria-hidden className="w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-to-r from-dark/95 via-dark/80 to-dark/50" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">

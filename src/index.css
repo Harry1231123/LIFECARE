@@ -13,12 +13,12 @@
     font-family: 'Inter', system-ui, sans-serif;
     @apply text-gray-700 bg-white;
     scrollbar-width: thin;
-    scrollbar-color: #D42C2C #f1f1f1;
+    scrollbar-color: #D24A25 #f1f1f1;
   }
 
   body::-webkit-scrollbar       { width: 5px; }
   body::-webkit-scrollbar-track { background: #f1f1f1; }
-  body::-webkit-scrollbar-thumb { background: #D42C2C; border-radius: 4px; }
+  body::-webkit-scrollbar-thumb { background: #D24A25; border-radius: 4px; }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
@@ -26,7 +26,7 @@
   }
 
   ::selection {
-    background: rgba(212,44,44,0.12);
+    background: rgba(210,74,37,0.12);
     color: #111827;
   }
 }
@@ -58,7 +58,7 @@
     display: inline-block;
     width: 2rem;
     height: 3px;
-    background: #D42C2C;
+    background: #D24A25;
     border-radius: 2px;
     flex-shrink: 0;
   }
@@ -72,7 +72,7 @@
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: #D42C2C;
+    color: #D24A25;
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   }
 
@@ -87,7 +87,7 @@
 
   /* ── Red gradient text ─────────────────────────────────────── */
   .text-gradient-brand {
-    background: linear-gradient(135deg, #D42C2C 0%, #EF4444 100%);
+    background: linear-gradient(135deg, #D24A25 0%, #E8623A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -114,12 +114,12 @@
   /* ── Red top accent strip ──────────────────────────────────── */
   .brand-strip {
     height: 3px;
-    background: linear-gradient(90deg, #D42C2C, #EF4444 60%, transparent);
+    background: linear-gradient(90deg, #D24A25, #E8623A 60%, transparent);
   }
 }
 
 /* ── Focus ring ──────────────────────────────────────────────── */
 :focus-visible {
-  outline: 2px solid #D42C2C;
+  outline: 2px solid #D24A25;
   outline-offset: 3px;
 }

@@ -13,7 +13,7 @@ function Btn({ to, href, children, variant = 'primary', size = 'md', className =
     size === 'lg' ? 'px-7 py-4 text-base' : 'px-5 py-3 text-sm'
   }`
   const styles = {
-    primary:  `bg-brand text-white hover:bg-brand-dark shadow-cta hover:shadow-[0_6px_24px_rgba(212,44,44,0.45)] focus-visible:outline-brand ${className}`,
+    primary:  `bg-brand text-white hover:bg-brand-dark shadow-cta hover:shadow-[0_6px_24px_rgba(210,74,37,0.45)] focus-visible:outline-brand ${className}`,
     outline:  `border-2 border-brand text-brand hover:bg-brand hover:text-white focus-visible:outline-brand ${className}`,
     ghost:    `border-2 border-white/40 text-white hover:bg-white/15 hover:border-white/60 focus-visible:outline-white ${className}`,
     dark:     `bg-dark text-white hover:bg-dark-soft focus-visible:outline-dark ${className}`,
@@ -145,7 +145,7 @@ const BLOG_POSTS = [
     excerpt: 'Mental health is now firmly on the workplace health and safety agenda. Here\'s what current HSE guidance means for your organisation.',
     date: '3 Apr 2025',
     readTime: '4 min',
-    image: '/assets/team.webp',
+    image: 'https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?auto=format&fit=crop&w=800&q=80',
   },
   {
     category: 'First Aid Skills',
@@ -523,6 +523,7 @@ export default function Home() {
 
       {/* ── FINAL CTA ─────────────────────────────────────────────── */}
       <section className="relative py-20 lg:py-28 bg-brand overflow-hidden">
+        <img src="/assets/equipment.webp" alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-overlay" />
         <div className="absolute inset-0 bg-gradient-to-br from-brand via-brand to-brand-dark opacity-80" />
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")" }} />
         <Reveal className="relative max-w-3xl mx-auto px-6 text-center">

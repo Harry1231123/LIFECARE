@@ -54,7 +54,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link to="/" className="group flex items-center gap-2.5 shrink-0" aria-label="LifeCare Training home">
-            <div className="w-9 h-9 bg-brand rounded-xl flex items-center justify-center shadow-[0_2px_8px_rgba(212,44,44,0.35)] group-hover:bg-brand-dark transition-colors duration-150">
+            <div className="w-9 h-9 bg-brand rounded-xl flex items-center justify-center shadow-[0_2px_8px_rgba(210,74,37,0.35)] group-hover:bg-brand-dark transition-colors duration-150">
               <HeartPulse size={18} className="text-white" strokeWidth={2.5} />
             </div>
             <div className="leading-none">
@@ -93,8 +93,8 @@ export default function Navbar() {
               to="/booking"
               className="inline-flex items-center gap-2 bg-brand text-white px-5 py-2.5 rounded-xl text-sm font-bold font-display
                 hover:bg-brand-dark active:scale-[0.98]
-                shadow-[0_2px_8px_rgba(212,44,44,0.35)]
-                hover:shadow-[0_4px_16px_rgba(212,44,44,0.45)]
+                shadow-[0_2px_8px_rgba(210,74,37,0.35)]
+                hover:shadow-[0_4px_16px_rgba(210,74,37,0.45)]
                 transition-[background-color,box-shadow,transform] duration-150
                 focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2"
             >

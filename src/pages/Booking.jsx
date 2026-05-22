@@ -172,7 +172,7 @@ export default function Booking() {
                             <button key={id} type="button" onClick={() => toggle(id)}
                               className={`flex items-start gap-3 rounded-xl border p-4 text-left transition-all duration-150 focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2 ${
                                 active
-                                  ? 'border-brand bg-brand-light shadow-[0_0_0_1px_rgba(212,44,44,0.2)]'
+                                  ? 'border-brand bg-brand-light shadow-[0_0_0_1px_rgba(210,74,37,0.2)]'
                                   : 'border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50'
                               }`}
                             >
@@ -239,7 +239,7 @@ export default function Booking() {
                     <button type="submit"
                       className="w-full flex items-center justify-center gap-2 bg-brand text-white px-6 py-4 rounded-xl font-bold font-display text-base
                         hover:bg-brand-dark active:scale-[0.98]
-                        shadow-cta hover:shadow-[0_6px_24px_rgba(212,44,44,0.45)]
+                        shadow-cta hover:shadow-[0_6px_24px_rgba(210,74,37,0.45)]
                         transition-[background-color,box-shadow,transform] duration-150
                         focus-visible:outline-2 focus-visible:outline-brand"
                     >

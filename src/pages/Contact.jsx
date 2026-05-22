@@ -189,7 +189,7 @@ export default function Contact() {
                     <button type="submit"
                       className="w-full flex items-center justify-center gap-2 bg-brand text-white px-6 py-4 rounded-xl font-bold font-display text-sm
                         hover:bg-brand-dark active:scale-[0.98]
-                        shadow-cta hover:shadow-[0_6px_24px_rgba(212,44,44,0.45)]
+                        shadow-cta hover:shadow-[0_6px_24px_rgba(210,74,37,0.45)]
                         transition-[background-color,box-shadow,transform] duration-150
                         focus-visible:outline-2 focus-visible:outline-brand"
                     >

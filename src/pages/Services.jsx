@@ -17,7 +17,7 @@ function Btn({ to, children }) {
     <Link to={to}
       className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-xl font-bold font-display text-sm
         hover:bg-brand-dark active:scale-[0.98]
-        shadow-cta hover:shadow-[0_6px_24px_rgba(212,44,44,0.45)]
+        shadow-cta hover:shadow-[0_6px_24px_rgba(210,74,37,0.45)]
         transition-[background-color,box-shadow,transform] duration-150
         focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2"
     >
@@ -107,7 +107,7 @@ const SERVICES = [
     body: "Delivered by an active ambulance technician, this isn't a passive classroom experience. Learners practise hands-on skills in realistic scenarios, leaving genuinely capable of managing a cardiac arrest, severe bleeding, choking, or an unconscious casualty — not just able to recite the theory.",
     includes: ['Managing an unresponsive casualty','CPR and AED use (adult)','Severe bleeding control','Choking — adults','Shock recognition & management','Epilepsy & seizure response','Minor injury management','Primary survey (DRABC)','HSE-compliant record keeping','Ofqual certificate (3 years)'],
     meta: [{ icon: Clock, label: '1 Day (approx. 6 hours)' }, { icon: Users, label: 'Up to 12 learners per group' }, { icon: Award, label: 'FAA Level 3 RQF' }],
-    image: '/assets/equipment.webp',
+    image: '/assets/hero.webp',
   },
   {
     id: 'faw', icon: Shield, tag: 'Comprehensive Cover · Higher-Risk Workplaces',
@@ -118,7 +118,7 @@ const SERVICES = [
     body: "Over three days, learners build advanced competency across a wide spectrum of medical emergencies. Ideal for businesses with multiple first aiders, higher-risk environments, or organisations wanting the highest possible standard of internal first aid provision.",
     includes: ['All EFAW content','Anatomy & physiology overview','Head, neck & back injuries','Chest injuries & pneumothorax','Sprains, strains & fractures','Eye & ear injuries','Poisoning & substance exposure','Medical conditions management','Advanced CPR techniques','Ofqual certificate (3 years)'],
     meta: [{ icon: Clock, label: '3 Days' }, { icon: Users, label: 'Up to 12 learners per group' }, { icon: Award, label: 'FAA Level 3 RQF' }],
-    image: '/assets/hero.webp',
+    image: '/assets/team.webp',
   },
   {
     id: 'paediatric', icon: Baby, tag: 'EYFS & OFSTED Required',
@@ -129,7 +129,7 @@ const SERVICES = [
     body: "Paediatric first aid is fundamentally different from adult first aid. Dosages, techniques, equipment, and conditions all require specialist knowledge. This course ensures your team is fully equipped for the unique challenges of caring for children in an emergency.",
     includes: ['Paediatric CPR (infant & child)','Paediatric AED awareness','Choking — infants & children','Seizures & febrile convulsions','Diabetic emergencies in children','Asthma attacks','Anaphylaxis & adrenaline auto-injectors','Meningitis recognition','Head, neck & back injuries','EYFS/OFSTED compliant certificate'],
     meta: [{ icon: Clock, label: '2 Days' }, { icon: Users, label: 'Up to 12 learners' }, { icon: Award, label: 'FAA Level 3 RQF' }],
-    image: '/assets/team.webp',
+    image: 'https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'epfa', icon: Baby, tag: 'Childcare · Condensed Format',
@@ -151,7 +151,7 @@ const SERVICES = [
     body: "In just 3 hours, learners gain the core skills to respond to the most critical emergencies — cardiac arrest, choking, and unconsciousness. Using real AEDs and manikins, the training builds genuine confidence and muscle memory.",
     includes: ['Primary survey (DRABC)','Adult CPR to Resuscitation Council UK guidelines','AED use (automated defibrillator)','Recovery position','Choking management','Level 2 RQF certificate'],
     meta: [{ icon: Clock, label: 'Approx. 3 hours' }, { icon: Users, label: 'Up to 12 learners' }, { icon: Award, label: 'FAA Level 2 RQF' }],
-    image: '/assets/hero.webp',
+    image: '/assets/equipment.webp',
   },
   {
     id: 'mental', icon: Brain, tag: 'Workplace Wellbeing',
@@ -162,7 +162,7 @@ const SERVICES = [
     body: "This isn't about turning employees into therapists. It's about giving them the awareness to spot early signs of mental health challenges, the skills to have a supportive conversation, and the knowledge of when and how to signpost someone to professional help.",
     includes: ['Recognising mental health conditions','Depression and anxiety awareness','Suicidal crisis response protocols','Supportive conversation skills','Active listening techniques','Signposting to professional support','Reducing workplace stigma','Self-care strategies','MHFA England certificate'],
     meta: [{ icon: Clock, label: '1 or 2-day course' }, { icon: Users, label: 'Up to 16 learners' }, { icon: Award, label: 'MHFA England Accredited' }],
-    image: '/assets/team.webp',
+    image: 'https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'events', icon: Calendar, tag: 'Event Cover · Fully Insured',
@@ -173,7 +173,7 @@ const SERVICES = [
     body: "Harry has extensive experience managing first aid provision at major public events — drawing on his emergency ambulance background to operate effectively in dynamic, high-pressure environments and coordinate with the wider emergency services.",
     includes: ['Pre-event risk assessment','Qualified first aiders on-site','Professional medical-grade equipment','Event medical plan documentation','Emergency services liaison','Real-time incident management','Post-event incident report','Scalable to any event size','Fully insured'],
     meta: [{ icon: Clock, label: 'Half-day to multi-day' }, { icon: Users, label: 'Scalable to event size' }, { icon: Award, label: 'Fully qualified & insured' }],
-    image: '/assets/hero.webp',
+    image: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'forestry', icon: Leaf, tag: 'Specialist · Forestry Commission',
@@ -184,7 +184,7 @@ const SERVICES = [
     body: 'This 2-hour qualification adds the specialist content needed to manage first aid incidents specific to forestry and agricultural work: chainsaw injuries, remote location response, crush injuries, and limited access to emergency services.',
     includes: ['Forestry-specific hazard awareness','Chainsaw injury management','Remote location emergency response','Crush injury & limb entrapment','Major haemorrhage control in rural settings','Forestry Commission compliant certificate'],
     meta: [{ icon: Clock, label: 'Approx. 2 hours (bolt-on)' }, { icon: Users, label: 'Individuals or groups' }, { icon: Award, label: 'FAA Level 3 RQF' }],
-    image: '/assets/equipment.webp',
+    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'iqa', icon: ClipboardCheck, tag: 'Quality Assurance · Training Providers',
@@ -195,7 +195,7 @@ const SERVICES = [
     body: 'LifeCare Training offers expert IQA services to training centres needing support meeting their regulatory obligations. Available remotely or on-site across the South East. Sectors covered include healthcare, education, and public services.',
     includes: ['Assessor decision sampling','Countersigning & verification','Standardisation event facilitation','Assessment practice observation','IQA planning documentation','EQA preparation & mock audits','Assessor coaching & development','Centre compliance gap analysis'],
     meta: [{ icon: Clock, label: 'Flexible — by arrangement' }, { icon: Users, label: 'Per assessor or per centre' }, { icon: Award, label: 'Awarding Org Aligned' }],
-    image: '/assets/team.webp',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
   },
 ]
 
@@ -206,7 +206,7 @@ export default function Services() {
       {/* ── PAGE HERO ─────────────────────────────────────────────── */}
       <section className="relative bg-dark py-20 lg:py-24 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/assets/equipment.webp" alt="" aria-hidden className="w-full h-full object-cover opacity-20" />
+          <img src="/assets/hero.webp" alt="" aria-hidden className="w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-to-r from-dark/95 via-dark/80 to-dark/50" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">

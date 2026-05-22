@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand:       '#D42C2C',
-        'brand-dark':'#B91C1C',
-        'brand-mid': '#C02424',
-        'brand-light':'#FEF2F2',
+        brand:       '#D24A25',
+        'brand-dark':'#C73F1C',
+        'brand-mid': '#B93A19',
+        'brand-light':'#FDF0EC',
         dark:        '#111827',
         'dark-soft': '#1F2937',
       },
@@ -27,7 +27,7 @@ export default {
         'card':    '0 1px 4px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.07)',
         'card-lg': '0 4px 12px rgba(0,0,0,0.08), 0 20px 56px rgba(0,0,0,0.10)',
         'card-hover': '0 4px 16px rgba(0,0,0,0.10), 0 24px 64px rgba(0,0,0,0.12)',
-        'cta':     '0 4px 20px rgba(212,44,44,0.40), 0 1px 4px rgba(212,44,44,0.20)',
+        'cta':     '0 4px 20px rgba(210,74,37,0.40), 0 1px 4px rgba(210,74,37,0.20)',
         'nav':     '0 1px 0 rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.06)',
       },
       keyframes: {
