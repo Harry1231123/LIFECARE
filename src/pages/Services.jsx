@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
-import { HeartPulse, Calendar, Brain, ClipboardCheck, ArrowRight, CheckCircle2, Clock, Users, Award, Baby, Shield, Leaf, ChevronLeft, ChevronRight } from 'lucide-react'
+import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight } from 'lucide-react'
 import { useRef, useState, useEffect } from 'react'
 import Reveal from '../components/Reveal'
+import { COURSES } from '../data/courses'
 
 function Label({ children }) {
   return (
@@ -12,17 +13,12 @@ function Label({ children }) {
   )
 }
 
-function Btn({ to, children }) {
+function Meta({ icon: Icon, label }) {
   return (
-    <Link to={to}
-      className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-xl font-bold font-display text-sm
-        hover:bg-brand-dark active:scale-[0.98]
-        shadow-cta hover:shadow-[0_6px_24px_rgba(210,74,37,0.45)]
-        transition-[background-color,box-shadow,transform] duration-150
-        focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2"
-    >
-      {children}
-    </Link>
+    <div className="flex items-center gap-2 text-gray-500 text-sm font-medium">
+      <Icon size={13} className="text-brand shrink-0" />
+      {label}
+    </div>
   )
 }
 
@@ -54,17 +50,11 @@ function CourseNav({ services }) {
 
   return (
     <div className="relative">
-      {/* Left fade + button */}
       <div className={`pointer-events-none absolute left-0 top-0 bottom-0 w-14 bg-gradient-to-r from-white to-transparent z-10 transition-opacity duration-150 ${canLeft ? 'opacity-100' : 'opacity-0'}`} />
-      <button
-        onClick={() => nudge(-1)}
-        aria-label="Scroll left"
-        className={`absolute left-1 top-1/2 -translate-y-1/2 z-20 w-7 h-7 bg-white border border-gray-200 rounded-full shadow-sm flex items-center justify-center text-gray-500 hover:text-dark hover:border-gray-300 transition-[opacity,transform] duration-150 ${canLeft ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
-      >
+      <button onClick={() => nudge(-1)} aria-label="Scroll left"
+        className={`absolute left-1 top-1/2 -translate-y-1/2 z-20 w-7 h-7 bg-white border border-gray-200 rounded-full shadow-sm flex items-center justify-center text-gray-500 hover:text-dark hover:border-gray-300 transition-[opacity,transform] duration-150 ${canLeft ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <ChevronLeft size={13} />
       </button>
-
-      {/* Scrollable track */}
       <div ref={ref} className="flex gap-1 overflow-x-auto py-2 scrollbar-none px-8">
         {services.map(({ id, icon: Icon, title }) => (
           <a key={id} href={`#${id}`}
@@ -74,130 +64,14 @@ function CourseNav({ services }) {
           </a>
         ))}
       </div>
-
-      {/* Right fade + button */}
       <div className={`pointer-events-none absolute right-0 top-0 bottom-0 w-14 bg-gradient-to-l from-white to-transparent z-10 transition-opacity duration-150 ${canRight ? 'opacity-100' : 'opacity-0'}`} />
-      <button
-        onClick={() => nudge(1)}
-        aria-label="Scroll right"
-        className={`absolute right-1 top-1/2 -translate-y-1/2 z-20 w-7 h-7 bg-white border border-gray-200 rounded-full shadow-sm flex items-center justify-center text-gray-500 hover:text-dark hover:border-gray-300 transition-[opacity,transform] duration-150 ${canRight ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
-      >
+      <button onClick={() => nudge(1)} aria-label="Scroll right"
+        className={`absolute right-1 top-1/2 -translate-y-1/2 z-20 w-7 h-7 bg-white border border-gray-200 rounded-full shadow-sm flex items-center justify-center text-gray-500 hover:text-dark hover:border-gray-300 transition-[opacity,transform] duration-150 ${canRight ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <ChevronRight size={13} />
       </button>
     </div>
   )
 }
-
-function Meta({ icon: Icon, label }) {
-  return (
-    <div className="flex items-center gap-2 text-gray-500 text-sm font-medium">
-      <Icon size={13} className="text-brand shrink-0" />
-      {label}
-    </div>
-  )
-}
-
-const SERVICES = [
-  {
-    id: 'efaw', icon: HeartPulse, tag: 'Most Popular · HSE Required',
-    title: 'Emergency First Aid at Work',
-    subtitle: 'FAA Award — Level 3 RQF | 1-Day Course',
-    price: 'From £850 per group',
-    intro: 'The Health and Safety (First-Aid) Regulations 1981 require every employer to make adequate first aid provision. EFAW is the benchmark qualification for lower-risk workplaces — and the most direct route to protecting your team and satisfying your legal duty of care.',
-    body: "Delivered by an active ambulance technician, this isn't a passive classroom experience. Learners practise hands-on skills in realistic scenarios, leaving genuinely capable of managing a cardiac arrest, severe bleeding, choking, or an unconscious casualty — not just able to recite the theory.",
-    includes: ['Managing an unresponsive casualty','CPR and AED use (adult)','Severe bleeding control','Choking — adults','Shock recognition & management','Epilepsy & seizure response','Minor injury management','Primary survey (DRABC)','HSE-compliant record keeping','Ofqual certificate (3 years)'],
-    meta: [{ icon: Clock, label: '1 Day (approx. 6 hours)' }, { icon: Users, label: 'Up to 12 learners per group' }, { icon: Award, label: 'FAA Level 3 RQF' }],
-    image: '/assets/hero.webp',
-  },
-  {
-    id: 'faw', icon: Shield, tag: 'Comprehensive Cover · Higher-Risk Workplaces',
-    title: 'First Aid at Work',
-    subtitle: 'FAA Award — Level 3 RQF | 3-Day Course',
-    price: 'From £1,850 per group',
-    intro: "For higher-risk workplaces and organisations requiring the deepest level of first aid provision, the full First Aid at Work qualification is the HSE's gold standard. Valid for 3 years and recognised across all sectors.",
-    body: "Over three days, learners build advanced competency across a wide spectrum of medical emergencies. Ideal for businesses with multiple first aiders, higher-risk environments, or organisations wanting the highest possible standard of internal first aid provision.",
-    includes: ['All EFAW content','Anatomy & physiology overview','Head, neck & back injuries','Chest injuries & pneumothorax','Sprains, strains & fractures','Eye & ear injuries','Poisoning & substance exposure','Medical conditions management','Advanced CPR techniques','Ofqual certificate (3 years)'],
-    meta: [{ icon: Clock, label: '3 Days' }, { icon: Users, label: 'Up to 12 learners per group' }, { icon: Award, label: 'FAA Level 3 RQF' }],
-    image: '/assets/team.webp',
-  },
-  {
-    id: 'paediatric', icon: Baby, tag: 'EYFS & OFSTED Required',
-    title: 'Paediatric First Aid',
-    subtitle: 'FAA Award — Level 3 RQF | 2-Day Course',
-    price: 'From £965 per group',
-    intro: 'A legal requirement for many childcare settings under EYFS and OFSTED standards. This course equips learners with the specific, specialist skills needed to respond to emergencies involving babies and young children.',
-    body: "Paediatric first aid is fundamentally different from adult first aid. Dosages, techniques, equipment, and conditions all require specialist knowledge. This course ensures your team is fully equipped for the unique challenges of caring for children in an emergency.",
-    includes: ['Paediatric CPR (infant & child)','Paediatric AED awareness','Choking — infants & children','Seizures & febrile convulsions','Diabetic emergencies in children','Asthma attacks','Anaphylaxis & adrenaline auto-injectors','Meningitis recognition','Head, neck & back injuries','EYFS/OFSTED compliant certificate'],
-    meta: [{ icon: Clock, label: '2 Days' }, { icon: Users, label: 'Up to 12 learners' }, { icon: Award, label: 'FAA Level 3 RQF' }],
-    image: 'https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'epfa', icon: Baby, tag: 'Childcare · Condensed Format',
-    title: 'Emergency Paediatric First Aid',
-    subtitle: 'FAA Award — Level 3 RQF | 1-Day Course',
-    price: 'From £850 per group',
-    intro: 'The one-day version of the Paediatric First Aid qualification for those who need to satisfy EYFS/OFSTED requirements in a condensed format. Covers all life-threatening emergency scenarios for children and infants.',
-    body: 'Ideal as an initial qualification or as a stepping stone to the full 2-day course. Learners receive an Ofqual-regulated certificate that satisfies childcare regulatory requirements.',
-    includes: ['Paediatric CPR (infant & child)','AED awareness','Choking — infants & children','Unconscious child management','Seizure response','Bleeding & shock in children','Anaphylaxis basics','EYFS/OFSTED compliant certificate'],
-    meta: [{ icon: Clock, label: '1 Day' }, { icon: Users, label: 'Up to 12 learners' }, { icon: Award, label: 'FAA Level 3 RQF' }],
-    image: '/assets/equipment.webp',
-  },
-  {
-    id: 'bls', icon: HeartPulse, tag: 'Essential Skills · All Staff',
-    title: 'Basic Life Support',
-    subtitle: 'FAA Award — Level 2 RQF | Half-Day',
-    price: 'From £650 per group',
-    intro: 'A focused, high-impact course covering the fundamentals of emergency response. Ideal for organisations that want all staff to have a baseline level of first aid awareness without the full-day commitment of EFAW.',
-    body: "In just 3 hours, learners gain the core skills to respond to the most critical emergencies — cardiac arrest, choking, and unconsciousness. Using real AEDs and manikins, the training builds genuine confidence and muscle memory.",
-    includes: ['Primary survey (DRABC)','Adult CPR to Resuscitation Council UK guidelines','AED use (automated defibrillator)','Recovery position','Choking management','Level 2 RQF certificate'],
-    meta: [{ icon: Clock, label: 'Approx. 3 hours' }, { icon: Users, label: 'Up to 12 learners' }, { icon: Award, label: 'FAA Level 2 RQF' }],
-    image: '/assets/equipment.webp',
-  },
-  {
-    id: 'mental', icon: Brain, tag: 'Workplace Wellbeing',
-    title: 'Mental Health First Aid',
-    subtitle: 'MHFA England Accredited | 1 or 2-Day',
-    price: 'From £65 per person',
-    intro: "Mental health conditions affect 1 in 4 people in the UK every year, yet most workplaces remain completely unprepared to recognise or respond. MHFA training equips your team with the knowledge, skills, and confidence to provide first-line mental health support.",
-    body: "This isn't about turning employees into therapists. It's about giving them the awareness to spot early signs of mental health challenges, the skills to have a supportive conversation, and the knowledge of when and how to signpost someone to professional help.",
-    includes: ['Recognising mental health conditions','Depression and anxiety awareness','Suicidal crisis response protocols','Supportive conversation skills','Active listening techniques','Signposting to professional support','Reducing workplace stigma','Self-care strategies','MHFA England certificate'],
-    meta: [{ icon: Clock, label: '1 or 2-day course' }, { icon: Users, label: 'Up to 16 learners' }, { icon: Award, label: 'MHFA England Accredited' }],
-    image: 'https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'events', icon: Calendar, tag: 'Event Cover · Fully Insured',
-    title: 'Community Events First Aid',
-    subtitle: 'On-Site Medical Cover for Events of All Sizes',
-    price: 'Custom quote',
-    intro: "Whether you're organising a local charity run, a music festival, a school sports day, or a major public gathering, you have a legal duty of care to everyone attending. LifeCare Training provides fully qualified, professionally equipped event first aid cover.",
-    body: "Harry has extensive experience managing first aid provision at major public events — drawing on his emergency ambulance background to operate effectively in dynamic, high-pressure environments and coordinate with the wider emergency services.",
-    includes: ['Pre-event risk assessment','Qualified first aiders on-site','Professional medical-grade equipment','Event medical plan documentation','Emergency services liaison','Real-time incident management','Post-event incident report','Scalable to any event size','Fully insured'],
-    meta: [{ icon: Clock, label: 'Half-day to multi-day' }, { icon: Users, label: 'Scalable to event size' }, { icon: Award, label: 'Fully qualified & insured' }],
-    image: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'forestry', icon: Leaf, tag: 'Specialist · Forestry Commission',
-    title: 'Forestry & Agricultural First Aid',
-    subtitle: 'FAA Level 3 RQF | Bolt-On Qualification',
-    price: 'From £300 per group',
-    intro: 'A specialist bolt-on qualification for those working in forestry, agricultural, and rural environments — required by the Forestry Commission for chainsaw operators and those working in remote outdoor settings.',
-    body: 'This 2-hour qualification adds the specialist content needed to manage first aid incidents specific to forestry and agricultural work: chainsaw injuries, remote location response, crush injuries, and limited access to emergency services.',
-    includes: ['Forestry-specific hazard awareness','Chainsaw injury management','Remote location emergency response','Crush injury & limb entrapment','Major haemorrhage control in rural settings','Forestry Commission compliant certificate'],
-    meta: [{ icon: Clock, label: 'Approx. 2 hours (bolt-on)' }, { icon: Users, label: 'Individuals or groups' }, { icon: Award, label: 'FAA Level 3 RQF' }],
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'iqa', icon: ClipboardCheck, tag: 'Quality Assurance · Training Providers',
-    title: 'IQA — Internal Quality Assurance',
-    subtitle: 'For Regulated Training Providers',
-    price: 'Contact for pricing',
-    intro: "For training providers delivering regulated qualifications, Internal Quality Assurance is not optional — it's the mechanism that ensures your assessors are consistent, fair, and meeting awarding organisation standards. Without it, your centre approval is at risk.",
-    body: 'LifeCare Training offers expert IQA services to training centres needing support meeting their regulatory obligations. Available remotely or on-site across the South East. Sectors covered include healthcare, education, and public services.',
-    includes: ['Assessor decision sampling','Countersigning & verification','Standardisation event facilitation','Assessment practice observation','IQA planning documentation','EQA preparation & mock audits','Assessor coaching & development','Centre compliance gap analysis'],
-    meta: [{ icon: Clock, label: 'Flexible — by arrangement' }, { icon: Users, label: 'Per assessor or per centre' }, { icon: Award, label: 'Awarding Org Aligned' }],
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
-  },
-]
 
 export default function Services() {
   return (
@@ -225,12 +99,12 @@ export default function Services() {
       {/* ── COURSE NAV ────────────────────────────────────────────── */}
       <div className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <CourseNav services={SERVICES} />
+          <CourseNav services={COURSES} />
         </div>
       </div>
 
-      {/* ── SERVICES ──────────────────────────────────────────────── */}
-      {SERVICES.map(({ id, icon: Icon, tag, title, subtitle, price, intro, body, includes, meta, image }, idx) => (
+      {/* ── COURSES ───────────────────────────────────────────────── */}
+      {COURSES.map(({ id, slug, icon: Icon, tag, title, subtitle, price, intro, body, includes, meta, image }, idx) => (
         <section key={id} id={id} className={`py-16 lg:py-20 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-start">
@@ -250,17 +124,30 @@ export default function Services() {
                   <div className="flex flex-wrap gap-4 mb-8">
                     {meta.map(({ icon: MIcon, label }) => <Meta key={label} icon={MIcon} label={label} />)}
                   </div>
-                  <Btn to="/booking">Book This Course <ArrowRight size={15} /></Btn>
+                  <div className="flex flex-wrap gap-3">
+                    <Link to="/booking"
+                      className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-xl font-bold font-display text-sm
+                        hover:bg-brand-dark active:scale-[0.98] shadow-cta hover:shadow-[0_6px_24px_rgba(210,74,37,0.45)]
+                        transition-[background-color,box-shadow,transform] duration-150 focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2">
+                      Book This Course <ArrowRight size={15} />
+                    </Link>
+                    <Link to={`/courses/${slug}`}
+                      className="inline-flex items-center gap-2 border-2 border-brand text-brand px-6 py-3 rounded-xl font-bold font-display text-sm
+                        hover:bg-brand hover:text-white active:scale-[0.98]
+                        transition-[background-color,color,transform] duration-150 focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2">
+                      Full Course Details <ArrowRight size={15} />
+                    </Link>
+                  </div>
                 </Reveal>
               </div>
 
               {/* Visual */}
               <div className={`space-y-5 ${idx % 2 !== 0 ? 'lg:order-1' : ''}`}>
                 <Reveal variant="scale">
-                  <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
-                    <img src={image} alt={title} className="w-full h-56 object-cover" />
+                  <Link to={`/courses/${slug}`} className="block relative rounded-2xl overflow-hidden shadow-card-lg group">
+                    <img src={image} alt={title} className="w-full h-56 object-cover group-hover:scale-[1.03] transition-transform duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent" />
-                  </div>
+                  </Link>
                 </Reveal>
                 <Reveal delay={80}>
                   <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-card">
@@ -280,6 +167,59 @@ export default function Services() {
           </div>
         </section>
       ))}
+
+      {/* ── OTHER COURSES & PARTNERS ──────────────────────────────── */}
+      <section className="py-16 lg:py-20 bg-dark">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <Reveal className="max-w-2xl mb-12">
+            <div className="label mb-4">
+              <span className="rule-brand" />
+              <span className="text-white/70">Extended Network</span>
+            </div>
+            <h2 className="font-display font-800 text-display-md text-white mb-5 text-balance">
+              Other Courses &amp; Partner Companies
+            </h2>
+            <p className="text-gray-400 leading-[1.85] text-[15px]">
+              Having worked in the pre-hospital care and first aid industry for nearly two decades, we have built up a large network of like-minded professionals who are passionate about giving the best to their customers. With this in mind, we have access to several other industry experts delivering courses including, but not limited to:
+            </p>
+          </Reveal>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-10">
+            {[
+              'Health &amp; Safety',
+              'Food Safety',
+              'Manual Handling',
+              'Food Allergen',
+              'Fire Safety',
+              'First Aid for Mental Health',
+              'Suicide Prevention',
+              'Catastrophic Bleeding',
+              'Bespoke First Aid Awareness',
+              'COSHH',
+            ].map(course => (
+              <Reveal key={course}>
+                <div className="flex items-center gap-2.5 bg-white/6 border border-white/10 rounded-xl px-4 py-3">
+                  <CheckCircle2 size={13} className="text-brand shrink-0" />
+                  <span className="text-gray-300 text-sm font-medium" dangerouslySetInnerHTML={{ __html: course }} />
+                </div>
+              </Reveal>
+            ))}
+            <Reveal>
+              <div className="flex items-center gap-2.5 bg-brand/15 border border-brand/30 rounded-xl px-4 py-3">
+                <CheckCircle2 size={13} className="text-brand shrink-0" />
+                <span className="text-gray-300 text-sm font-medium italic">Other courses — please enquire</span>
+              </div>
+            </Reveal>
+          </div>
+          <Reveal>
+            <p className="text-gray-500 text-sm mb-6">Please get in touch if you would like to find out more about any of these courses.</p>
+            <Link to="/contact"
+              className="inline-flex items-center gap-2 border-2 border-white/30 text-white px-6 py-3 rounded-xl font-bold font-display text-sm
+                hover:bg-white/10 active:scale-[0.98] transition-[background-color,transform] duration-150">
+              Get in Touch <ArrowRight size={15} />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
 
       {/* ── BOTTOM CTA ────────────────────────────────────────────── */}
       <section className="relative py-20 lg:py-28 bg-brand overflow-hidden">

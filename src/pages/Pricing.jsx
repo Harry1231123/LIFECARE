@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, CheckCircle2, HeartPulse, Calendar, Brain, ClipboardCheck, Shield, Baby, Leaf, MessageCircle, ChevronDown } from 'lucide-react'
+import { ArrowRight, CheckCircle2, HeartPulse, Shield, Baby, Brain, Leaf, MessageCircle, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 import Reveal from '../components/Reveal'
 
@@ -18,63 +18,49 @@ const PLANS = [
     tagline: '1-day group course · Level 3 RQF',
     price: 'From £850', unit: 'per group (up to 12 learners)', popular: true,
     features: ['6-hour course (full day)','Up to 12 learners per session','Ofqual regulated certificate','Certificate valid for 3 years','All course materials included','Active EMT instructor','On-site delivery at your premises','HSE compliant documentation'],
-    href: '/services#efaw',
+    href: '/courses/efaw',
   },
   {
     icon: Shield, name: 'First Aid at Work',
     tagline: '3-day group course · Level 3 RQF',
     price: 'From £1,850', unit: 'per group (up to 12 learners)', popular: false,
     features: ['3-day comprehensive qualification','All EFAW content plus advanced','Anatomy & physiology overview','Head, neck & back injury response','Ofqual Level 3 RQF certificate','Valid for 3 years','Up to 12 learners','HSE gold standard'],
-    href: '/services#faw',
+    href: '/courses/faw',
   },
   {
     icon: Baby, name: 'Paediatric First Aid',
     tagline: '2-day course · Level 3 RQF',
     price: 'From £965', unit: 'per group (up to 12 learners)', popular: false,
     features: ['2-day specialist qualification','Infant & child CPR and AED','Choking, seizures & anaphylaxis','EYFS & OFSTED compliant','Ofqual Level 3 RQF certificate','Valid for 3 years','Up to 12 learners','Required for many childcare settings'],
-    href: '/services#paediatric',
+    href: '/courses/paediatric',
   },
   {
     icon: Baby, name: 'Emergency Paediatric First Aid',
     tagline: '1-day course · Level 3 RQF',
     price: 'From £850', unit: 'per group (up to 12 learners)', popular: false,
     features: ['Condensed 1-day paediatric course','Infant & child CPR','Choking & unconscious child','EYFS & OFSTED compliant','Ofqual Level 3 RQF certificate','Up to 12 learners','Stepping stone to full PFA','Valid for 3 years'],
-    href: '/services#epfa',
+    href: '/courses/epfa',
   },
   {
     icon: HeartPulse, name: 'Basic Life Support',
     tagline: 'Half-day · Level 2 RQF',
     price: 'From £650', unit: 'per group (up to 12 learners)', popular: false,
     features: ['Approx. 3-hour session','Adult CPR & AED use','Recovery position','Choking management','DRABC primary survey','Level 2 RQF certificate','Up to 12 learners','Ideal for all staff'],
-    href: '/services#bls',
+    href: '/courses/bls',
   },
   {
     icon: Brain, name: 'Mental Health First Aid',
     tagline: '1 or 2-day · MHFA England',
     price: 'From £65', unit: 'per person (group discounts available)', popular: false,
-    features: ['1-day or full 2-day option','MHFA England accredited','Up to 16 learners per group','Nationally recognised certificate','MHFA manual included','All staff levels welcome','On or off-site delivery','Follow-up digital resources'],
-    href: '/services#mental',
-  },
-  {
-    icon: Calendar, name: 'Community Events First Aid',
-    tagline: 'On-site event medical cover',
-    price: 'Custom quote', unit: 'based on event size & duration', popular: false,
-    features: ['Pre-event risk assessment','Qualified first aiders on-site','Professional medical equipment','Event medical plan','Emergency services liaison','Post-event incident report','Scalable to any event size','Fully insured'],
-    href: '/services#events',
+    features: ['1-day or full 2-day option', 'MHFA England accredited', 'Up to 16 learners per group', 'Nationally recognised certificate', 'MHFA manual included', 'All staff levels welcome', 'On or off-site delivery', 'Follow-up digital resources'],
+    href: '/courses/mental',
   },
   {
     icon: Leaf, name: 'Forestry & Agricultural First Aid',
     tagline: 'Bolt-on qualification · Level 3 RQF',
     price: 'From £300', unit: 'per group (bolt-on to existing FA cert)', popular: false,
     features: ['Approx. 2-hour bolt-on session','Requires existing EFAW or FAW','Forestry-specific hazard response','Chainsaw injury management','Forestry Commission compliant','FAA Level 3 RQF certificate','Individuals or groups'],
-    href: '/services#forestry',
-  },
-  {
-    icon: ClipboardCheck, name: 'IQA Services',
-    tagline: 'Internal Quality Assurance',
-    price: 'Contact us', unit: 'for a tailored quote', popular: false,
-    features: ['Qualified IQA practitioner','Assessor decision sampling','Standardisation facilitation','EQA preparation & mock audit','Assessment practice observation','IQA planning documentation','Assessor coaching','Compliance gap analysis'],
-    href: '/services#iqa',
+    href: '/courses/forestry',
   },
 ]
 

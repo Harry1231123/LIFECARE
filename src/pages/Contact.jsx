@@ -51,7 +51,7 @@ export default function Contact() {
                   <ul className="space-y-5">
                     {[
                       { icon: Phone, label: 'Phone', value: '07908 783457', href: 'tel:+447908783457', sub: 'Mon–Fri 08:00–17:00' },
-                      { icon: Mail,  label: 'Email', value: 'info@lifecare-training.co.uk', href: 'mailto:info@lifecare-training.co.uk', sub: 'We reply within 24hrs' },
+                      { icon: Mail,  label: 'Email', value: 'LifeCareTraining@Outlook.Com', href: 'mailto:LifeCareTraining@Outlook.Com', sub: 'We reply within 24hrs' },
                     ].map(({ icon: Icon, label, value, href, sub }) => (
                       <li key={label} className="flex items-start gap-4">
                         <div className="w-10 h-10 bg-brand-light rounded-xl flex items-center justify-center shrink-0">

@@ -5,6 +5,7 @@ import { FacebookIcon, InstagramIcon, LinkedInIcon } from './SocialIcons'
 const QUICK = [
   { to: '/',         label: 'Home' },
   { to: '/about',    label: 'About Harry' },
+  { to: '/team',     label: 'Meet the Team' },
   { to: '/services', label: 'All Courses' },
   { to: '/pricing',  label: 'Pricing' },
   { to: '/blog',     label: 'Blog & Guides' },
@@ -12,14 +13,14 @@ const QUICK = [
   { to: '/booking',  label: 'Get a Quote' },
 ]
 
-const COURSES = [
-  { to: '/services#efaw',      label: 'Emergency First Aid at Work' },
-  { to: '/services#faw',       label: 'First Aid at Work' },
-  { to: '/services#paediatric',label: 'Paediatric First Aid' },
-  { to: '/services#bls',       label: 'Basic Life Support' },
-  { to: '/services#mental',    label: 'Mental Health First Aid' },
-  { to: '/services#events',    label: 'Community Events First Aid' },
-  { to: '/services#iqa',       label: 'IQA Services' },
+const FOOTER_COURSES = [
+  { to: '/courses/efaw',       label: 'Emergency First Aid at Work' },
+  { to: '/courses/faw',        label: 'First Aid at Work' },
+  { to: '/courses/paediatric', label: 'Paediatric First Aid' },
+  { to: '/courses/epfa',       label: 'Emergency Paediatric First Aid' },
+  { to: '/courses/bls',        label: 'Basic Life Support' },
+  { to: '/courses/mental',     label: 'Mental Health First Aid' },
+  { to: '/courses/forestry',   label: 'Forestry & Agricultural First Aid' },
 ]
 
 const ACCRED = [
@@ -95,7 +96,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-display font-bold text-[11px] uppercase tracking-[0.15em] mb-5">Our Courses</h4>
             <ul className="space-y-2.5">
-              {COURSES.map(({ to, label }) => (
+              {FOOTER_COURSES.map(({ to, label }) => (
                 <li key={to}>
                   <Link to={to} className="group flex items-center gap-1.5 text-gray-400 text-sm hover:text-white transition-colors duration-150">
                     <ArrowRight size={11} className="opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition-all duration-150 shrink-0 text-brand" />
@@ -116,8 +117,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@lifecare-training.co.uk" className="flex items-start gap-3 text-gray-400 text-sm hover:text-white transition-colors duration-150">
-                  <Mail size={13} className="text-brand shrink-0 mt-0.5" /> info@lifecare-training.co.uk
+                <a href="mailto:LifeCareTraining@Outlook.Com" className="flex items-start gap-3 text-gray-400 text-sm hover:text-white transition-colors duration-150">
+                  <Mail size={13} className="text-brand shrink-0 mt-0.5" /> LifeCareTraining@Outlook.Com
                 </a>
               </li>
               <li>

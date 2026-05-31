@@ -5,6 +5,7 @@ import { Menu, X, Phone, HeartPulse, ChevronDown } from 'lucide-react'
 const NAV = [
   { to: '/',         label: 'Home' },
   { to: '/about',    label: 'About' },
+  { to: '/team',     label: 'Team' },
   { to: '/services', label: 'Services' },
   { to: '/pricing',  label: 'Pricing' },
   { to: '/blog',     label: 'Blog' },

@@ -13,11 +13,18 @@ function Label({ children }) {
 
 const POSTS = [
   {
+    slug: 'saving-lives-is-not-enough',
+    category: 'Training Advice',
+    title: '#SavingLivesIsNotEnough — Pre-Hospital Management of Paediatric Burns',
+    excerpt: 'A clinical case study from the frontline. A 12-year-old girl. A chip pan fire. And a simple intervention — cool running water — that can be the difference between a full recovery and a lifetime of scarring.',
+    date: '11 Mar 2026', readTime: '6 min', image: '/assets/hero.webp', featured: true,
+  },
+  {
     slug: 'business-legally-required-first-aider',
     category: 'Legal Compliance',
     title: 'Is Your Business Legally Required to Have a Qualified First Aider?',
     excerpt: "The Health and Safety (First-Aid) Regulations 1981 require every employer to make adequate first aid provision. But what does 'adequate' actually mean, and what happens if you don't comply?",
-    date: '12 May 2025', readTime: '5 min', image: '/assets/equipment.webp', featured: true,
+    date: '12 May 2025', readTime: '5 min', image: '/assets/equipment.webp', featured: false,
   },
   {
     slug: 'hse-first-aid-regulations-guide',
