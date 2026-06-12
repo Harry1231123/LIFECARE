@@ -86,10 +86,11 @@ export default function Services() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <Reveal className="max-w-2xl">
             <Label><span className="text-white/70">Our Courses</span></Label>
-            <h1 className="font-display font-800 text-display-xl text-white mb-5 text-balance">
+            <h1 className="font-display font-800 text-display-xl text-white mb-3 text-balance">
               First Aid Training That Actually Works
             </h1>
-            <p className="text-gray-300 text-xl leading-relaxed">
+            <p className="font-display font-bold text-brand text-xl mb-5">Become a lifesaver with LifeCare Training.</p>
+            <p className="text-gray-300 text-lg leading-relaxed">
               Every qualification is Ofqual regulated and HSE recognised. Every course is delivered by someone who still works on the frontline.
             </p>
           </Reveal>
@@ -106,7 +107,12 @@ export default function Services() {
       {/* ── COURSES ───────────────────────────────────────────────── */}
       {COURSES.map(({ id, slug, icon: Icon, tag, title, subtitle, price, intro, body, includes, meta, image, addon }, idx) => (
         <Fragment key={id}>
-          <section id={id} className={`py-16 lg:py-20 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
+          <section id={id} className={`py-16 lg:py-20 ${id === 'efaw' ? 'bg-white ring-2 ring-inset ring-brand/20' : idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
+            {id === 'efaw' && (
+              <div className="bg-brand text-white text-[10px] font-bold font-display tracking-widest uppercase text-center py-2 -mt-16 mb-16">
+                ★ Most Popular Course
+              </div>
+            )}
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
               <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-start">
 

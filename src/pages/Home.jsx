@@ -48,7 +48,7 @@ const FEATURED_COURSES = [
     id: 'events', icon: Calendar,
     tag: 'Events Cover',
     title: 'Community Events First Aid',
-    desc: 'Professional, fully-equipped first aid cover for events of all sizes, from local charity runs to multi-thousand-person gatherings.',
+    desc: 'Professional, fully-equipped first aid cover for community events of all sizes, from charity runs and sports days to fairs and local festivals.',
     duration: 'Flexible',
     level: 'Fully Insured',
     price: 'Custom quote',
@@ -61,14 +61,14 @@ const FEATURED_COURSES = [
     desc: 'Give your team the skills to recognise, respond to, and support colleagues experiencing mental health challenges.',
     duration: '1–2 Days',
     level: 'MHFA England',
-    price: 'From £65 p/person',
+    price: 'From £390 per group',
     href: '/services#mental',
   },
   {
     id: 'iqa', icon: ClipboardCheck,
     tag: 'Quality Assurance',
     title: 'IQA: Internal Quality Assurance',
-    desc: 'Expert IQA services for regulated training providers. On-site or remote. Sampling, standardisation, and EQA preparation.',
+    desc: 'Expert IQA services for regulated training providers. On-site or remote. Sampling, standardisation, and assessment support.',
     duration: 'Flexible',
     level: 'Awarding Org Aligned',
     price: 'Contact for pricing',
@@ -79,8 +79,8 @@ const FEATURED_COURSES = [
 const WHY_POINTS = [
   {
     icon: Stethoscope,
-    title: 'Active Frontline Instructor',
-    body: 'Harry is a practicing ambulance technician and community first responder, not a former professional. The difference shows in every session.',
+    title: 'Still Active on the Frontline',
+    body: 'Harry works for the ambulance service in both frontline and volunteer roles. He brings current, real-world experience into every session, not knowledge from a decade ago.',
   },
   {
     icon: BadgeCheck,
@@ -89,13 +89,13 @@ const WHY_POINTS = [
   },
   {
     icon: Shield,
-    title: 'Tailored to Your Organisation',
-    body: 'From boardrooms to building sites, Harry adapts every course to your team\'s actual working environment and risk profile.',
+    title: 'Genuinely Competitive Pricing',
+    body: 'LifeCare Training is far more competitively priced than larger national providers, without any compromise on quality, accreditation, or hands-on delivery.',
   },
   {
     icon: Users,
-    title: 'Learners Who Can Actually Do It',
-    body: 'Scenario-based, hands-on training means your team leaves confident rather than just certificated. Skills that hold up under real pressure.',
+    title: 'Hands-On, Scenario-Based Learning',
+    body: 'Every course is built around practical scenarios, not just theory. Your team leaves genuinely capable of responding when it matters, not just able to pass a test.',
   },
 ]
 
@@ -115,10 +115,10 @@ const TESTIMONIALS = [
     stars: 5,
   },
   {
-    name: 'James Okafor',
-    role: 'Event Director',
-    company: 'Brighton Community Festival',
-    body: "LifeCare provided first aid cover for our 3,000-person festival. Professional, calm under pressure, and completely prepared for everything. Couldn't have asked for more.",
+    name: 'Claire Hutchins',
+    role: 'Charity Run Organiser',
+    company: 'Worthing Coastal Dash',
+    body: "Harry provided first aid cover for our charity run and was fantastic from start to finish. Professional, calm, prepared for everything, and great with participants. We'll have him back every year.",
     stars: 5,
   },
   {
@@ -148,12 +148,12 @@ const BLOG_POSTS = [
     image: 'https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?auto=format&fit=crop&w=800&q=80',
   },
   {
-    category: 'First Aid Skills',
-    title: '5 First Aid Mistakes That Could Cost Lives: From an EMT Who\'s Seen Them',
-    excerpt: 'Our frontline ambulance instructor shares the most common errors people make under pressure, and how proper training prevents them.',
-    date: '18 Mar 2025',
-    readTime: '6 min',
-    image: '/assets/hero.webp',
+    category: 'Events',
+    title: 'Community Events: How Much First Aid Cover Does Your Event Actually Need?',
+    excerpt: 'Every event organiser has a duty of care. Here\'s how to assess the right level of cover for your specific event.',
+    date: '5 Mar 2025',
+    readTime: '5 min',
+    image: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80',
   },
 ]
 
@@ -192,7 +192,7 @@ export default function Home() {
             </p>
 
             <p className="animate-fade-up [animation-delay:120ms] text-gray-300 text-lg leading-[1.75] mb-10 max-w-[520px]">
-              Professional first aid training delivered by Harry Todhunter, an active ambulance technician and law enforcement professional with 17+ years of genuine frontline experience.
+              Professional first aid training delivered by Harry Todhunter, who works for the ambulance service in both frontline and volunteer roles and brings 17+ years of genuine experience into every session.
             </p>
 
             <div className="animate-fade-up [animation-delay:180ms] flex flex-wrap gap-3 mb-16">

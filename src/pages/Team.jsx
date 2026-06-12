@@ -34,9 +34,10 @@ function Avatar({ initials, color = 'brand' }) {
 const HARRY_CREDS = [
   { icon: Stethoscope, label: 'Level 5 Diploma: First Response Emergency & Urgent Care (Ambulance Technician)' },
   { icon: BadgeCheck,  label: 'Qualified Trainer & Assessor in Regulated Qualifications Delivery' },
+  { icon: BadgeCheck,  label: 'BLSI Qualified (Basic Life Support Instructor) via Resuscitation Council UK' },
   { icon: Shield,      label: '17+ Years in First Aid across Public, Private & Government Sectors' },
   { icon: Building2,   label: 'St John Ambulance: Medical Events & Management' },
-  { icon: Users,       label: 'Ambulance Service Tutor & Community First Responder (paid & volunteer)' },
+  { icon: Users,       label: 'Works for the Ambulance Service in Both Frontline and Volunteer Roles' },
   { icon: Award,       label: 'Multiple Awards & Commendations for Saving Lives' },
 ]
 
@@ -117,7 +118,7 @@ export default function Team() {
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
                   <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives, not someone who last treated a real emergency a decade ago.</p>
-                  <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care, the qualification that makes him a practicing Ambulance Technician. He is also a qualified Trainer and Assessor for regulated qualifications, an active ambulance service tutor, and a community first responder in both paid and volunteer capacities.</p>
+                  <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care and is BLSI qualified through the Resuscitation Council UK. He works for the ambulance service in both frontline and volunteer roles, and is also a qualified Trainer and Assessor for regulated qualifications.</p>
                   <p>With roots in St John Ambulance's medical events and management teams, and over 17 years delivering first aid across NHS trusts, government organisations, corporate businesses, and public events, Harry brings an unmatched depth of real-world experience to every session.</p>
                 </div>
               </Reveal>

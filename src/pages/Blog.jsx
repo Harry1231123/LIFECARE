@@ -41,13 +41,6 @@ const POSTS = [
     date: '3 Apr 2025', readTime: '4 min', image: 'https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?auto=format&fit=crop&w=1200&q=80', featured: false,
   },
   {
-    slug: 'five-first-aid-mistakes',
-    category: 'Training Advice',
-    title: "5 First Aid Mistakes That Could Cost Lives: From an EMT Who's Seen Them",
-    excerpt: 'From incorrect CPR depth to missing early signs of cardiac events, our frontline ambulance instructor shares the most common errors made under pressure.',
-    date: '18 Mar 2025', readTime: '6 min', image: '/assets/hero.webp', featured: false,
-  },
-  {
     slug: 'event-first-aid-cover-guide',
     category: 'Events',
     title: 'Community Events: How Much First Aid Cover Does Your Event Actually Need?',

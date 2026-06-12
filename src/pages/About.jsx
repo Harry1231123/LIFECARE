@@ -25,9 +25,10 @@ function Btn({ to, href, children, variant = 'primary' }) {
 const CREDENTIALS = [
   { icon: Stethoscope, label: 'Level 5 Diploma in First Response Emergency & Urgent Care (Ambulance Technician)' },
   { icon: BadgeCheck,  label: 'Qualified Trainer & Assessor in Regulated Qualifications Delivery' },
+  { icon: BadgeCheck,  label: 'BLSI Qualified (Basic Life Support Instructor) via Resuscitation Council UK' },
   { icon: Shield,      label: '17+ Years in First Aid across Public, Private & Government Sectors' },
   { icon: Building2,   label: 'St John Ambulance: Medical Events & Management' },
-  { icon: Users,       label: 'Ambulance Service Tutor & Community First Responder (paid & volunteer)' },
+  { icon: Users,       label: 'Works for the Ambulance Service in Both Frontline and Volunteer Roles' },
   { icon: Award,       label: 'Multiple Awards & Commendations for Saving Lives' },
 ]
 
@@ -82,10 +83,11 @@ export default function About() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <Reveal className="max-w-2xl">
             <Label><span className="text-white/70">About LifeCare Training</span></Label>
-            <h1 className="font-display font-800 text-display-xl text-white mb-5 text-balance">
+            <h1 className="font-display font-800 text-display-xl text-white mb-3 text-balance">
               Training Built on Real Experience
             </h1>
-            <p className="text-gray-300 text-xl leading-relaxed">
+            <p className="font-display font-bold text-brand text-xl mb-5">Become a lifesaver with LifeCare Training.</p>
+            <p className="text-gray-300 text-lg leading-relaxed">
               LifeCare Training was founded by Harry Todhunter, an active ambulance technician with 17+ years on the frontline and a mission to create genuine lifesavers, not just certificate holders.
             </p>
           </Reveal>
@@ -128,7 +130,7 @@ export default function About() {
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
                   <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives, not someone who last treated a real emergency a decade ago.</p>
-                  <p>Harry holds a Level 5 Diploma in First Response Emergency & Urgent Care, the qualification that makes him a practicing Ambulance Technician. He is also a qualified Trainer and Assessor for regulated qualifications, an active ambulance service tutor, and a community first responder in both paid and volunteer capacities.</p>
+                  <p>Harry holds a Level 5 Diploma in First Response Emergency & Urgent Care and is a BLSI qualified through the Resuscitation Council UK. He works for the ambulance service in both frontline and volunteer roles, and is also a qualified Trainer and Assessor for regulated qualifications.</p>
                   <p>With roots in St John Ambulance's medical events and management teams, and over 17 years delivering first aid across NHS trusts, government organisations, corporate businesses, and public events, Harry brings an unmatched depth of real-world experience to every session.</p>
                   <p>Learners don't just pass their qualification. They leave knowing they can actually do it: confident, competent, and ready to be a lifesaver when it counts. Harry has received multiple awards and commendations for his dedication to his community and for saving lives.</p>
                 </div>
