@@ -48,7 +48,7 @@ const FEATURED_COURSES = [
     id: 'events', icon: Calendar,
     tag: 'Events Cover',
     title: 'Community Events First Aid',
-    desc: 'Professional, fully-equipped first aid cover for events of all sizes — from local charity runs to multi-thousand-person gatherings.',
+    desc: 'Professional, fully-equipped first aid cover for events of all sizes - from local charity runs to multi-thousand-person gatherings.',
     duration: 'Flexible',
     level: 'Fully Insured',
     price: 'Custom quote',
@@ -67,7 +67,7 @@ const FEATURED_COURSES = [
   {
     id: 'iqa', icon: ClipboardCheck,
     tag: 'Quality Assurance',
-    title: 'IQA — Internal Quality Assurance',
+    title: 'IQA - Internal Quality Assurance',
     desc: 'Expert IQA services for regulated training providers. On-site or remote. Sampling, standardisation, and EQA preparation.',
     duration: 'Flexible',
     level: 'Awarding Org Aligned',
@@ -80,7 +80,7 @@ const WHY_POINTS = [
   {
     icon: Stethoscope,
     title: 'Active Frontline Instructor',
-    body: 'Harry is a practicing ambulance technician and community first responder — not a former professional. The difference shows in every session.',
+    body: 'Harry is a practicing ambulance technician and community first responder - not a former professional. The difference shows in every session.',
   },
   {
     icon: BadgeCheck,
@@ -95,7 +95,7 @@ const WHY_POINTS = [
   {
     icon: Users,
     title: 'Learners Who Can Actually Do It',
-    body: 'Scenario-based, hands-on training means your team leaves confident — not just certificated. Skills that hold up under real pressure.',
+    body: 'Scenario-based, hands-on training means your team leaves confident - not just certificated. Skills that hold up under real pressure.',
   },
 ]
 
@@ -111,7 +111,7 @@ const TESTIMONIALS = [
     name: 'Sarah Mitchell',
     role: 'HR Manager',
     company: 'Sussex Construction Ltd',
-    body: "Outstanding training. Harry's real-world EMT experience made all the difference — our team left genuinely confident and prepared, not just ticking a compliance box. We'll be back every year.",
+    body: "Outstanding training. Harry's real-world EMT experience made all the difference - our team left genuinely confident and prepared, not just ticking a compliance box. We'll be back every year.",
     stars: 5,
   },
   {
@@ -134,7 +134,7 @@ const BLOG_POSTS = [
   {
     category: 'Legal Compliance',
     title: 'Is Your Business Legally Required to Have a First Aider?',
-    excerpt: 'The HSE is clear: every employer must make adequate first aid provision. Here\'s exactly what the law requires — and what the consequences are if you don\'t.',
+    excerpt: 'The HSE is clear: every employer must make adequate first aid provision. Here\'s exactly what the law requires - and what the consequences are if you don\'t.',
     date: '12 May 2025',
     readTime: '5 min',
     image: '/assets/equipment.webp',
@@ -149,7 +149,7 @@ const BLOG_POSTS = [
   },
   {
     category: 'First Aid Skills',
-    title: '5 First Aid Mistakes That Could Cost Lives — From an EMT Who\'s Seen Them',
+    title: '5 First Aid Mistakes That Could Cost Lives - From an EMT Who\'s Seen Them',
     excerpt: 'Our frontline ambulance instructor shares the most common errors people make under pressure, and how proper training prevents them.',
     date: '18 Mar 2025',
     readTime: '6 min',
@@ -192,7 +192,7 @@ export default function Home() {
             </p>
 
             <p className="animate-fade-up [animation-delay:120ms] text-gray-300 text-lg leading-[1.75] mb-10 max-w-[520px]">
-              Professional first aid training delivered by Harry Todhunter — an active ambulance technician and law enforcement professional with 17+ years of genuine frontline experience.
+              Professional first aid training delivered by Harry Todhunter - an active ambulance technician and law enforcement professional with 17+ years of genuine frontline experience.
             </p>
 
             <div className="animate-fade-up [animation-delay:180ms] flex flex-wrap gap-3 mb-16">
@@ -315,7 +315,7 @@ export default function Home() {
             {/* Image */}
             <Reveal variant="scale" className="relative order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
-                <img src="/assets/team.webp" alt="Harry Todhunter — LifeCare Training instructor" className="w-full h-[520px] object-cover" />
+                <img src="/assets/team.webp" alt="Harry Todhunter - LifeCare Training instructor" className="w-full h-[520px] object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
               </div>
               {/* Float stat */}
@@ -340,7 +340,7 @@ export default function Home() {
                   Taught by Someone Who Does It for Real
                 </h2>
                 <p className="text-gray-500 text-lg leading-relaxed mb-8">
-                  Most first aid trainers retired from frontline work years ago. Harry Todhunter is still active — responding to real emergencies, staying current, and bringing that lived experience directly into your training room.
+                  Most first aid trainers retired from frontline work years ago. Harry Todhunter is still active - responding to real emergencies, staying current, and bringing that lived experience directly into your training room.
                 </p>
               </Reveal>
 
@@ -532,7 +532,7 @@ export default function Home() {
             Ready to Protect Your Team?
           </h2>
           <p className="text-white/80 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-            Get a free, tailored quote within 24 hours. No sales pressure, no obligation — just honest advice on the right training for your organisation.
+            Get a free, tailored quote within 24 hours. No sales pressure, no obligation - just honest advice on the right training for your organisation.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-10">
             <Btn to="/booking" variant="light" size="lg">

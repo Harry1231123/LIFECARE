@@ -23,10 +23,10 @@ function Btn({ to, href, children, variant = 'primary' }) {
 }
 
 const CREDENTIALS = [
-  { icon: Stethoscope, label: 'Level 5 Diploma — First Response Emergency & Urgent Care (Ambulance Technician)' },
-  { icon: BadgeCheck,  label: 'Qualified Trainer & Assessor — Regulated Qualifications Delivery' },
-  { icon: Shield,      label: '17+ Years in First Aid — Public, Private & Government Sectors' },
-  { icon: Building2,   label: 'St John Ambulance — Medical Events & Management' },
+  { icon: Stethoscope, label: 'Level 5 Diploma - First Response Emergency & Urgent Care (Ambulance Technician)' },
+  { icon: BadgeCheck,  label: 'Qualified Trainer & Assessor - Regulated Qualifications Delivery' },
+  { icon: Shield,      label: '17+ Years in First Aid - Public, Private & Government Sectors' },
+  { icon: Building2,   label: 'St John Ambulance - Medical Events & Management' },
   { icon: Users,       label: 'Ambulance Service Tutor & Community First Responder (paid & volunteer)' },
   { icon: Award,       label: 'Multiple Awards & Commendations for Saving Lives' },
 ]
@@ -35,12 +35,12 @@ const VALUES = [
   {
     num: '01',
     title: 'Real-World Relevance',
-    body: 'Harry teaches what he lives. Every scenario, every skill, every decision framework comes from genuine frontline ambulance and emergency response experience — not just a training manual.',
+    body: 'Harry teaches what he lives. Every scenario, every skill, every decision framework comes from genuine frontline ambulance and emergency response experience - not just a training manual.',
   },
   {
     num: '02',
     title: 'Genuine Competence',
-    body: 'Success isn\'t measured by who passes a test — it\'s measured by who can actually respond when it matters. Every learner leaves with hands-on confidence and skills that hold up under pressure.',
+    body: 'Success isn\'t measured by who passes a test - it\'s measured by who can actually respond when it matters. Every learner leaves with hands-on confidence and skills that hold up under pressure.',
   },
   {
     num: '03',
@@ -50,7 +50,7 @@ const VALUES = [
   {
     num: '04',
     title: 'Accessible Training',
-    body: "Life-saving skills shouldn't be the preserve of well-funded organisations. Harry brings training to your workplace, your community, and your budget — no unnecessary fuss or overhead.",
+    body: "Life-saving skills shouldn't be the preserve of well-funded organisations. Harry brings training to your workplace, your community, and your budget - no unnecessary fuss or overhead.",
   },
 ]
 
@@ -86,7 +86,7 @@ export default function About() {
               Training Built on Real Experience
             </h1>
             <p className="text-gray-300 text-xl leading-relaxed">
-              LifeCare Training was founded by Harry Todhunter — an active ambulance technician with 17+ years on the frontline and a mission to create genuine lifesavers, not just certificate holders.
+              LifeCare Training was founded by Harry Todhunter - an active ambulance technician with 17+ years on the frontline and a mission to create genuine lifesavers, not just certificate holders.
             </p>
           </Reveal>
         </div>
@@ -101,7 +101,7 @@ export default function About() {
               <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
                 <img
                   src="/assets/team.webp"
-                  alt="Harry Todhunter — LifeCare Training founder and lead instructor"
+                  alt="Harry Todhunter - LifeCare Training founder and lead instructor"
                   className="w-full h-[520px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
@@ -127,10 +127,10 @@ export default function About() {
               </Reveal>
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
-                  <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives — not someone who last treated a real emergency a decade ago.</p>
-                  <p>Harry holds a Level 5 Diploma in First Response Emergency & Urgent Care — the qualification that makes him a practicing Ambulance Technician. He is also a qualified Trainer and Assessor for regulated qualifications, an active ambulance service tutor, and a community first responder in both paid and volunteer capacities.</p>
+                  <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives - not someone who last treated a real emergency a decade ago.</p>
+                  <p>Harry holds a Level 5 Diploma in First Response Emergency & Urgent Care - the qualification that makes him a practicing Ambulance Technician. He is also a qualified Trainer and Assessor for regulated qualifications, an active ambulance service tutor, and a community first responder in both paid and volunteer capacities.</p>
                   <p>With roots in St John Ambulance's medical events and management teams, and over 17 years delivering first aid across NHS trusts, government organisations, corporate businesses, and public events, Harry brings an unmatched depth of real-world experience to every session.</p>
-                  <p>Learners don't just pass their qualification. They leave knowing they can actually do it — confident, competent, and ready to be a lifesaver when it counts. Harry has received multiple awards and commendations for his dedication to his community and for saving lives.</p>
+                  <p>Learners don't just pass their qualification. They leave knowing they can actually do it - confident, competent, and ready to be a lifesaver when it counts. Harry has received multiple awards and commendations for his dedication to his community and for saving lives.</p>
                 </div>
               </Reveal>
               <Reveal delay={120} className="flex flex-wrap gap-3">
@@ -235,7 +235,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <Reveal className="text-center mb-8">
             <h2 className="font-display font-800 text-[1.5rem] text-dark mb-2">Sectors We Serve</h2>
-            <p className="text-gray-500 text-sm">From government organisations to community groups — Harry has trained them all.</p>
+            <p className="text-gray-500 text-sm">From government organisations to community groups - Harry has trained them all.</p>
           </Reveal>
           <Reveal delay={80}>
             <div className="flex flex-wrap justify-center gap-3">

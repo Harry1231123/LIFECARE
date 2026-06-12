@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 
 /**
  * Wraps children in a scroll-triggered reveal animation.
- * Uses IntersectionObserver — zero deps, no layout jank.
+ * Uses IntersectionObserver - zero deps, no layout jank.
  *
  * @param {number}  delay     - stagger delay in ms (0, 100, 200, …)
  * @param {string}  variant   - 'up' (default) | 'scale' | 'fade'

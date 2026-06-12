@@ -67,7 +67,7 @@ const PLANS = [
 const FAQS = [
   {
     q: 'Can you train at our premises?',
-    a: 'Yes — we come to you. All courses can be delivered at your workplace, keeping disruption to a minimum and saving you travel costs. All we need is a suitable training space.',
+    a: 'Yes - we come to you. All courses can be delivered at your workplace, keeping disruption to a minimum and saving you travel costs. All we need is a suitable training space.',
   },
   {
     q: 'How many people can attend each course?',
@@ -79,7 +79,7 @@ const FAQS = [
   },
   {
     q: "What's included in the price?",
-    a: 'All course materials, learner certificates, and tuition are included. Travel may be charged for locations outside of Sussex — please request a quote for full pricing based on your location and group size.',
+    a: 'All course materials, learner certificates, and tuition are included. Travel may be charged for locations outside of Sussex - please request a quote for full pricing based on your location and group size.',
   },
   {
     q: 'Do you offer discounts for charities or multiple bookings?',
@@ -129,7 +129,7 @@ export default function Pricing() {
               Transparent, Competitive Pricing
             </h1>
             <p className="text-gray-300 text-xl leading-relaxed">
-              No hidden costs, no surprise invoices. Clear guide pricing for every course — plus a free tailored quote for your exact requirements.
+              No hidden costs, no surprise invoices. Clear guide pricing for every course - plus a free tailored quote for your exact requirements.
             </p>
           </Reveal>
         </div>
@@ -198,11 +198,11 @@ export default function Pricing() {
                 <MessageCircle size={17} className="text-brand" />
               </div>
               <div>
-                <h4 className="font-display font-bold text-dark text-sm mb-1">Prices are guide rates — your quote will be tailored</h4>
+                <h4 className="font-display font-bold text-dark text-sm mb-1">Prices are guide rates - your quote will be tailored</h4>
                 <p className="text-gray-500 text-sm leading-relaxed">
                   Final pricing depends on group size, location, and the number of courses booked.{' '}
                   <Link to="/booking" className="text-brand font-bold hover:underline">Request a free tailored quote</Link>
-                  {' '}— we respond within 24 hours.
+                  {' '}- we respond within 24 hours.
                 </p>
               </div>
             </div>

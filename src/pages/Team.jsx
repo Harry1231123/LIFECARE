@@ -32,19 +32,19 @@ function Avatar({ initials, color = 'brand' }) {
 }
 
 const HARRY_CREDS = [
-  { icon: Stethoscope, label: 'Level 5 Diploma — First Response Emergency & Urgent Care (Ambulance Technician)' },
-  { icon: BadgeCheck,  label: 'Qualified Trainer & Assessor — Regulated Qualifications Delivery' },
-  { icon: Shield,      label: '17+ Years in First Aid — Public, Private & Government Sectors' },
-  { icon: Building2,   label: 'St John Ambulance — Medical Events & Management' },
+  { icon: Stethoscope, label: 'Level 5 Diploma - First Response Emergency & Urgent Care (Ambulance Technician)' },
+  { icon: BadgeCheck,  label: 'Qualified Trainer & Assessor - Regulated Qualifications Delivery' },
+  { icon: Shield,      label: '17+ Years in First Aid - Public, Private & Government Sectors' },
+  { icon: Building2,   label: 'St John Ambulance - Medical Events & Management' },
   { icon: Users,       label: 'Ambulance Service Tutor & Community First Responder (paid & volunteer)' },
   { icon: Award,       label: 'Multiple Awards & Commendations for Saving Lives' },
 ]
 
 const JENNIFER_CREDS = [
-  { icon: Stethoscope, label: 'Paramedic — 20 Years Pre-Hospital Care Experience' },
+  { icon: Stethoscope, label: 'Paramedic - 20 Years Pre-Hospital Care Experience' },
   { icon: Building2,   label: '15 Years with London Ambulance Service' },
   { icon: Activity,    label: '5 Years in Primary Care' },
-  { icon: BadgeCheck,  label: 'PPED — Paramedic Practice Educator' },
+  { icon: BadgeCheck,  label: 'PPED - Paramedic Practice Educator' },
   { icon: Heart,       label: 'First Aid Instructor & Clinical Mentor' },
   { icon: Users,       label: 'Passionate About Supporting First Aiders & Clinicians' },
 ]
@@ -52,7 +52,7 @@ const JENNIFER_CREDS = [
 const HILARY_CREDS = [
   { icon: Users,       label: 'Community Events Contract Manager' },
   { icon: BookOpen,    label: 'Educator with Extensive Teaching Experience' },
-  { icon: Shield,      label: 'Quality Assurance — Years of Professional Experience' },
+  { icon: Shield,      label: 'Quality Assurance - Years of Professional Experience' },
   { icon: Heart,       label: 'Community First Responder (CFR)' },
   { icon: BadgeCheck,  label: 'L3AET · L4 IQA · FREC4 Qualified' },
   { icon: Star,        label: 'BODO Ambassador & FAFF Member' },
@@ -75,7 +75,7 @@ export default function Team() {
               The People Behind the Training
             </h1>
             <p className="text-gray-300 text-xl leading-relaxed">
-              Every member of the LifeCare Training team brings genuine frontline experience. We don't just teach first aid — we've lived it.
+              Every member of the LifeCare Training team brings genuine frontline experience. We don't just teach first aid - we've lived it.
             </p>
           </Reveal>
         </div>
@@ -90,7 +90,7 @@ export default function Team() {
               <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
                 <img
                   src="/assets/team.webp"
-                  alt="Harry Todhunter — LifeCare Training founder and lead instructor"
+                  alt="Harry Todhunter - LifeCare Training founder and lead instructor"
                   className="w-full h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
@@ -116,8 +116,8 @@ export default function Team() {
               </Reveal>
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
-                  <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives — not someone who last treated a real emergency a decade ago.</p>
-                  <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care — the qualification that makes him a practicing Ambulance Technician. He is also a qualified Trainer and Assessor for regulated qualifications, an active ambulance service tutor, and a community first responder in both paid and volunteer capacities.</p>
+                  <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives - not someone who last treated a real emergency a decade ago.</p>
+                  <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care - the qualification that makes him a practicing Ambulance Technician. He is also a qualified Trainer and Assessor for regulated qualifications, an active ambulance service tutor, and a community first responder in both paid and volunteer capacities.</p>
                   <p>With roots in St John Ambulance's medical events and management teams, and over 17 years delivering first aid across NHS trusts, government organisations, corporate businesses, and public events, Harry brings an unmatched depth of real-world experience to every session.</p>
                 </div>
               </Reveal>
@@ -151,7 +151,7 @@ export default function Team() {
                 <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
                   <img
                     src="/assets/jennifer.png"
-                    alt="Jennifer — Paramedic &amp; Clinical Mentor"
+                    alt="Jennifer - Paramedic &amp; Clinical Mentor"
                     className="w-full h-[500px] object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
@@ -178,7 +178,7 @@ export default function Team() {
               </Reveal>
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
-                  <p>Jennifer brings over 20 years of pre-hospital care experience to LifeCare Training, including 15 years with the London Ambulance Service and 5 years working in Primary Care. Her career spans the full breadth of emergency and community medicine — from responding to life-threatening incidents on the frontline to supporting long-term patient care.</p>
+                  <p>Jennifer brings over 20 years of pre-hospital care experience to LifeCare Training, including 15 years with the London Ambulance Service and 5 years working in Primary Care. Her career spans the full breadth of emergency and community medicine - from responding to life-threatening incidents on the frontline to supporting long-term patient care.</p>
                   <p>As a qualified Paramedic Practice Educator (PPED), Jennifer is uniquely equipped to bridge the gap between clinical practice and education. She works with both first aiders taking their first steps and experienced clinicians seeking to progress their skills, adapting her teaching to meet every learner where they are.</p>
                   <p>Jennifer's passion is straightforward: she believes that well-supported first aiders and clinicians save more lives. Everything she does in the classroom is shaped by that conviction and by two decades of real-world evidence.</p>
                 </div>
@@ -276,9 +276,9 @@ export default function Team() {
               </Reveal>
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
-                  <p>Hilary manages LifeCare Training's community events contract, bringing a rare combination of frontline volunteerism and rigorous quality assurance to everything she oversees. As a qualified educator, she ensures that the training we deliver meets the highest standards — consistently and reliably.</p>
-                  <p>Her background spans years of experience in quality assurance, giving her an exceptional eye for process, consistency, and learner outcomes. Alongside her professional work, Hilary volunteers as a Community First Responder — a commitment that keeps her rooted in the real-world impact of the skills she helps deliver.</p>
-                  <p>Hilary holds multiple respected qualifications including L3AET, L4 IQA, and FREC4. She is also an ambassador for BODO and a proud member of FAFF — organisations dedicated to advancing first aid education and community resilience across the UK.</p>
+                  <p>Hilary manages LifeCare Training's community events contract, bringing a rare combination of frontline volunteerism and rigorous quality assurance to everything she oversees. As a qualified educator, she ensures that the training we deliver meets the highest standards - consistently and reliably.</p>
+                  <p>Her background spans years of experience in quality assurance, giving her an exceptional eye for process, consistency, and learner outcomes. Alongside her professional work, Hilary volunteers as a Community First Responder - a commitment that keeps her rooted in the real-world impact of the skills she helps deliver.</p>
+                  <p>Hilary holds multiple respected qualifications including L3AET, L4 IQA, and FREC4. She is also an ambassador for BODO and a proud member of FAFF - organisations dedicated to advancing first aid education and community resilience across the UK.</p>
                 </div>
               </Reveal>
               <Reveal delay={120}>
