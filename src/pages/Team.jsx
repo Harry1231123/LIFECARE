@@ -44,7 +44,7 @@ const JENNIFER_CREDS = [
   { icon: Stethoscope, label: 'Paramedic with 20 Years Pre-Hospital Care Experience' },
   { icon: Building2,   label: '15 Years with London Ambulance Service' },
   { icon: Activity,    label: '5 Years in Primary Care' },
-  { icon: BadgeCheck,  label: 'PPED - Paramedic Practice Educator' },
+  { icon: BadgeCheck,  label: 'PPED (Paramedic Practice Educator)' },
   { icon: Heart,       label: 'First Aid Instructor & Clinical Mentor' },
   { icon: Users,       label: 'Passionate About Supporting First Aiders & Clinicians' },
 ]
@@ -90,7 +90,7 @@ export default function Team() {
               <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
                 <img
                   src="/assets/team.webp"
-                  alt="Harry Todhunter - LifeCare Training founder and lead instructor"
+                  alt="Harry Todhunter, LifeCare Training founder and lead instructor"
                   className="w-full h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
@@ -151,7 +151,7 @@ export default function Team() {
                 <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
                   <img
                     src="/assets/jennifer.png"
-                    alt="Jennifer - Paramedic &amp; Clinical Mentor"
+                    alt="Jennifer, Paramedic &amp; Clinical Mentor"
                     className="w-full h-[500px] object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
@@ -277,8 +277,8 @@ export default function Team() {
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
                   <p>Hilary manages LifeCare Training's community events contract, bringing a rare combination of frontline volunteerism and rigorous quality assurance to everything she oversees. As a qualified educator, she ensures that the training we deliver meets the highest standards, consistently and reliably.</p>
-                  <p>Her background spans years of experience in quality assurance, giving her an exceptional eye for process, consistency, and learner outcomes. Alongside her professional work, Hilary volunteers as a Community First Responder - a commitment that keeps her rooted in the real-world impact of the skills she helps deliver.</p>
-                  <p>Hilary holds multiple respected qualifications including L3AET, L4 IQA, and FREC4. She is also an ambassador for BODO and a proud member of FAFF - organisations dedicated to advancing first aid education and community resilience across the UK.</p>
+                  <p>Her background spans years of experience in quality assurance, giving her an exceptional eye for process, consistency, and learner outcomes. Alongside her professional work, Hilary volunteers as a Community First Responder, a commitment that keeps her rooted in the real-world impact of the skills she helps deliver.</p>
+                  <p>Hilary holds multiple respected qualifications including L3AET, L4 IQA, and FREC4. She is also an ambassador for BODO and a proud member of FAFF, organisations dedicated to advancing first aid education and community resilience across the UK.</p>
                 </div>
               </Reveal>
               <Reveal delay={120}>

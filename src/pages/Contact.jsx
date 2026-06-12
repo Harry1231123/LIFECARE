@@ -32,7 +32,7 @@ export default function Contact() {
             <Label><span className="text-white/70">Contact Us</span></Label>
             <h1 className="font-display font-800 text-display-xl text-white mb-5">Let's Talk</h1>
             <p className="text-gray-300 text-xl leading-relaxed">
-              Whether you have a question about a course, need advice on compliance, or are ready to book - we'd love to hear from you.
+              Whether you have a question about a course, need advice on compliance, or are ready to book, we'd love to hear from you.
             </p>
           </Reveal>
         </div>
@@ -120,7 +120,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-display font-bold text-emerald-800 text-sm">WhatsApp Harry directly</p>
-                    <p className="text-emerald-600 text-xs mt-0.5">Speak to the trainer - not a call centre</p>
+                    <p className="text-emerald-600 text-xs mt-0.5">Speak to the trainer, not a call centre</p>
                   </div>
                 </a>
               </Reveal>
@@ -182,7 +182,7 @@ export default function Contact() {
                       <textarea
                         id="message" name="message" required rows={6}
                         value={form.message} onChange={handleChange}
-                        placeholder="Tell us what you're looking for - course type, number of learners, any specific requirements..."
+                        placeholder="Tell us what you're looking for: course type, number of learners, any specific requirements..."
                         className={`${inputCls} resize-none`}
                       />
                     </div>

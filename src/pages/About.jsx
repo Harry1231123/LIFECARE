@@ -101,7 +101,7 @@ export default function About() {
               <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
                 <img
                   src="/assets/team.webp"
-                  alt="Harry Todhunter - LifeCare Training founder and lead instructor"
+                  alt="Harry Todhunter, LifeCare Training founder and lead instructor"
                   className="w-full h-[520px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />

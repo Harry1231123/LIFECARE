@@ -244,7 +244,7 @@ export default function Services() {
             <Reveal>
               <div className="flex items-center gap-2.5 bg-brand/15 border border-brand/30 rounded-xl px-4 py-3">
                 <CheckCircle2 size={13} className="text-brand shrink-0" />
-                <span className="text-gray-300 text-sm font-medium italic">Other courses - please enquire</span>
+                <span className="text-gray-300 text-sm font-medium italic">Other courses: please enquire</span>
               </div>
             </Reveal>
           </div>

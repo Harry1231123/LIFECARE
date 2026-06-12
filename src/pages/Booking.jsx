@@ -22,14 +22,14 @@ const COURSES = [
   { id: 'mental',   icon: Brain,          label: 'Mental Health First Aid',          sub: '1–2 days · MHFA England' },
   { id: 'events',   icon: Calendar,       label: 'Community Events First Aid',       sub: 'On-site medical cover' },
   { id: 'forestry', icon: Leaf,           label: 'Forestry & Agricultural FA',       sub: '2 hrs · Bolt-on qualification' },
-  { id: 'iqa',      icon: ClipboardCheck, label: 'IQA - Internal Quality Assurance', sub: 'Remote or on-site' },
+  { id: 'iqa',      icon: ClipboardCheck, label: 'IQA: Internal Quality Assurance', sub: 'Remote or on-site' },
 ]
 
 const LEARNER_RANGES = ['1–5 learners', '6–12 learners', '13–20 learners', '21–50 learners', '50+ learners']
 const DELIVERY = [
   { value: 'onsite',  label: 'At our premises (we come to you)' },
   { value: 'offsite', label: 'At a LifeCare Training venue' },
-  { value: 'unsure',  label: 'Not sure yet - happy to discuss' },
+  { value: 'unsure',  label: 'Not sure yet, happy to discuss' },
 ]
 
 export default function Booking() {
@@ -95,7 +95,7 @@ export default function Booking() {
                 <div className="bg-dark rounded-2xl p-6 text-white">
                   <p className="font-display font-bold text-lg mb-2">Prefer to call?</p>
                   <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                    Speak directly to Harry - no call centres, no sales team.
+                    Speak directly to Harry. No call centres, no sales team.
                   </p>
                   <a href="tel:+447908783457"
                     className="inline-flex items-center gap-2 text-brand font-bold font-display text-sm hover:text-red-400 transition-colors duration-150">
@@ -110,7 +110,7 @@ export default function Booking() {
                     {[...Array(5)].map((_, i) => <span key={i} className="text-amber-400 text-sm">★</span>)}
                   </div>
                   <p className="text-gray-600 text-sm italic leading-relaxed mb-4">
-                    "Outstanding training. Harry's real-world experience made all the difference - our team left genuinely confident and prepared. We'll be back every year."
+                    "Outstanding training. Harry's real-world experience made all the difference: our team left genuinely confident and prepared. We'll be back every year."
                   </p>
                   <div>
                     <p className="font-display font-bold text-dark text-sm">Sarah Mitchell</p>

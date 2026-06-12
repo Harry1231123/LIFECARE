@@ -58,7 +58,7 @@ export const COURSES = [
     body: "In just 3 hours, learners gain the core skills to respond to the most critical emergencies: cardiac arrest, choking, and unconsciousness. Using real AEDs and manikins, the training builds genuine confidence and muscle memory.",
     includes: ['Primary survey (DRABC)', 'Adult CPR to Resuscitation Council UK guidelines', 'AED use (automated defibrillator)', 'Recovery position', 'Choking management', 'Level 2 RQF certificate'],
     meta: [{ icon: Clock, label: 'Approx. 3 hours' }, { icon: Users, label: 'Up to 12 learners' }, { icon: Award, label: 'FAA Level 2 RQF' }],
-    who: ['All staff - any sector', 'Offices & shops', 'Sports & leisure facilities', 'Volunteers', 'CPR refresher for existing first aiders'],
+    who: ['All staff in any sector', 'Offices & shops', 'Sports & leisure facilities', 'Volunteers', 'CPR refresher for existing first aiders'],
     image: '/assets/equipment.webp',
   },
   {
