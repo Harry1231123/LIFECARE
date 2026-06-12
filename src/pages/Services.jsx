@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight } from 'lucide-react'
-import { useRef, useState, useEffect } from 'react'
+import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Brain } from 'lucide-react'
+import { useRef, useState, useEffect, Fragment } from 'react'
 import Reveal from '../components/Reveal'
 import { COURSES } from '../data/courses'
 
@@ -104,68 +104,106 @@ export default function Services() {
       </div>
 
       {/* ── COURSES ───────────────────────────────────────────────── */}
-      {COURSES.map(({ id, slug, icon: Icon, tag, title, subtitle, price, intro, body, includes, meta, image }, idx) => (
-        <section key={id} id={id} className={`py-16 lg:py-20 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-start">
+      {COURSES.map(({ id, slug, icon: Icon, tag, title, subtitle, price, intro, body, includes, meta, image, addon }, idx) => (
+        <Fragment key={id}>
+          <section id={id} className={`py-16 lg:py-20 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
+            <div className="max-w-7xl mx-auto px-6 lg:px-8">
+              <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-start">
 
-              {/* Copy */}
-              <div className={idx % 2 !== 0 ? 'lg:order-2' : ''}>
-                <Reveal>
-                  <div className="inline-flex items-center gap-2 bg-brand-light border border-red-200 rounded-full px-3 py-1.5 mb-6">
-                    <Icon size={11} className="text-brand" />
-                    <span className="text-brand text-[10px] font-bold font-display uppercase tracking-wider">{tag}</span>
-                  </div>
-                  <h2 className="font-display font-800 text-display-md text-dark mb-1.5 text-balance">{title}</h2>
-                  <p className="text-gray-400 text-base mb-1">{subtitle}</p>
-                  <p className="text-brand font-bold font-display text-sm mb-6">{price}</p>
-                  <p className="text-gray-600 leading-[1.85] text-[15px] mb-4">{intro}</p>
-                  <p className="text-gray-600 leading-[1.85] text-[15px] mb-7">{body}</p>
-                  <div className="flex flex-wrap gap-4 mb-8">
-                    {meta.map(({ icon: MIcon, label }) => <Meta key={label} icon={MIcon} label={label} />)}
-                  </div>
-                  <div className="flex flex-wrap gap-3">
-                    <Link to="/booking"
-                      className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-xl font-bold font-display text-sm
-                        hover:bg-brand-dark active:scale-[0.98] shadow-cta hover:shadow-[0_6px_24px_rgba(210,74,37,0.45)]
-                        transition-[background-color,box-shadow,transform] duration-150 focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2">
-                      Book This Course <ArrowRight size={15} />
+                {/* Copy */}
+                <div className={idx % 2 !== 0 ? 'lg:order-2' : ''}>
+                  <Reveal>
+                    <div className="inline-flex items-center gap-2 bg-brand-light border border-red-200 rounded-full px-3 py-1.5 mb-6">
+                      <Icon size={11} className="text-brand" />
+                      <span className="text-brand text-[10px] font-bold font-display uppercase tracking-wider">{tag}</span>
+                    </div>
+                    <h2 className="font-display font-800 text-display-md text-dark mb-1.5 text-balance">{title}</h2>
+                    <p className="text-gray-400 text-base mb-1">{subtitle}</p>
+                    <p className="text-brand font-bold font-display text-sm mb-6">{price}</p>
+                    <p className="text-gray-600 leading-[1.85] text-[15px] mb-4">{intro}</p>
+                    <p className="text-gray-600 leading-[1.85] text-[15px] mb-7">{body}</p>
+                    <div className="flex flex-wrap gap-4 mb-8">
+                      {meta.map(({ icon: MIcon, label }) => <Meta key={label} icon={MIcon} label={label} />)}
+                    </div>
+                    <div className="flex flex-wrap gap-3">
+                      <Link to="/booking"
+                        className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-xl font-bold font-display text-sm
+                          hover:bg-brand-dark active:scale-[0.98] shadow-cta hover:shadow-[0_6px_24px_rgba(210,74,37,0.45)]
+                          transition-[background-color,box-shadow,transform] duration-150 focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2">
+                        Book This Course <ArrowRight size={15} />
+                      </Link>
+                      <Link to={`/courses/${slug}`}
+                        className="inline-flex items-center gap-2 border-2 border-brand text-brand px-6 py-3 rounded-xl font-bold font-display text-sm
+                          hover:bg-brand hover:text-white active:scale-[0.98]
+                          transition-[background-color,color,transform] duration-150 focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2">
+                        Full Course Details <ArrowRight size={15} />
+                      </Link>
+                    </div>
+                  </Reveal>
+                </div>
+
+                {/* Visual */}
+                <div className={`space-y-5 ${idx % 2 !== 0 ? 'lg:order-1' : ''}`}>
+                  <Reveal variant="scale">
+                    <Link to={`/courses/${slug}`} className="block relative rounded-2xl overflow-hidden shadow-card-lg group">
+                      <img src={image} alt={title} className="w-full h-56 object-cover group-hover:scale-[1.03] transition-transform duration-500" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent" />
                     </Link>
-                    <Link to={`/courses/${slug}`}
-                      className="inline-flex items-center gap-2 border-2 border-brand text-brand px-6 py-3 rounded-xl font-bold font-display text-sm
-                        hover:bg-brand hover:text-white active:scale-[0.98]
-                        transition-[background-color,color,transform] duration-150 focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2">
-                      Full Course Details <ArrowRight size={15} />
-                    </Link>
-                  </div>
-                </Reveal>
+                  </Reveal>
+                  <Reveal delay={80}>
+                    <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-card">
+                      <h4 className="font-display font-bold text-dark text-xs uppercase tracking-widest mb-5">What's Covered</h4>
+                      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        {includes.map(item => (
+                          <li key={item} className="flex items-start gap-2.5 text-gray-600 text-sm">
+                            <CheckCircle2 size={13} className="text-brand mt-0.5 shrink-0" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </Reveal>
+                </div>
               </div>
+            </div>
+          </section>
 
-              {/* Visual */}
-              <div className={`space-y-5 ${idx % 2 !== 0 ? 'lg:order-1' : ''}`}>
-                <Reveal variant="scale">
-                  <Link to={`/courses/${slug}`} className="block relative rounded-2xl overflow-hidden shadow-card-lg group">
-                    <img src={image} alt={title} className="w-full h-56 object-cover group-hover:scale-[1.03] transition-transform duration-500" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent" />
-                  </Link>
-                </Reveal>
-                <Reveal delay={80}>
-                  <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-card">
-                    <h4 className="font-display font-bold text-dark text-xs uppercase tracking-widest mb-5">What's Covered</h4>
+          {/* ── ASIST ADDON ─────────────────────────────────────────── */}
+          {addon && (
+            <section className="py-16 lg:py-20 bg-dark">
+              <div className="max-w-7xl mx-auto px-6 lg:px-8">
+                <Reveal className="max-w-3xl mb-10">
+                  <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-3 py-1.5 mb-6">
+                    <Brain size={11} className="text-brand" />
+                    <span className="text-white/70 text-[10px] font-bold font-display uppercase tracking-wider">Add-On Training</span>
+                  </div>
+                  <h2 className="font-display font-800 text-display-md text-white mb-2 text-balance">{addon.title}</h2>
+                  <p className="text-gray-400 text-base mb-6">{addon.subtitle}</p>
+                  <p className="text-gray-300 leading-[1.85] text-[15px] mb-4">{addon.description}</p>
+                  <p className="text-gray-300 leading-[1.85] text-[15px] mb-6">{addon.body}</p>
+                  <p className="text-brand font-bold font-display text-sm mb-8">{addon.meta}</p>
+                  <div className="bg-white/6 border border-white/10 rounded-2xl p-6 mb-8">
+                    <h4 className="font-display font-bold text-white text-xs uppercase tracking-widest mb-5">What's Covered</h4>
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                      {includes.map(item => (
-                        <li key={item} className="flex items-start gap-2.5 text-gray-600 text-sm">
+                      {addon.includes.map(item => (
+                        <li key={item} className="flex items-start gap-2.5 text-gray-300 text-sm">
                           <CheckCircle2 size={13} className="text-brand mt-0.5 shrink-0" />
                           {item}
                         </li>
                       ))}
                     </ul>
                   </div>
+                  <Link to="/booking"
+                    className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-xl font-bold font-display text-sm
+                      hover:bg-brand-dark active:scale-[0.98] shadow-cta hover:shadow-[0_6px_24px_rgba(210,74,37,0.45)]
+                      transition-[background-color,box-shadow,transform] duration-150 focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2">
+                    Enquire About ASIST <ArrowRight size={15} />
+                  </Link>
                 </Reveal>
               </div>
-            </div>
-          </div>
-        </section>
+            </section>
+          )}
+        </Fragment>
       ))}
 
       {/* ── OTHER COURSES & PARTNERS ──────────────────────────────── */}

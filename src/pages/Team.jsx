@@ -31,6 +31,15 @@ function Avatar({ initials, color = 'brand' }) {
   )
 }
 
+const HARRY_CREDS = [
+  { icon: Stethoscope, label: 'Level 5 Diploma — First Response Emergency & Urgent Care (Ambulance Technician)' },
+  { icon: BadgeCheck,  label: 'Qualified Trainer & Assessor — Regulated Qualifications Delivery' },
+  { icon: Shield,      label: '17+ Years in First Aid — Public, Private & Government Sectors' },
+  { icon: Building2,   label: 'St John Ambulance — Medical Events & Management' },
+  { icon: Users,       label: 'Ambulance Service Tutor & Community First Responder (paid & volunteer)' },
+  { icon: Award,       label: 'Multiple Awards & Commendations for Saving Lives' },
+]
+
 const JENNIFER_CREDS = [
   { icon: Stethoscope, label: 'Paramedic — 20 Years Pre-Hospital Care Experience' },
   { icon: Building2,   label: '15 Years with London Ambulance Service' },
@@ -72,38 +81,95 @@ export default function Team() {
         </div>
       </section>
 
-      {/* ── JENNIFER ──────────────────────────────────────────────── */}
+      {/* ── HARRY ─────────────────────────────────────────────────── */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
 
             <Reveal variant="scale" className="relative">
-              <div className="relative rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-card-lg flex flex-col items-center justify-center py-16 px-8">
-                <Avatar initials="JA" color="brand" />
-                <div className="mt-6 text-center">
-                  <p className="font-display font-800 text-dark text-2xl mb-1">Jennifer</p>
-                  <p className="text-brand font-semibold text-sm">First Aid Instructor &amp; Clinical Mentor</p>
-                </div>
-                <div className="mt-6 w-full border-t border-gray-100 pt-6 grid grid-cols-2 gap-4 text-center">
-                  <div>
-                    <p className="font-display font-800 text-3xl text-dark tracking-tight">20+</p>
-                    <p className="text-gray-400 text-xs mt-0.5 leading-snug">Years pre-hospital care</p>
-                  </div>
-                  <div>
-                    <p className="font-display font-800 text-3xl text-dark tracking-tight">15</p>
-                    <p className="text-gray-400 text-xs mt-0.5 leading-snug">Years London Ambulance Service</p>
-                  </div>
-                </div>
+              <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
+                <img
+                  src="/assets/team.webp"
+                  alt="Harry Todhunter — LifeCare Training founder and lead instructor"
+                  className="w-full h-[500px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
               </div>
               <div className="absolute top-6 -right-4 lg:-right-8 bg-dark text-white rounded-2xl px-4 py-3 shadow-card-lg">
                 <div className="flex items-center gap-2">
                   <Stethoscope size={13} className="text-brand" />
-                  <span className="text-xs font-bold font-display">Paramedic &amp; PPED</span>
+                  <span className="text-xs font-bold font-display">Active Ambulance Technician</span>
                 </div>
+              </div>
+              <div className="absolute -bottom-5 left-6 bg-white rounded-2xl p-4 shadow-card-lg">
+                <div className="font-display font-800 text-3xl text-dark tracking-tight mb-0.5">17+</div>
+                <div className="text-gray-500 text-xs leading-snug">Years frontline experience</div>
               </div>
             </Reveal>
 
             <div>
+              <Reveal>
+                <Label>Founder &amp; Lead Instructor</Label>
+                <h2 className="font-display font-800 text-display-lg text-dark mb-5 text-balance">
+                  Harry Todhunter
+                </h2>
+              </Reveal>
+              <Reveal delay={60}>
+                <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
+                  <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives — not someone who last treated a real emergency a decade ago.</p>
+                  <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care — the qualification that makes him a practicing Ambulance Technician. He is also a qualified Trainer and Assessor for regulated qualifications, an active ambulance service tutor, and a community first responder in both paid and volunteer capacities.</p>
+                  <p>With roots in St John Ambulance's medical events and management teams, and over 17 years delivering first aid across NHS trusts, government organisations, corporate businesses, and public events, Harry brings an unmatched depth of real-world experience to every session.</p>
+                </div>
+              </Reveal>
+              <Reveal delay={120}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                  {HARRY_CREDS.map(({ icon: Icon, label }) => (
+                    <div key={label} className="flex items-start gap-3 bg-gray-50 border border-gray-100 rounded-xl p-4">
+                      <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
+                        <Icon size={14} className="text-brand" />
+                      </div>
+                      <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
+                    </div>
+                  ))}
+                </div>
+              </Reveal>
+              <Reveal delay={160} className="flex flex-wrap gap-3">
+                <Btn to="/booking" variant="primary">Book a Course <ArrowRight size={15} /></Btn>
+              </Reveal>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── JENNIFER ──────────────────────────────────────────────── */}
+      <section className="py-20 lg:py-28 bg-gray-50 border-y border-gray-100">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+
+            <div className="lg:order-2">
+              <Reveal variant="scale" className="relative">
+                <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
+                  <img
+                    src="/assets/jennifer.png"
+                    alt="Jennifer — Paramedic &amp; Clinical Mentor"
+                    className="w-full h-[500px] object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
+                </div>
+                <div className="absolute top-6 -left-4 lg:-left-8 bg-dark text-white rounded-2xl px-4 py-3 shadow-card-lg">
+                  <div className="flex items-center gap-2">
+                    <Stethoscope size={13} className="text-brand" />
+                    <span className="text-xs font-bold font-display">Paramedic &amp; PPED</span>
+                  </div>
+                </div>
+                <div className="absolute -bottom-5 right-6 bg-white rounded-2xl p-4 shadow-card-lg">
+                  <div className="font-display font-800 text-3xl text-dark tracking-tight mb-0.5">20+</div>
+                  <div className="text-gray-500 text-xs leading-snug">Years pre-hospital care</div>
+                </div>
+              </Reveal>
+            </div>
+
+            <div className="lg:order-1">
               <Reveal>
                 <Label>Instructor &amp; Clinical Mentor</Label>
                 <h2 className="font-display font-800 text-display-lg text-dark mb-5 text-balance">
@@ -119,8 +185,8 @@ export default function Team() {
               </Reveal>
               <Reveal delay={120}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                  {JENNIFER_CREDS.map(({ icon: Icon, label }, i) => (
-                    <div key={label} className="flex items-start gap-3 bg-gray-50 border border-gray-100 rounded-xl p-4">
+                  {JENNIFER_CREDS.map(({ icon: Icon, label }) => (
+                    <div key={label} className="flex items-start gap-3 bg-white border border-gray-100 rounded-xl p-4 shadow-card">
                       <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
                         <Icon size={14} className="text-brand" />
                       </div>
@@ -128,6 +194,39 @@ export default function Team() {
                     </div>
                   ))}
                 </div>
+              </Reveal>
+              <Reveal delay={160} className="flex flex-wrap gap-3">
+                <Btn to="/booking" variant="primary">Book a Course <ArrowRight size={15} /></Btn>
+              </Reveal>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── MOLLY ─────────────────────────────────────────────────── */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+
+            <Reveal variant="scale" className="relative">
+              <div className="relative rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-card-lg flex flex-col items-center justify-center py-16 px-8">
+                <Avatar initials="M" color="brand" />
+                <div className="mt-6 text-center">
+                  <p className="font-display font-800 text-dark text-2xl mb-1">Molly</p>
+                  <p className="text-brand font-semibold text-sm">Instructor</p>
+                </div>
+              </div>
+            </Reveal>
+
+            <div>
+              <Reveal>
+                <Label>Instructor</Label>
+                <h2 className="font-display font-800 text-display-lg text-dark mb-5 text-balance">
+                  Molly
+                </h2>
+              </Reveal>
+              <Reveal delay={60}>
+                <p className="text-gray-400 leading-[1.8] text-[15px] mb-8">Full profile coming soon.</p>
               </Reveal>
               <Reveal delay={160} className="flex flex-wrap gap-3">
                 <Btn to="/booking" variant="primary">Book a Course <ArrowRight size={15} /></Btn>
@@ -184,7 +283,7 @@ export default function Team() {
               </Reveal>
               <Reveal delay={120}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                  {HILARY_CREDS.map(({ icon: Icon, label }, i) => (
+                  {HILARY_CREDS.map(({ icon: Icon, label }) => (
                     <div key={label} className="flex items-start gap-3 bg-white border border-gray-100 rounded-xl p-4 shadow-card">
                       <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
                         <Icon size={14} className="text-brand" />
@@ -193,6 +292,74 @@ export default function Team() {
                     </div>
                   ))}
                 </div>
+              </Reveal>
+              <Reveal delay={160} className="flex flex-wrap gap-3">
+                <Btn to="/booking" variant="primary">Book a Course <ArrowRight size={15} /></Btn>
+              </Reveal>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── STEPHEN ───────────────────────────────────────────────── */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+
+            <Reveal variant="scale" className="relative">
+              <div className="relative rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-card-lg flex flex-col items-center justify-center py-16 px-8">
+                <Avatar initials="S" color="brand" />
+                <div className="mt-6 text-center">
+                  <p className="font-display font-800 text-dark text-2xl mb-1">Stephen</p>
+                  <p className="text-brand font-semibold text-sm">Instructor</p>
+                </div>
+              </div>
+            </Reveal>
+
+            <div>
+              <Reveal>
+                <Label>Instructor</Label>
+                <h2 className="font-display font-800 text-display-lg text-dark mb-5 text-balance">
+                  Stephen
+                </h2>
+              </Reveal>
+              <Reveal delay={60}>
+                <p className="text-gray-400 leading-[1.8] text-[15px] mb-8">Full profile coming soon.</p>
+              </Reveal>
+              <Reveal delay={160} className="flex flex-wrap gap-3">
+                <Btn to="/booking" variant="primary">Book a Course <ArrowRight size={15} /></Btn>
+              </Reveal>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CHARLEY ───────────────────────────────────────────────── */}
+      <section className="py-20 lg:py-28 bg-gray-50 border-y border-gray-100">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+
+            <div className="lg:order-2">
+              <Reveal variant="scale" className="relative">
+                <div className="relative rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-card-lg flex flex-col items-center justify-center py-16 px-8">
+                  <Avatar initials="C" color="dark" />
+                  <div className="mt-6 text-center">
+                    <p className="font-display font-800 text-dark text-2xl mb-1">Charley</p>
+                    <p className="text-brand font-semibold text-sm">Instructor</p>
+                  </div>
+                </div>
+              </Reveal>
+            </div>
+
+            <div className="lg:order-1">
+              <Reveal>
+                <Label>Instructor</Label>
+                <h2 className="font-display font-800 text-display-lg text-dark mb-5 text-balance">
+                  Charley
+                </h2>
+              </Reveal>
+              <Reveal delay={60}>
+                <p className="text-gray-400 leading-[1.8] text-[15px] mb-8">Full profile coming soon.</p>
               </Reveal>
               <Reveal delay={160} className="flex flex-wrap gap-3">
                 <Btn to="/booking" variant="primary">Book a Course <ArrowRight size={15} /></Btn>
