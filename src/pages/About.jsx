@@ -127,10 +127,10 @@ export default function About() {
               </Reveal>
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
-                  <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives - not someone who last treated a real emergency a decade ago.</p>
-                  <p>Harry holds a Level 5 Diploma in First Response Emergency & Urgent Care - the qualification that makes him a practicing Ambulance Technician. He is also a qualified Trainer and Assessor for regulated qualifications, an active ambulance service tutor, and a community first responder in both paid and volunteer capacities.</p>
+                  <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives, not someone who last treated a real emergency a decade ago.</p>
+                  <p>Harry holds a Level 5 Diploma in First Response Emergency & Urgent Care, the qualification that makes him a practicing Ambulance Technician. He is also a qualified Trainer and Assessor for regulated qualifications, an active ambulance service tutor, and a community first responder in both paid and volunteer capacities.</p>
                   <p>With roots in St John Ambulance's medical events and management teams, and over 17 years delivering first aid across NHS trusts, government organisations, corporate businesses, and public events, Harry brings an unmatched depth of real-world experience to every session.</p>
-                  <p>Learners don't just pass their qualification. They leave knowing they can actually do it - confident, competent, and ready to be a lifesaver when it counts. Harry has received multiple awards and commendations for his dedication to his community and for saving lives.</p>
+                  <p>Learners don't just pass their qualification. They leave knowing they can actually do it: confident, competent, and ready to be a lifesaver when it counts. Harry has received multiple awards and commendations for his dedication to his community and for saving lives.</p>
                 </div>
               </Reveal>
               <Reveal delay={120} className="flex flex-wrap gap-3">
