@@ -56,10 +56,10 @@ const PLANS = [
     href: '/courses/mental',
   },
   {
-    icon: Brain, name: 'ASIST Training',
-    tagline: '2-day workshop · Resuscitation Council UK',
-    price: 'Contact for pricing', unit: 'up to 30 participants', popular: false,
-    features: ['2-day intensive workshop', 'Applied Suicide Intervention Skills', 'The TALK intervention model', 'Safety planning with the person at risk', 'Up to 30 participants', 'Internationally recognised certificate', 'Valid for 2 years', 'Used in over 30 countries'],
+    icon: Brain, name: 'LivingWorks ASIST',
+    tagline: '2-day in-person workshop · LivingWorks',
+    price: 'Contact for pricing', unit: 'open to anyone aged 16+', popular: false,
+    features: ['2-day in-person workshop', 'No prior experience required', 'Recognise suicidal thinking & respond with confidence', 'Build a SafePlan to keep someone safe', 'Suicide First-Aid Helper certificate', 'LivingWorks Connect app access included', '1.5 million+ trained worldwide', 'Suitable for any role or background'],
     href: '/services#mental',
   },
   {
