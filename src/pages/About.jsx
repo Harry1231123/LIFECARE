@@ -102,7 +102,7 @@ export default function About() {
             <Reveal variant="scale" className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
                 <img
-                  src="/assets/team.webp"
+                  src="/assets/harry.png"
                   alt="Harry Todhunter, LifeCare Training founder and lead instructor"
                   className="w-full h-[520px] object-cover"
                 />

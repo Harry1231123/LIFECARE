@@ -315,7 +315,7 @@ export default function Home() {
             {/* Image */}
             <Reveal variant="scale" className="relative order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
-                <img src="/assets/team.webp" alt="Harry Todhunter, LifeCare Training instructor" className="w-full h-[520px] object-cover" />
+                <img src="/assets/harry.png" alt="Harry Todhunter, LifeCare Training instructor" className="w-full h-[520px] object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
               </div>
               {/* Float stat */}
