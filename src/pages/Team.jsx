@@ -244,26 +244,23 @@ export default function Team() {
 
             <div className="lg:order-2">
               <Reveal variant="scale" className="relative">
-                <div className="relative rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-card-lg flex flex-col items-center justify-center py-16 px-8">
-                  <Avatar initials="HM" color="dark" />
-                  <div className="mt-6 text-center">
-                    <p className="font-display font-800 text-dark text-2xl mb-1">Hilary</p>
-                    <p className="text-brand font-semibold text-sm">Community Events Manager &amp; Educator</p>
-                  </div>
-                  <div className="mt-6 w-full border-t border-gray-100 pt-6 grid grid-cols-3 gap-2 text-center">
-                    {['L3AET', 'L4 IQA', 'FREC4'].map(q => (
-                      <div key={q}>
-                        <p className="font-display font-800 text-lg text-dark tracking-tight">{q}</p>
-                        <p className="text-gray-400 text-[10px] mt-0.5">Qualified</p>
-                      </div>
-                    ))}
-                  </div>
+                <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
+                  <img
+                    src="/assets/hilary.jpg"
+                    alt="Hilary, Community Events Manager and Educator"
+                    className="w-full h-[500px] object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
                 </div>
                 <div className="absolute top-6 -left-4 lg:-left-8 bg-brand text-white rounded-2xl px-4 py-3 shadow-card-lg">
                   <div className="flex items-center gap-2">
                     <CheckCircle2 size={13} className="text-white" />
                     <span className="text-xs font-bold font-display">Community First Responder</span>
                   </div>
+                </div>
+                <div className="absolute -bottom-5 right-6 bg-white rounded-2xl p-4 shadow-card-lg">
+                  <div className="font-display font-800 text-lg text-dark tracking-tight">L3AET · L4 IQA · FREC4</div>
+                  <div className="text-gray-500 text-xs mt-0.5">Qualified</div>
                 </div>
               </Reveal>
             </div>
