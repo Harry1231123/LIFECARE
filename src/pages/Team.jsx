@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Stethoscope, BadgeCheck, Shield, Users, Award, Heart, Star, CheckCircle2, Building2, BookOpen, Activity, Plane, Linkedin } from 'lucide-react'
+import { ArrowRight, Stethoscope, BadgeCheck, Shield, Users, Award, Heart, Star, CheckCircle2, Building2, BookOpen, Activity, Plane, ExternalLink } from 'lucide-react'
 import Reveal from '../components/Reveal'
 
 function Label({ children }) {
@@ -391,7 +391,7 @@ export default function Team() {
               <Reveal delay={160} className="flex flex-wrap gap-3">
                 <Btn to="/booking" variant="primary">Book a Course <ArrowRight size={15} /></Btn>
                 <Btn href="https://www.linkedin.com/in/charlotte-crocker-5a684a30a/" variant="outline">
-                  <Linkedin size={14} /> LinkedIn
+                  <ExternalLink size={14} /> LinkedIn
                 </Btn>
               </Reveal>
             </div>
