@@ -332,8 +332,43 @@ export default function Team() {
         </div>
       </section>
 
-      {/* ── CHARLOTTE ─────────────────────────────────────────────── */}
+      {/* ── CHARLEY ───────────────────────────────────────────────── */}
       <section className="py-20 lg:py-28 bg-gray-50 border-y border-gray-100">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+
+            <div className="lg:order-2">
+              <Reveal variant="scale" className="relative">
+                <div className="relative rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-card-lg flex flex-col items-center justify-center py-16 px-8">
+                  <Avatar initials="C" color="dark" />
+                  <div className="mt-6 text-center">
+                    <p className="font-display font-800 text-dark text-2xl mb-1">Charley</p>
+                    <p className="text-brand font-semibold text-sm">Instructor</p>
+                  </div>
+                </div>
+              </Reveal>
+            </div>
+
+            <div className="lg:order-1">
+              <Reveal>
+                <Label>Instructor</Label>
+                <h2 className="font-display font-800 text-display-lg text-dark mb-5 text-balance">
+                  Charley
+                </h2>
+              </Reveal>
+              <Reveal delay={60}>
+                <p className="text-gray-400 leading-[1.8] text-[15px] mb-8">Full profile coming soon.</p>
+              </Reveal>
+              <Reveal delay={160} className="flex flex-wrap gap-3">
+                <Btn to="/booking" variant="primary">Book a Course <ArrowRight size={15} /></Btn>
+              </Reveal>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CHARLOTTE ─────────────────────────────────────────────── */}
+      <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
 
