@@ -210,12 +210,13 @@ export default function Team() {
           <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
 
             <Reveal variant="scale" className="relative">
-              <div className="relative rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-card-lg flex flex-col items-center justify-center py-16 px-8">
-                <Avatar initials="M" color="brand" />
-                <div className="mt-6 text-center">
-                  <p className="font-display font-800 text-dark text-2xl mb-1">Molly</p>
-                  <p className="text-brand font-semibold text-sm">Instructor</p>
-                </div>
+              <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
+                <img
+                  src="/assets/molly.png"
+                  alt="Molly, Instructor at LifeCare Training"
+                  className="w-full h-[500px] object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
               </div>
             </Reveal>
 
