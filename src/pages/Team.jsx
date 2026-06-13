@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Stethoscope, BadgeCheck, Shield, Users, Award, Heart, Star, CheckCircle2, Building2, BookOpen, Activity } from 'lucide-react'
+import { ArrowRight, Stethoscope, BadgeCheck, Shield, Users, Award, Heart, Star, CheckCircle2, Building2, BookOpen, Activity, Plane, Linkedin } from 'lucide-react'
 import Reveal from '../components/Reveal'
 
 function Label({ children }) {
@@ -332,18 +332,25 @@ export default function Team() {
         </div>
       </section>
 
-      {/* ── CHARLEY ───────────────────────────────────────────────── */}
+      {/* ── CHARLOTTE ─────────────────────────────────────────────── */}
       <section className="py-20 lg:py-28 bg-gray-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
 
             <div className="lg:order-2">
               <Reveal variant="scale" className="relative">
-                <div className="relative rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-card-lg flex flex-col items-center justify-center py-16 px-8">
-                  <Avatar initials="C" color="dark" />
-                  <div className="mt-6 text-center">
-                    <p className="font-display font-800 text-dark text-2xl mb-1">Charley</p>
-                    <p className="text-brand font-semibold text-sm">Instructor</p>
+                <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
+                  <img
+                    src="/assets/charlotte.jpg"
+                    alt="Charlotte Crocker, LivingWorks ASIST Trainer and EFAW Trainer"
+                    className="w-full h-[500px] object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
+                </div>
+                <div className="absolute top-6 -left-4 lg:-left-8 bg-dark text-white rounded-2xl px-4 py-3 shadow-card-lg">
+                  <div className="flex items-center gap-2">
+                    <Plane size={13} className="text-brand" />
+                    <span className="text-xs font-bold font-display">Aviation &amp; Emergency Services</span>
                   </div>
                 </div>
               </Reveal>
@@ -351,16 +358,41 @@ export default function Team() {
 
             <div className="lg:order-1">
               <Reveal>
-                <Label>Instructor</Label>
+                <Label>ASIST Trainer &amp; EFAW Instructor</Label>
                 <h2 className="font-display font-800 text-display-lg text-dark mb-5 text-balance">
-                  Charley
+                  Charlotte Crocker
                 </h2>
               </Reveal>
               <Reveal delay={60}>
-                <p className="text-gray-400 leading-[1.8] text-[15px] mb-8">Full profile coming soon.</p>
+                <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
+                  <p>Charlotte is a freelance LivingWorks ASIST trainer and Emergency First Aid at Work instructor with a background spanning aviation and emergency services. She delivers training to a diverse range of corporate, commercial and community clients, including British Airways and South East Coast Ambulance Service.</p>
+                  <p>Charlotte is passionate about suicide prevention and brings a calm, empathetic approach to ASIST workshops, creating a safe environment where participants feel confident to engage openly. Her varied professional background gives her an ability to connect with learners from all walks of life.</p>
+                </div>
+              </Reveal>
+              <Reveal delay={120}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                  {[
+                    { icon: BadgeCheck, label: 'Certified LivingWorks ASIST Trainer' },
+                    { icon: Shield,     label: 'Emergency First Aid at Work Instructor' },
+                    { icon: Plane,      label: 'Background in Aviation & Emergency Services' },
+                    { icon: Heart,      label: 'Passionate About Suicide Prevention' },
+                    { icon: Users,      label: 'Clients include British Airways & SECAMB' },
+                    { icon: Star,       label: 'Corporate, Commercial & Community Delivery' },
+                  ].map(({ icon: Icon, label }) => (
+                    <div key={label} className="flex items-start gap-3 bg-white border border-gray-100 rounded-xl p-4 shadow-card">
+                      <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
+                        <Icon size={14} className="text-brand" />
+                      </div>
+                      <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
+                    </div>
+                  ))}
+                </div>
               </Reveal>
               <Reveal delay={160} className="flex flex-wrap gap-3">
                 <Btn to="/booking" variant="primary">Book a Course <ArrowRight size={15} /></Btn>
+                <Btn href="https://www.linkedin.com/in/charlotte-crocker-5a684a30a/" variant="outline">
+                  <Linkedin size={14} /> LinkedIn
+                </Btn>
               </Reveal>
             </div>
           </div>
