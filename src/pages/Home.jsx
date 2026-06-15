@@ -108,24 +108,45 @@ const STATS = [
 
 const TESTIMONIALS = [
   {
-    name: 'Sarah Mitchell',
-    role: 'HR Manager',
-    company: 'Sussex Construction Ltd',
-    body: "Outstanding training. Harry's real-world EMT experience made all the difference: our team left genuinely confident and prepared, not just ticking a compliance box. We'll be back every year.",
+    name: 'Richard Drakeford',
+    role: 'Repeat Client',
+    company: 'LifeCare Training',
+    body: "I have had the pleasure of working with Lifecare Training on and off for a couple of years now. Harry, who heads the team is a professional through and through and will always go the extra mile to ensure his customers get the service and course they require. His courses are always interactive, interesting and fun, which creates a great learning process. Highly recommend.",
     stars: 5,
   },
   {
-    name: 'Claire Hutchins',
-    role: 'Charity Run Organiser',
-    company: 'Worthing Coastal Dash',
-    body: "Harry provided first aid cover for our charity run and was fantastic from start to finish. Professional, calm, prepared for everything, and great with participants. We'll have him back every year.",
+    name: 'James Grayling',
+    role: 'Training Attendee',
+    company: 'LifeCare Training',
+    body: "Attended a training event with Lifecare training today and just wanted to say how impressed I was. It was fun and informative, and I took so much away from today. Harry was professional, polite and very approachable. No questions went unanswered, his knowledge was great and he made it relatable and easy to understand. Would highly recommend to anyone.",
     stars: 5,
   },
   {
-    name: 'Emma Davies',
-    role: 'Operations Lead',
-    company: 'South East NHS Trust',
-    body: "We've used several providers. LifeCare is in a different league. The combination of emergency medicine and teaching experience is unmatched. Our team learned more in one day than in years of box-tick training.",
+    name: 'Billy Coles',
+    role: 'Course Attendee',
+    company: 'LifeCare Training',
+    body: "Very professional and informative! Best trainer I've had in years. Can't wait to renew it.",
+    stars: 5,
+  },
+  {
+    name: 'Emel Fretwell',
+    role: 'Course Attendee',
+    company: 'LifeCare Training',
+    body: "It was a great training and Harry was brilliant. Even though it was a long training, we never got bored, enjoyed every minute of it. We refreshed our knowledge and it was also fun learning new things. We just loved the little quiz at the end — such a fun and efficient way of ending.",
+    stars: 5,
+  },
+  {
+    name: 'Charlie LJ',
+    role: 'First Aid Course',
+    company: 'LifeCare Training',
+    body: "Harry delivered the First Aid course brilliantly! Very well presented, explained situations in depth. He has amazing knowledge in a great deal of areas. Certainly kept the day interesting too, not boring, especially with his added humour. Good job, thanks Harry!",
+    stars: 5,
+  },
+  {
+    name: 'Brandon Grayling',
+    role: 'Course Attendee',
+    company: 'LifeCare Training',
+    body: "Really well put together course, very helpful, great instructors.",
     stars: 5,
   },
 ]
@@ -451,12 +472,20 @@ export default function Home() {
             <h2 className="font-display font-800 text-display-lg text-dark mb-4">
               What Our Clients Say
             </h2>
-            <p className="text-gray-500 text-lg leading-relaxed">
+            <p className="text-gray-500 text-lg leading-relaxed mb-4">
               Trusted by businesses, NHS trusts, public sector organisations, and event companies across Sussex and the South East.
             </p>
+            <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-2">
+              <div className="flex gap-0.5">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} size={12} className="fill-amber-400 text-amber-400" />
+                ))}
+              </div>
+              <span className="text-gray-600 text-xs font-semibold font-display">100% recommend · 18 reviews on Facebook</span>
+            </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {TESTIMONIALS.map(({ name, role, company, body, stars }, i) => (
               <Reveal key={name} delay={i * 90}>
                 <div className="relative bg-white border border-gray-200 rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-shadow duration-200 flex flex-col h-full overflow-hidden">
@@ -488,12 +517,12 @@ export default function Home() {
 
           <Reveal className="text-center mt-10">
             <a
-              href="https://lifecare-training.co.uk/reviews"
+              href="https://www.facebook.com/Lifecaretraining21/reviews"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-brand font-bold font-display text-sm hover:text-brand-dark transition-colors duration-150"
             >
-              Read all reviews <ChevronRight size={15} />
+              Read all reviews on Facebook <ChevronRight size={15} />
             </a>
           </Reveal>
         </div>
