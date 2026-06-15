@@ -55,7 +55,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link to="/" className="group shrink-0" aria-label="LifeCare Training home">
-            <img src="/assets/logo.png" alt="LifeCare Training" className="h-10 w-auto" />
+            <img src="/assets/logo.png" alt="LifeCare Training" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop nav */}

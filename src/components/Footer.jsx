@@ -43,7 +43,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link to="/" className="group inline-block mb-5">
               <div className="bg-white rounded-xl px-3 py-2 inline-block">
-                <img src="/assets/logo.png" alt="LifeCare Training" className="h-9 w-auto" />
+                <img src="/assets/logo.png" alt="LifeCare Training" className="h-12 w-auto" />
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
