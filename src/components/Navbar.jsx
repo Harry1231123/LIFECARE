@@ -54,18 +54,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
-          <Link to="/" className="group flex items-center gap-2.5 shrink-0" aria-label="LifeCare Training home">
-            <div className="w-9 h-9 bg-brand rounded-xl flex items-center justify-center shadow-[0_2px_8px_rgba(210,74,37,0.35)] group-hover:bg-brand-dark transition-colors duration-150">
-              <HeartPulse size={18} className="text-white" strokeWidth={2.5} />
-            </div>
-            <div className="leading-none">
-              <span className="block font-display font-800 text-[1.05rem] leading-none text-dark tracking-tight">
-                Life<span className="text-brand">Care</span>
-              </span>
-              <span className="block text-gray-400 text-[9px] font-semibold tracking-[0.22em] uppercase mt-[3px]">
-                Training
-              </span>
-            </div>
+          <Link to="/" className="group shrink-0" aria-label="LifeCare Training home">
+            <img src="/assets/logo.png" alt="LifeCare Training" className="h-10 w-auto" />
           </Link>
 
           {/* Desktop nav */}

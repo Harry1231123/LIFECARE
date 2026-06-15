@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Stethoscope, BadgeCheck, Shield, Users, Award, Heart, Star, CheckCircle2, Building2, BookOpen, Activity, Plane, ExternalLink } from 'lucide-react'
+import { ArrowRight, Stethoscope, BadgeCheck, Shield, Users, Award, Heart, Star, CheckCircle2, Building2, BookOpen, Activity, Plane, ExternalLink, Brain } from 'lucide-react'
 import Reveal from '../components/Reveal'
 
 function Label({ children }) {
@@ -35,10 +35,19 @@ const HARRY_CREDS = [
   { icon: Stethoscope, label: 'Level 5 Diploma: First Response Emergency & Urgent Care (Ambulance Technician)' },
   { icon: BadgeCheck,  label: 'Qualified Trainer & Assessor in Regulated Qualifications Delivery' },
   { icon: BadgeCheck,  label: 'BLSI Qualified (Basic Life Support Instructor) via Resuscitation Council UK' },
+  { icon: BadgeCheck,  label: 'L3 AET · L3 CAVA · Specialist Instructor Status (UK Government)' },
+  { icon: Brain,       label: 'LivingWorks ASIST Trainer & Mental Health First Aider (MHFA England)' },
+  { icon: Brain,       label: 'Member, Association of Mental Health First Aiders' },
+  { icon: Shield,      label: 'TRiM Practitioner (Trauma Risk Management) for NHS & UK Government Organisations' },
   { icon: Shield,      label: '17+ Years in First Aid across Public, Private & Government Sectors' },
   { icon: Building2,   label: 'St John Ambulance: Medical Events & Management' },
   { icon: Users,       label: 'Works for the Ambulance Service in Both Frontline and Volunteer Roles' },
-  { icon: Award,       label: 'Multiple Awards & Commendations for Saving Lives' },
+  { icon: Users,       label: 'Member: FAFF (First Aid Facilitators Forum) & BODO Campaign' },
+  { icon: Award,       label: 'Grand Priors Award, St John Ambulance (Highest Equalisation Attainable)' },
+  { icon: Award,       label: 'Resuscitation Certificate, Royal Humane Society' },
+  { icon: Award,       label: 'Prison Group Directors Commendation for Bravery, HM Prison Service' },
+  { icon: Award,       label: 'ROSC Award (Return of Spontaneous Circulation), South East Coast Ambulance' },
+  { icon: Star,        label: 'Commended by UK Home Office COO' },
 ]
 
 const JENNIFER_CREDS = [
@@ -118,8 +127,10 @@ export default function Team() {
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
                   <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives, not someone who last treated a real emergency a decade ago.</p>
-                  <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care and is BLSI qualified through the Resuscitation Council UK. He works for the ambulance service in both frontline and volunteer roles, and is also a qualified Trainer and Assessor for regulated qualifications.</p>
-                  <p>With roots in St John Ambulance's medical events and management teams, and over 17 years delivering first aid across NHS trusts, government organisations, corporate businesses, and public events, Harry brings an unmatched depth of real-world experience to every session.</p>
+                  <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care, is BLSI qualified through the Resuscitation Council UK, and holds L3 AET, L3 CAVA, and Specialist Instructor status with the UK Government. He works for the ambulance service in both frontline and volunteer roles and is a qualified Trainer and Assessor for regulated qualifications. With roots in St John Ambulance's medical events and management teams, he has spent over 17 years delivering training across NHS trusts, government organisations, corporate businesses, and public events.</p>
+                  <p>Harry is a qualified Mental Health First Aider, a member of the Association of Mental Health First Aiders, and holds ASIST certification. As a TRiM Practitioner he undertakes Trauma Risk Management assessments for ambulance services and UK Government organisations, and has completed additional training with CRUSE in bereavement support and CPD in Breaking Bad News. He is passionate about saving lives and supporting individuals facing mental health challenges.</p>
+                  <p>In the UK, less than 10% of people survive an out-of-hospital cardiac arrest. Harry is committed to changing that, both as a clinician and trainer and as a community volunteer. He is a proud member of FAFF (First Aid Facilitators Forum) and supports the BODO (Bra Off Defib On) campaign, which addresses the fact that women are 27% less likely to have CPR started on them in cardiac arrest.</p>
+                  <p>His dedication has been recognised through some of the most prestigious commendations in the sector: a Resuscitation Certificate from the Royal Humane Society, a ROSC Award from South East Coast Ambulance, a Prison Group Directors Commendation for Bravery from HM Prison Service, commendation by the UK Home Office COO, and the Grand Priors Award from St John Ambulance, the highest equalisation attainable within the organisation.</p>
                 </div>
               </Reveal>
               <Reveal delay={120}>
@@ -310,20 +321,43 @@ export default function Team() {
                 <Avatar initials="S" color="brand" />
                 <div className="mt-6 text-center">
                   <p className="font-display font-800 text-dark text-2xl mb-1">Stephen</p>
-                  <p className="text-brand font-semibold text-sm">Instructor</p>
+                  <p className="text-brand font-semibold text-sm">Health &amp; Safety Specialist</p>
                 </div>
               </div>
             </Reveal>
 
             <div>
               <Reveal>
-                <Label>Instructor</Label>
+                <Label>Health &amp; Safety Specialist</Label>
                 <h2 className="font-display font-800 text-display-lg text-dark mb-5 text-balance">
                   Stephen
                 </h2>
               </Reveal>
               <Reveal delay={60}>
-                <p className="text-gray-400 leading-[1.8] text-[15px] mb-8">Full profile coming soon.</p>
+                <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
+                  <p>Stephen is a Health &amp; Safety specialist and senior manager with extensive NHS experience. His expertise spans health and safety management, risk assessment, fire assessment, and keeping organisations and the people within them safe across complex, multi-site environments.</p>
+                  <p>He has delivered safety leadership across a diverse range of organisations, including HM Prison Service, educational institutions, and NHS trusts. This breadth of experience gives him a rare ability to understand the specific regulatory pressures and operational realities facing each sector.</p>
+                  <p>Stephen holds a NEBOSH Diploma, L3 AET, and a Fire Assessor qualification, and is also a first aid instructor delivering accredited qualifications through the Royal Society for Public Health.</p>
+                </div>
+              </Reveal>
+              <Reveal delay={120}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                  {[
+                    { icon: Shield,     label: 'NEBOSH Diploma in Health & Safety' },
+                    { icon: BadgeCheck, label: 'L3 AET & Fire Assessor Qualified' },
+                    { icon: Award,      label: 'First Aid Instructor (RSPH Accredited)' },
+                    { icon: Building2,  label: 'NHS, HM Prison Service & Education Sectors' },
+                    { icon: Users,      label: 'Senior NHS Health & Safety Manager' },
+                    { icon: Shield,     label: 'Risk Assessment & Fire Assessment Specialist' },
+                  ].map(({ icon: Icon, label }) => (
+                    <div key={label} className="flex items-start gap-3 bg-gray-50 border border-gray-100 rounded-xl p-4">
+                      <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
+                        <Icon size={14} className="text-brand" />
+                      </div>
+                      <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
+                    </div>
+                  ))}
+                </div>
               </Reveal>
               <Reveal delay={160} className="flex flex-wrap gap-3">
                 <Btn to="/booking" variant="primary">Book a Course <ArrowRight size={15} /></Btn>

@@ -307,6 +307,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── CARDIAC ARREST STAT ───────────────────────────────────── */}
+      <section className="py-10 bg-dark">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <Reveal>
+            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 text-center lg:text-left">
+              <div className="shrink-0">
+                <div className="font-display font-800 text-6xl lg:text-7xl text-brand tracking-tight leading-none">&lt;10%</div>
+                <div className="text-gray-400 text-[11px] font-bold font-display uppercase tracking-[0.16em] mt-2">Survival Rate</div>
+              </div>
+              <div className="h-px lg:h-16 w-24 lg:w-px bg-white/10 shrink-0" />
+              <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
+                In the UK, current statistics from the Resuscitation Council UK suggest less than a 10% chance of survival from out-of-hospital cardiac arrest. Trained bystanders change that. Every first aider matters.
+              </p>
+              <div className="shrink-0 lg:ml-auto">
+                <Link to="/services" className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-xl font-bold font-display text-sm hover:bg-brand-dark active:scale-[0.98] shadow-cta transition-[background-color,transform] duration-150">
+                  Get Trained <ArrowRight size={15} />
+                </Link>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ── WHY LIFECARE ──────────────────────────────────────────── */}
       <section className="py-20 lg:py-28 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">

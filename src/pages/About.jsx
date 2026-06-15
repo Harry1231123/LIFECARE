@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, CheckCircle2, Award, Shield, Users, Building2, Stethoscope, BadgeCheck, Heart, Star, PhoneCall } from 'lucide-react'
+import { ArrowRight, CheckCircle2, Award, Shield, Users, Building2, Stethoscope, BadgeCheck, Heart, Star, PhoneCall, Brain } from 'lucide-react'
 import Reveal from '../components/Reveal'
 
 function Label({ children }) {
@@ -26,10 +26,16 @@ const CREDENTIALS = [
   { icon: Stethoscope, label: 'Level 5 Diploma in First Response Emergency & Urgent Care (Ambulance Technician)' },
   { icon: BadgeCheck,  label: 'Qualified Trainer & Assessor in Regulated Qualifications Delivery' },
   { icon: BadgeCheck,  label: 'BLSI Qualified (Basic Life Support Instructor) via Resuscitation Council UK' },
+  { icon: BadgeCheck,  label: 'L3 AET · L3 CAVA · Specialist Instructor Status (UK Government)' },
+  { icon: Brain,       label: 'LivingWorks ASIST Trainer & Mental Health First Aider (MHFA England)' },
+  { icon: Shield,      label: 'TRiM Practitioner (Trauma Risk Management) for NHS & UK Government Organisations' },
   { icon: Shield,      label: '17+ Years in First Aid across Public, Private & Government Sectors' },
   { icon: Building2,   label: 'St John Ambulance: Medical Events & Management' },
   { icon: Users,       label: 'Works for the Ambulance Service in Both Frontline and Volunteer Roles' },
-  { icon: Award,       label: 'Multiple Awards & Commendations for Saving Lives' },
+  { icon: Award,       label: 'Grand Priors Award, St John Ambulance (Highest Equalisation Attainable)' },
+  { icon: Award,       label: 'Resuscitation Certificate, Royal Humane Society' },
+  { icon: Award,       label: 'Prison Group Directors Commendation for Bravery, HM Prison Service' },
+  { icon: Star,        label: 'ROSC Award (Return of Spontaneous Circulation), South East Coast Ambulance' },
 ]
 
 const VALUES = [
@@ -130,9 +136,10 @@ export default function About() {
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
                   <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives, not someone who last treated a real emergency a decade ago.</p>
-                  <p>Harry holds a Level 5 Diploma in First Response Emergency & Urgent Care and is a BLSI qualified through the Resuscitation Council UK. He works for the ambulance service in both frontline and volunteer roles, and is also a qualified Trainer and Assessor for regulated qualifications.</p>
+                  <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care, is BLSI qualified through the Resuscitation Council UK, and holds L3 AET, L3 CAVA, and Specialist Instructor status with the UK Government. He works for the ambulance service in both frontline and volunteer roles and is a qualified Trainer and Assessor for regulated qualifications.</p>
                   <p>With roots in St John Ambulance's medical events and management teams, and over 17 years delivering first aid across NHS trusts, government organisations, corporate businesses, and public events, Harry brings an unmatched depth of real-world experience to every session.</p>
-                  <p>Learners don't just pass their qualification. They leave knowing they can actually do it: confident, competent, and ready to be a lifesaver when it counts. Harry has received multiple awards and commendations for his dedication to his community and for saving lives.</p>
+                  <p>Harry is a qualified Mental Health First Aider, a member of the Association of Mental Health First Aiders, and holds ASIST certification. As a TRiM Practitioner he undertakes Trauma Risk Management assessments for ambulance services and UK Government organisations. He has completed additional training with CRUSE in bereavement support and CPD in Breaking Bad News, and is passionate about saving lives and supporting individuals facing mental health challenges.</p>
+                  <p>His dedication has been recognised through some of the most prestigious commendations in the sector: a Resuscitation Certificate from the Royal Humane Society, a ROSC Award from South East Coast Ambulance, a Prison Group Directors Commendation for Bravery from HM Prison Service, commendation by the UK Home Office COO, and the Grand Priors Award from St John Ambulance.</p>
                 </div>
               </Reveal>
               <Reveal delay={120} className="flex flex-wrap gap-3">
@@ -202,6 +209,37 @@ export default function About() {
                   <p className="font-display font-bold text-dark text-sm leading-tight">Award Winner</p>
                   <p className="text-gray-400 text-xs">Community commendations</p>
                 </div>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ── PARTNERS ──────────────────────────────────────────────── */}
+      <section className="py-14 bg-gray-50 border-y border-gray-100">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <Reveal className="text-center mb-10">
+            <p className="text-gray-400 text-xs font-bold font-display uppercase tracking-[0.18em]">Partners &amp; Affiliations</p>
+          </Reveal>
+          <Reveal delay={60}>
+            <div className="flex flex-wrap items-center justify-center gap-10 lg:gap-16">
+              <div className="flex flex-col items-center gap-3">
+                <img src="/assets/aoht.png" alt="Association of Healthcare Trainers" className="h-14 w-auto object-contain" />
+                <p className="text-gray-400 text-xs font-semibold font-display text-center">AoHT Member</p>
+              </div>
+              <div className="flex flex-col items-center gap-3">
+                <img src="/assets/amhfa.png" alt="Association of Mental Health First Aiders" className="h-14 w-auto object-contain" />
+                <p className="text-gray-400 text-xs font-semibold font-display text-center">AMHFA Member</p>
+              </div>
+              <div className="flex flex-col items-center gap-3">
+                <img src="/assets/bodo.jpg" alt="Bra Off Defib On" className="h-14 w-auto object-contain" />
+                <p className="text-gray-400 text-xs font-semibold font-display text-center">BODO Supporter</p>
+              </div>
+              <div className="flex flex-col items-center gap-3">
+                <div className="h-14 w-14 bg-dark rounded-xl flex items-center justify-center">
+                  <span className="text-white text-[10px] font-bold font-display text-center leading-tight">FAFF</span>
+                </div>
+                <p className="text-gray-400 text-xs font-semibold font-display text-center">FAFF Member</p>
               </div>
             </div>
           </Reveal>

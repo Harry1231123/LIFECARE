@@ -41,15 +41,9 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="group flex items-center gap-2.5 mb-5">
-              <div className="w-9 h-9 bg-brand rounded-xl flex items-center justify-center group-hover:bg-brand-dark transition-colors duration-150">
-                <HeartPulse size={18} className="text-white" strokeWidth={2.5} />
-              </div>
-              <div className="leading-none">
-                <span className="block font-display font-800 text-[1.05rem] text-white">
-                  Life<span className="text-brand">Care</span>
-                </span>
-                <span className="block text-gray-500 text-[9px] font-semibold tracking-[0.22em] uppercase mt-[3px]">Training</span>
+            <Link to="/" className="group inline-block mb-5">
+              <div className="bg-white rounded-xl px-3 py-2 inline-block">
+                <img src="/assets/logo.png" alt="LifeCare Training" className="h-9 w-auto" />
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
