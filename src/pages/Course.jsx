@@ -32,7 +32,7 @@ export default function Course() {
   const others = COURSES.filter(c => c.slug !== slug).slice(0, 3)
 
   return (
-    <div className="pt-[109px] lg:pt-[117px]">
+    <div className="pt-[141px] lg:pt-[149px]">
 
       {/* ── HERO ──────────────────────────────────────────────────── */}
       <section className="relative bg-dark py-20 lg:py-28 overflow-hidden">

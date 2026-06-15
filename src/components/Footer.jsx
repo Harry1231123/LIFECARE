@@ -141,6 +141,47 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Accreditations & Partners strip */}
+      <div className="border-t border-white/6 py-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <p className="text-gray-600 text-[10px] font-bold font-display uppercase tracking-[0.18em] text-center mb-6">Accreditations &amp; Partners</p>
+          <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
+            {[
+              { abbr: 'FAA', name: 'First Aid Awards' },
+              { abbr: 'RQF', name: 'Ofqual Regulated' },
+              { abbr: 'RCUK', name: 'Resuscitation Council UK' },
+              { abbr: 'HSE', name: 'HSE Compliant' },
+              { abbr: 'FAFF', name: 'First Aid Facilitators Forum' },
+            ].map(({ abbr, name }) => (
+              <div key={abbr} className="flex items-center gap-2.5">
+                <div className="w-9 h-9 bg-white/8 border border-white/10 rounded-lg flex items-center justify-center shrink-0">
+                  <span className="text-white text-[9px] font-bold font-display leading-tight text-center">{abbr}</span>
+                </div>
+                <span className="text-gray-500 text-xs font-semibold font-display">{name}</span>
+              </div>
+            ))}
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center shrink-0 overflow-hidden">
+                <img src="/assets/aoht.png" alt="AoHT" className="w-full h-full object-contain p-0.5" />
+              </div>
+              <span className="text-gray-500 text-xs font-semibold font-display">AoHT Member</span>
+            </div>
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center shrink-0 overflow-hidden">
+                <img src="/assets/amhfa.png" alt="AMHFA" className="w-full h-full object-contain p-0.5" />
+              </div>
+              <span className="text-gray-500 text-xs font-semibold font-display">AMHFA Member</span>
+            </div>
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center shrink-0 overflow-hidden">
+                <img src="/assets/bodo.jpg" alt="BODO" className="w-full h-full object-contain p-0.5" />
+              </div>
+              <span className="text-gray-500 text-xs font-semibold font-display">BODO Supporter</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom bar */}
       <div className="border-t border-white/6">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">

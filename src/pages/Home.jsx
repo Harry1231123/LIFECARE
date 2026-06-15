@@ -181,7 +181,7 @@ const BLOG_POSTS = [
 /* ── Page ────────────────────────────────────────────────────────── */
 export default function Home() {
   return (
-    <div className="pt-[109px] lg:pt-[117px]">
+    <div className="pt-[141px] lg:pt-[149px]">
 
       {/* ── HERO ──────────────────────────────────────────────────── */}
       <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-dark">
@@ -329,24 +329,30 @@ export default function Home() {
       </section>
 
       {/* ── CARDIAC ARREST STAT ───────────────────────────────────── */}
-      <section className="py-10 bg-dark">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="py-14 bg-dark">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
           <Reveal>
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 text-center lg:text-left">
-              <div className="shrink-0">
-                <div className="font-display font-800 text-6xl lg:text-7xl text-brand tracking-tight leading-none">&lt;10%</div>
-                <div className="text-gray-400 text-[11px] font-bold font-display uppercase tracking-[0.16em] mt-2">Survival Rate</div>
+            <p className="text-gray-500 text-[11px] font-bold font-display uppercase tracking-[0.18em] mb-6">Why First Aid Training Saves Lives</p>
+            <h2 className="font-display font-800 text-white text-2xl lg:text-3xl mb-10 text-balance">
+              Right now, the average UK out-of-hospital cardiac arrest has less than a 10% chance of survival. A trained bystander can change that.
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+                <div className="font-display font-800 text-4xl text-brand tracking-tight mb-2">&lt;10%</div>
+                <p className="text-gray-400 text-sm leading-snug">Current UK survival rate from out-of-hospital cardiac arrest without bystander intervention</p>
               </div>
-              <div className="h-px lg:h-16 w-24 lg:w-px bg-white/10 shrink-0" />
-              <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
-                In the UK, current statistics from the Resuscitation Council UK suggest less than a 10% chance of survival from out-of-hospital cardiac arrest. Trained bystanders change that. Every first aider matters.
-              </p>
-              <div className="shrink-0 lg:ml-auto">
-                <Link to="/services" className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-xl font-bold font-display text-sm hover:bg-brand-dark active:scale-[0.98] shadow-cta transition-[background-color,transform] duration-150">
-                  Get Trained <ArrowRight size={15} />
-                </Link>
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+                <div className="font-display font-800 text-4xl text-white tracking-tight mb-2">2–3×</div>
+                <p className="text-gray-400 text-sm leading-snug">Improvement in survival odds when a trained bystander starts CPR immediately</p>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+                <div className="font-display font-800 text-4xl text-white tracking-tight mb-2">27%</div>
+                <p className="text-gray-400 text-sm leading-snug">Less likely women are to receive bystander CPR — something the BODO campaign is working to change</p>
               </div>
             </div>
+            <Link to="/services" className="inline-flex items-center gap-2 bg-brand text-white px-7 py-3.5 rounded-xl font-bold font-display text-sm hover:bg-brand-dark active:scale-[0.98] shadow-cta transition-[background-color,transform] duration-150">
+              Get Your Team Trained <ArrowRight size={15} />
+            </Link>
           </Reveal>
         </div>
       </section>
