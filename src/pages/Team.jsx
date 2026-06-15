@@ -134,13 +134,13 @@ export default function Team() {
                 </div>
               </Reveal>
               <Reveal delay={120}>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
                   {HARRY_CREDS.map(({ icon: Icon, label }) => (
-                    <div key={label} className="flex items-start gap-2 bg-gray-50 border border-gray-100 rounded-lg p-2.5">
-                      <div className="w-5 h-5 bg-brand-light rounded flex items-center justify-center shrink-0 mt-0.5">
-                        <Icon size={10} className="text-brand" />
+                    <div key={label} className="flex items-start gap-3 bg-gray-50 border border-gray-100 rounded-xl p-4">
+                      <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
+                        <Icon size={14} className="text-brand" />
                       </div>
-                      <span className="text-dark font-semibold text-[10px] leading-snug">{label}</span>
+                      <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
                     </div>
                   ))}
                 </div>
