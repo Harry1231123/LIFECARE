@@ -151,7 +151,6 @@ export default function Footer() {
               { abbr: 'RQF', name: 'Ofqual Regulated' },
               { abbr: 'RCUK', name: 'Resuscitation Council UK' },
               { abbr: 'HSE', name: 'HSE Compliant' },
-              { abbr: 'FAFF', name: 'First Aid Facilitators Forum' },
             ].map(({ abbr, name }) => (
               <div key={abbr} className="flex items-center gap-2.5">
                 <div className="w-9 h-9 bg-white/8 border border-white/10 rounded-lg flex items-center justify-center shrink-0">
@@ -177,6 +176,12 @@ export default function Footer() {
                 <img src="/assets/bodo.jpg" alt="BODO" className="w-full h-full object-contain p-0.5" />
               </div>
               <span className="text-gray-500 text-xs font-semibold font-display">BODO Supporter</span>
+            </div>
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center shrink-0 overflow-hidden">
+                <img src="/assets/faff.jpg" alt="FAFF" className="w-full h-full object-contain p-0.5" />
+              </div>
+              <span className="text-gray-500 text-xs font-semibold font-display">FAFF Member</span>
             </div>
           </div>
         </div>

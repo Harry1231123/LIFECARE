@@ -132,7 +132,7 @@ const TESTIMONIALS = [
     name: 'Emel Fretwell',
     role: 'Course Attendee',
     company: 'LifeCare Training',
-    body: "It was a great training and Harry was brilliant. Even though it was a long training, we never got bored, enjoyed every minute of it. We refreshed our knowledge and it was also fun learning new things. We just loved the little quiz at the end — such a fun and efficient way of ending.",
+    body: "It was a great training and Harry was brilliant. Even though it was a long training, we never got bored, enjoyed every minute of it. We refreshed our knowledge and it was also fun learning new things. We just loved the little quiz at the end, such a fun and efficient way of ending.",
     stars: 5,
   },
   {
@@ -347,7 +347,7 @@ export default function Home() {
               </div>
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                 <div className="font-display font-800 text-4xl text-white tracking-tight mb-2">27%</div>
-                <p className="text-gray-400 text-sm leading-snug">Less likely women are to receive bystander CPR — something the BODO campaign is working to change</p>
+                <p className="text-gray-400 text-sm leading-snug">Less likely women are to receive bystander CPR. The BODO campaign is working to change this.</p>
               </div>
             </div>
             <Link to="/services" className="inline-flex items-center gap-2 bg-brand text-white px-7 py-3.5 rounded-xl font-bold font-display text-sm hover:bg-brand-dark active:scale-[0.98] shadow-cta transition-[background-color,transform] duration-150">
