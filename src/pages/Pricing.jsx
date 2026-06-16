@@ -51,7 +51,7 @@ const PLANS = [
   {
     icon: Brain, name: 'Mental Health First Aid',
     tagline: '1 or 2-day · MHFA England',
-    price: 'From £390', unit: 'per group (up to 6 learners)', popular: false,
+    price: 'From £390', unit: 'per group (based on 6 learners)', popular: false,
     features: ['1-day or full 2-day option', 'MHFA England accredited', 'Up to 16 learners per group', 'Nationally recognised certificate', 'MHFA manual included', 'All staff levels welcome', 'On or off-site delivery', 'Follow-up digital resources'],
     href: '/courses/mental',
   },
