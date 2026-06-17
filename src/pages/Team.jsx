@@ -34,7 +34,7 @@ function Avatar({ initials, color = 'brand' }) {
 const HARRY_CREDS = [
   { icon: Stethoscope, label: 'Level 5 Diploma: First Response Emergency & Urgent Care (Ambulance Technician)' },
   { icon: BadgeCheck,  label: 'Qualified Trainer & Assessor in Regulated Qualifications Delivery' },
-  { icon: BadgeCheck,  label: 'BLSi Qualified (Basic Life Support Instructor) via Resuscitation Council UK' },
+  { icon: BadgeCheck,  label: 'BLSi Qualified (Basic Life Support Instructor) via Resuscitation Council UK (guidelines aligned)' },
   { icon: BadgeCheck,  label: 'L3 AET · L3 CAVA · Specialist Instructor Status (UK Government)' },
   { icon: Brain,       label: 'LivingWorks ASIST Qualified & Mental Health First Aider (MHFA England)' },
   { icon: Brain,       label: 'Member, Association of Mental Health First Aiders' },
@@ -127,7 +127,7 @@ export default function Team() {
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
                   <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives, not someone who last treated a real emergency a decade ago.</p>
-                  <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care, is BLSi qualified through the Resuscitation Council UK, and holds L3 AET, L3 CAVA, and Specialist Instructor status with the UK Government. He works for the ambulance service in both frontline and volunteer roles and is a qualified Trainer and Assessor for regulated qualifications. With roots in St John Ambulance's medical events and management teams, he has spent over 17 years delivering training across NHS trusts, government organisations, corporate businesses, and public events.</p>
+                  <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care, is BLSi qualified through the Resuscitation Council UK (guidelines aligned), and holds L3 AET, L3 CAVA, and Specialist Instructor status with the UK Government. He works for the ambulance service in both frontline and volunteer roles and is a qualified Trainer and Assessor for regulated qualifications. With roots in St John Ambulance's medical events and management teams, he has spent over 17 years delivering training across NHS trusts, government organisations, corporate businesses, and public events.</p>
                   <p>Harry is a qualified Mental Health First Aider, a member of the Association of Mental Health First Aiders, and holds ASIST certification. As a TRiM Practitioner he undertakes Trauma Risk Management assessments for ambulance services and UK Government organisations, and has completed additional training with CRUSE in bereavement support and CPD in Breaking Bad News. He is passionate about saving lives and supporting individuals facing mental health challenges.</p>
                   <p>In the UK, less than 10% of people survive an out-of-hospital cardiac arrest. Harry is committed to changing that, both as a clinician and trainer and as a community volunteer. He is a proud member of FAFF (First Aid Facilitators Forum) and supports the BODO (Bra Off Defib On) campaign, which addresses the fact that women are 27% less likely to have CPR started on them in cardiac arrest.</p>
                   <p>His dedication has been recognised through some of the most prestigious commendations in the sector: a Resuscitation Certificate from the Royal Humane Society, a ROSC Award from South East Coast Ambulance, a Prison Group Directors Commendation for Bravery from HM Prison Service, commendation by the UK Home Office COO, and the Grand Priors Award from St John Ambulance, the highest equalisation attainable within the organisation.</p>
@@ -403,7 +403,7 @@ export default function Team() {
                 <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
                   <img
                     src="/assets/charlotte.jpg"
-                    alt="Charlotte Crocker, LivingWorks ASIST Trainer and EFAW Trainer"
+                    alt="Charlotte, LivingWorks ASIST Trainer and EFAW Trainer"
                     className="w-full h-[500px] object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
@@ -421,7 +421,7 @@ export default function Team() {
               <Reveal>
                 <Label>ASIST Trainer &amp; EFAW Instructor</Label>
                 <h2 className="font-display font-800 text-display-lg text-dark mb-5 text-balance">
-                  Charlotte Crocker
+                  Charlotte
                 </h2>
               </Reveal>
               <Reveal delay={60}>

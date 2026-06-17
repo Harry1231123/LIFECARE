@@ -253,7 +253,7 @@ export default function Home() {
               'Ofqual Regulated Qualifications',
               'HSE Code of Practice',
               'First Aid Awards (FAA)',
-              'Resuscitation Council UK',
+              'Resuscitation Council UK (guidelines aligned)',
               'Enhanced DBS Checked Instructors',
               'AoHT Member',
             ].map(t => (
