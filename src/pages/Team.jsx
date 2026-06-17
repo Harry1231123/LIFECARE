@@ -233,16 +233,41 @@ export default function Team() {
 
             <div>
               <Reveal>
-                <Label>Instructor</Label>
+                <Label>Marketing Manager</Label>
                 <h2 className="font-display font-800 text-display-lg text-dark mb-5 text-balance">
                   Molly
                 </h2>
               </Reveal>
               <Reveal delay={60}>
-                <p className="text-gray-400 leading-[1.8] text-[15px] mb-8">Full profile coming soon.</p>
+                <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
+                  <p>Molly is the Founder of Fleur Marketing, a creative marketing agency dedicated to helping brands build a strong and impactful presence. As Marketing Manager at LifeCare Training, she works closely with Harry and the team to develop and deliver a multi-channel marketing strategy that strengthens the brand and connects with its audience.</p>
+                  <p>Alongside her role with LifeCare Training, Molly also leads marketing for FAFF (First Aid Facilitators Forum) and proudly serves on the board for the Bra Off, Defib On charity. Her involvement across the first aid, training, and charitable sectors reflects her passion for community impact, public awareness, and supporting organisations that make a real difference.</p>
+                </div>
+              </Reveal>
+              <Reveal delay={120}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                  {[
+                    { icon: Star,       label: 'Founder, Fleur Marketing' },
+                    { icon: Users,      label: 'Marketing Manager, LifeCare Training' },
+                    { icon: Heart,      label: 'Board Member, Bra Off Defib On Charity' },
+                    { icon: BadgeCheck, label: 'Marketing Lead, FAFF' },
+                    { icon: Building2,  label: 'Multi-Channel Marketing Strategy' },
+                    { icon: Award,      label: 'Community Impact & Public Awareness' },
+                  ].map(({ icon: Icon, label }) => (
+                    <div key={label} className="flex items-start gap-3 bg-gray-50 border border-gray-100 rounded-xl p-4">
+                      <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
+                        <Icon size={14} className="text-brand" />
+                      </div>
+                      <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
+                    </div>
+                  ))}
+                </div>
               </Reveal>
               <Reveal delay={160} className="flex flex-wrap gap-3">
                 <Btn to="/booking" variant="primary">Book a Course <ArrowRight size={15} /></Btn>
+                <Btn href="https://www.linkedin.com/in/molly-mae-hanson-2494062aa" variant="outline">
+                  <ExternalLink size={14} /> LinkedIn
+                </Btn>
               </Reveal>
             </div>
           </div>
@@ -317,12 +342,13 @@ export default function Team() {
           <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
 
             <Reveal variant="scale" className="relative">
-              <div className="relative rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-card-lg flex flex-col items-center justify-center py-16 px-8">
-                <Avatar initials="S" color="brand" />
-                <div className="mt-6 text-center">
-                  <p className="font-display font-800 text-dark text-2xl mb-1">Stephen</p>
-                  <p className="text-brand font-semibold text-sm">Health &amp; Safety Specialist</p>
-                </div>
+              <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
+                <img
+                  src="/assets/stephen.png"
+                  alt="Stephen, Health & Safety Specialist"
+                  className="w-full h-[500px] object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
               </div>
             </Reveal>
 
