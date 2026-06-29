@@ -22,7 +22,7 @@ export default function Contact() {
   const handleSubmit = e => { e.preventDefault(); setSent(true) }
 
   return (
-    <div className="pt-[141px] lg:pt-[149px]">
+    <div className="pt-[99px] lg:pt-[128px]">
 
       {/* ── PAGE HERO ─────────────────────────────────────────────── */}
       <section className="relative bg-dark py-20 lg:py-24 overflow-hidden">

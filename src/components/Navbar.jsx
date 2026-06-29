@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="brand-strip" />
 
       {/* Top bar */}
-      <div className="hidden lg:block border-b border-white/15">
+      <div className="hidden lg:block border-b border-white/15 bg-dark">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-1.5 flex items-center justify-between">
           <p className="text-white/80 text-[11px] font-medium">
             HSE-compliant first aid training · Sussex &amp; South East England

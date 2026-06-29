@@ -181,7 +181,7 @@ const BLOG_POSTS = [
 /* ── Page ────────────────────────────────────────────────────────── */
 export default function Home() {
   return (
-    <div className="pt-[141px] lg:pt-[149px]">
+    <div className="pt-[99px] lg:pt-[128px]">
 
       {/* ── HERO ──────────────────────────────────────────────────── */}
       <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-dark">

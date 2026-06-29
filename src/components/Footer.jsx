@@ -42,9 +42,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="group inline-block mb-5">
-              <div className="bg-white rounded-xl px-3 py-2 inline-block">
-                <img src="/assets/logo.png" alt="LifeCare Training" className="h-16 w-auto" />
-              </div>
+              <img src="/assets/logo2.png" alt="LifeCare Training" className="h-16 w-auto" />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
               Delivering life-saving first aid skills to businesses and communities across Sussex and the South East. Ofqual regulated. HSE compliant. Frontline experienced.

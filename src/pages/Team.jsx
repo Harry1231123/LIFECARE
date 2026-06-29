@@ -89,7 +89,7 @@ const CHARLOTTE_CREDS = [
 
 export default function Team() {
   return (
-    <div className="pt-[141px] lg:pt-[149px]">
+    <div className="pt-[99px] lg:pt-[128px]">
 
       {/* ── PAGE HERO ─────────────────────────────────────────────── */}
       <section className="relative bg-dark py-20 lg:py-28 overflow-hidden">
@@ -146,10 +146,8 @@ export default function Team() {
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
                   <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives, not just someone who's learnt it in a book.</p>
-                  <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care, is BLSi qualified through the Resuscitation Council UK, and holds L3 AET, L3 CAVA, and Specialist Instructor status with the UK Government. He works for the ambulance service in both frontline and volunteer roles and is a qualified Trainer and Assessor for regulated qualifications. With roots in St John Ambulance's medical events and management teams, he has spent over 17 years delivering training across NHS trusts, government organisations, corporate businesses, and public events.</p>
-                  <p>Harry is a qualified Mental Health First Aider, a member of the Association of Mental Health First Aiders, and holds ASIST certification. As a TRiM Practitioner he undertakes Trauma Risk Management assessments for ambulance services and UK Government organisations, and has completed additional training with CRUSE in bereavement support and CPD in Breaking Bad News. He is passionate about saving lives and supporting individuals facing mental health challenges.</p>
-                  <p>In the UK, less than 10% of people survive an out-of-hospital cardiac arrest. Harry is committed to changing that, both as a clinician and trainer and as a community volunteer. He is a proud member of FAFF (First Aid Facilitators Forum) and supports the BODO (Bra Off Defib On) campaign, which addresses the fact that women are 15–27% less likely to receive bystander CPR compared to men.</p>
-                  <p>His dedication has been recognised through some of the most prestigious commendations in the sector: a Resuscitation Certificate from the Royal Humane Society, a ROSC Award from South East Coast Ambulance, a Prison Group Directors Commendation for Bravery from HM Prison Service, commendation by the UK Home Office COO, and the Grand Priors Award from St John Ambulance, the highest achievement attainable within the organisation.</p>
+                  <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care, is BLSi qualified through the Resuscitation Council UK, and holds Specialist Instructor status with the UK Government. He works frontline for the ambulance service and has spent over 17 years delivering training across NHS trusts, government organisations, and corporate businesses. He is also a qualified Mental Health First Aider, ASIST certified, and a TRiM Practitioner carrying out Trauma Risk Management assessments for ambulance services and UK Government organisations.</p>
+                  <p>Driven by the fact that fewer than 10% of people survive an out-of-hospital cardiac arrest, Harry is committed to changing that as both a clinician and community volunteer. His work has earned some of the sector's highest honours, including a Resuscitation Certificate from the Royal Humane Society, a Prison Group Directors Commendation for Bravery from HM Prison Service, and the Grand Priors Award from St John Ambulance — the highest achievement attainable within the organisation.</p>
                 </div>
               </Reveal>
               <Reveal delay={160} className="flex flex-wrap gap-3">
@@ -181,11 +179,11 @@ export default function Team() {
 
             <div className="lg:order-2">
               <Reveal variant="scale" className="relative">
-                <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
+                <div className="relative rounded-2xl overflow-hidden shadow-card-lg bg-dark">
                   <img
                     src="/assets/jennifer.png"
                     alt="Jennifer, Paramedic &amp; Clinical Mentor"
-                    className="w-full h-[500px] object-cover object-[center_15%]"
+                    className="w-full h-[500px] object-contain object-top"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
                 </div>
@@ -248,7 +246,7 @@ export default function Team() {
                 <img
                   src="/assets/molly.png"
                   alt="Molly, Marketing Manager at LifeCare Training"
-                  className="w-full h-[500px] object-cover object-top"
+                  className="w-full h-[500px] object-cover object-[center_40%]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
               </div>

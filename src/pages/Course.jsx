@@ -27,12 +27,12 @@ export default function Course() {
 
   if (!course) return <Navigate to="/services" replace />
 
-  const { icon: Icon, tag, title, subtitle, price, intro, body, includes, meta, who, image, addon } = course
+  const { icon: Icon, tag, title, subtitle, price, intro, body, includes, meta, who, image, imagePosition, addon } = course
 
   const others = COURSES.filter(c => c.slug !== slug).slice(0, 3)
 
   return (
-    <div className="pt-[141px] lg:pt-[149px]">
+    <div className="pt-[99px] lg:pt-[128px]">
 
       {/* ── HERO ──────────────────────────────────────────────────── */}
       <section className="relative bg-dark py-20 lg:py-28 overflow-hidden">
@@ -86,7 +86,7 @@ export default function Course() {
             <div className="space-y-5">
               <Reveal variant="scale">
                 <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
-                  <img src={image} alt={title} className="w-full h-56 object-cover" />
+                  <img src={image} alt={title} className={`w-full h-56 object-cover ${imagePosition || ''}`} />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent" />
                 </div>
               </Reveal>

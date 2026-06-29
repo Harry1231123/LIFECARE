@@ -12,7 +12,7 @@ export const COURSES = [
     meta: [{ icon: Clock, label: '1 Day (approx. 6 hours)' }, { icon: Users, label: 'Up to 12 learners per group' }, { icon: Award, label: 'FAA Level 3 RQF' }],
     who: ['Offices & admin teams', 'Retail & hospitality businesses', 'Schools & educational settings', 'Sports clubs & community groups', 'Small business owners', 'Any employer seeking legal compliance'],
     image: '/assets/hero.webp',
-    imagePosition: 'object-[center_30%]',
+    imagePosition: 'object-[center_12%]',
   },
   {
     id: 'faw', slug: 'faw', icon: Shield, tag: 'Comprehensive Cover · Higher-Risk Workplaces',
