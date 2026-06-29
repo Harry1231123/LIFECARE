@@ -157,7 +157,7 @@ export default function Services() {
                     </Link>
                   </Reveal>
                   <Reveal delay={80}>
-                    <div className="bg-navy rounded-2xl p-6 shadow-card-lg">
+                    <div style={{ backgroundColor: "#101827" }} className="rounded-2xl p-6 shadow-card-lg">
                       <h4 className="font-display font-bold text-white text-xs uppercase tracking-widest mb-5">What's Covered</h4>
                       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                         {includes.map(item => (

@@ -118,7 +118,7 @@ export default function About() {
                 <div className="font-display font-800 text-4xl text-dark tracking-tight mb-1">17+</div>
                 <div className="text-gray-500 text-xs leading-snug">Years industry experience</div>
               </div>
-              <div className="absolute top-6 -left-4 lg:-left-8 bg-navy text-white rounded-2xl px-4 py-3 shadow-card-lg">
+              <div style={{ backgroundColor: "#101827" }} className="absolute top-6 -left-4 lg:-left-8 text-white rounded-2xl px-4 py-3 shadow-card-lg">
                 <div className="flex items-center gap-2">
                   <Stethoscope size={13} className="text-brand" />
                   <span className="text-xs font-bold font-display">Active Ambulance Technician</span>
