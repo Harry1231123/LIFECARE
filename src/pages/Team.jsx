@@ -421,7 +421,7 @@ export default function Team() {
                 <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
                   <img
                     src="/assets/charlotte.jpg"
-                    alt="Charlie, LivingWorks ASIST Trainer and EFAW Trainer"
+                    alt="Charley, LivingWorks ASIST Trainer and EFAW Trainer"
                     className="w-full h-[500px] object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
@@ -439,7 +439,7 @@ export default function Team() {
               <Reveal>
                 <Label>ASIST Trainer &amp; EFAW Instructor</Label>
                 <h2 className="font-display font-800 text-display-lg text-dark mb-5 text-balance">
-                  Charlie
+                  Charley
                 </h2>
               </Reveal>
               <Reveal delay={60}>

@@ -29,12 +29,15 @@ export default function Navbar() {
     to === '/' ? location.pathname === '/' : location.pathname.startsWith(to)
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 bg-white transition-shadow duration-300 ${scrolled ? 'shadow-nav' : 'border-b border-gray-100'}`}>
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition-shadow duration-300 ${scrolled ? 'shadow-nav' : ''}`}
+      style={{ backgroundColor: '#737373' }}
+    >
       {/* Brand strip */}
       <div className="brand-strip" />
 
       {/* Top bar */}
-      <div className="hidden lg:block" style={{ backgroundColor: '#737373' }}>
+      <div className="hidden lg:block border-b border-white/15">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-1.5 flex items-center justify-between">
           <p className="text-white/80 text-[11px] font-medium">
             HSE-compliant first aid training · Sussex &amp; South East England
@@ -64,7 +67,9 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link to="/" className="group shrink-0" aria-label="LifeCare Training home">
-            <img src="/assets/logo.png" alt="LifeCare Training" className="h-24 w-auto" />
+            <div className="bg-white rounded-xl px-3 py-2">
+              <img src="/assets/logo2.png" alt="LifeCare Training" className="h-16 w-auto" />
+            </div>
           </Link>
 
           {/* Desktop nav */}
@@ -75,8 +80,8 @@ export default function Navbar() {
                 to={to}
                 className={`relative px-4 py-2 text-sm font-semibold rounded-lg transition-colors duration-150 font-display ${
                   active(to)
-                    ? 'text-brand'
-                    : 'text-gray-600 hover:text-dark hover:bg-gray-50'
+                    ? 'text-white'
+                    : 'text-white/75 hover:text-white hover:bg-white/15'
                 }`}
               >
                 {label}
@@ -107,7 +112,7 @@ export default function Navbar() {
             onClick={() => setOpen(v => !v)}
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
-            className="lg:hidden w-9 h-9 flex items-center justify-center text-gray-700 rounded-lg hover:bg-gray-100 active:bg-gray-200 transition-colors duration-150"
+            className="lg:hidden w-9 h-9 flex items-center justify-center text-white rounded-lg hover:bg-white/20 active:bg-white/30 transition-colors duration-150"
           >
             {open ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -116,21 +121,21 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div className={`lg:hidden overflow-hidden transition-[max-height,opacity] duration-250 ${open ? 'max-h-[560px] opacity-100' : 'max-h-0 opacity-0'}`}>
-        <div className="bg-white border-t border-gray-100 px-6 py-5 space-y-1">
+        <div className="border-t border-white/15 px-6 py-5 space-y-1" style={{ backgroundColor: '#737373' }}>
           {NAV.map(({ to, label }) => (
             <Link
               key={to}
               to={to}
               className={`flex items-center px-4 py-3 rounded-xl text-sm font-semibold font-display transition-colors duration-150 ${
                 active(to)
-                  ? 'bg-brand-light text-brand'
-                  : 'text-gray-700 hover:bg-gray-50 hover:text-dark'
+                  ? 'bg-white/20 text-white'
+                  : 'text-white/80 hover:bg-white/15 hover:text-white'
               }`}
             >
               {label}
             </Link>
           ))}
-          <div className="pt-4 border-t border-gray-100">
+          <div className="pt-4 border-t border-white/15">
             <Link
               to="/booking"
               className="flex justify-center bg-brand text-white px-5 py-3.5 rounded-xl text-sm font-bold font-display hover:bg-brand-dark transition-colors duration-150 shadow-cta"
@@ -139,7 +144,7 @@ export default function Navbar() {
             </Link>
             <a
               href="tel:+447908783457"
-              className="flex items-center justify-center gap-2 mt-3 text-gray-500 text-sm font-medium"
+              className="flex items-center justify-center gap-2 mt-3 text-white/70 text-sm font-medium"
             >
               <Phone size={13} className="text-brand" /> 07908 783457
             </a>
