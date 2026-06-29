@@ -42,7 +42,7 @@ const VALUES = [
   {
     num: '01',
     title: 'Real-World Relevance',
-    body: 'Harry teaches what he lives. Every scenario, every skill, every decision framework comes from genuine frontline ambulance and emergency response experience, not a training manual.',
+    body: 'We teach what we live. Every scenario, every skill, every decision framework comes from genuine frontline ambulance and emergency response experience, not a training manual.',
   },
   {
     num: '02',
@@ -57,7 +57,7 @@ const VALUES = [
   {
     num: '04',
     title: 'Accessible Training',
-    body: "Life-saving skills shouldn't be the preserve of well-funded organisations. Harry brings training to your workplace, your community, and your budget, with no unnecessary fuss or overhead.",
+    body: "Life-saving skills shouldn't be the preserve of well-funded organisations. We bring training to your workplace, your community, and your budget, with no unnecessary fuss or overhead.",
   },
 ]
 
@@ -275,7 +275,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <Reveal className="text-center mb-8">
             <h2 className="font-display font-800 text-[1.5rem] text-dark mb-2">Sectors We Serve</h2>
-            <p className="text-gray-500 text-sm">From government organisations to community groups, Harry has trained them all.</p>
+            <p className="text-gray-500 text-sm">From government organisations to community groups, we have trained them all.</p>
           </Reveal>
           <Reveal delay={80}>
             <div className="flex flex-wrap justify-center gap-3">
@@ -301,7 +301,7 @@ export default function About() {
             Ready to Train with the Best?
           </h2>
           <p className="text-white/80 text-lg leading-relaxed mb-8">
-            Get a free, no-obligation quote tailored to your organisation's specific needs. Harry responds within 24 hours.
+            Get a free, no-obligation quote tailored to your organisation's specific needs. We respond within 24 hours.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Btn to="/booking" variant="light">Get a Free Quote <ArrowRight size={15} /></Btn>

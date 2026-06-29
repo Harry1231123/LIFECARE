@@ -148,7 +148,7 @@ export default function Contact() {
                       <CheckCircle2 size={36} className="text-emerald-500" />
                     </div>
                     <h3 className="font-display font-bold text-2xl text-dark mb-3">Message Received!</h3>
-                    <p className="text-gray-500 text-sm leading-relaxed max-w-sm">Thank you for getting in touch. Harry will review your message and respond within 24 hours.</p>
+                    <p className="text-gray-500 text-sm leading-relaxed max-w-sm">Thank you for getting in touch. We'll review your message and respond within 24 hours.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="bg-white border border-gray-200 rounded-2xl p-8 lg:p-10 shadow-card space-y-5" noValidate>

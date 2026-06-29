@@ -170,7 +170,7 @@ export default function Booking() {
                           const active = selected.includes(id)
                           return (
                             <button key={id} type="button" onClick={() => toggle(id)}
-                              className={`flex items-start gap-3 rounded-xl border p-4 text-left transition-all duration-150 focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2 ${
+                              className={`flex items-start gap-3 rounded-xl border p-4 text-left transition-[border-color,background-color,box-shadow] duration-150 focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2 ${
                                 active
                                   ? 'border-brand bg-brand-light shadow-[0_0_0_1px_rgba(210,74,37,0.2)]'
                                   : 'border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50'

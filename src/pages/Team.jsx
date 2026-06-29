@@ -272,7 +272,7 @@ export default function Team() {
                 <Btn href="https://www.linkedin.com/in/molly-mae-hanson-2494062aa" variant="outline">
                   <ExternalLink size={14} /> LinkedIn
                 </Btn>
-                <Btn href="https://www.fleurmarketing.co.uk" variant="outline">
+                <Btn href="https://fleurmarketinguk.com" variant="outline">
                   <ExternalLink size={14} /> Fleur Marketing
                 </Btn>
               </Reveal>
@@ -310,9 +310,9 @@ export default function Team() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
                 </div>
-                <div className="absolute top-6 -left-4 lg:-left-8 bg-brand text-white rounded-2xl px-4 py-3 shadow-card-lg">
+                <div style={{ backgroundColor: "#101827" }} className="absolute top-6 -left-4 lg:-left-8 text-white rounded-2xl px-4 py-3 shadow-card-lg">
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 size={13} className="text-white" />
+                    <CheckCircle2 size={13} className="text-brand" />
                     <span className="text-xs font-bold font-display">Community First Responder</span>
                   </div>
                 </div>

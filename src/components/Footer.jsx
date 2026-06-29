@@ -4,7 +4,7 @@ import { FacebookIcon, InstagramIcon, LinkedInIcon } from './SocialIcons'
 
 const QUICK = [
   { to: '/',         label: 'Home' },
-  { to: '/about',    label: 'About Harry' },
+  { to: '/about',    label: 'About' },
   { to: '/team',     label: 'Meet the Team' },
   { to: '/services', label: 'All Courses' },
   { to: '/pricing',  label: 'Pricing' },
@@ -78,7 +78,7 @@ export default function Footer() {
               {QUICK.map(({ to, label }) => (
                 <li key={to}>
                   <Link to={to} className="group flex items-center gap-1.5 text-gray-400 text-sm hover:text-white transition-colors duration-150">
-                    <ArrowRight size={11} className="opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition-all duration-150 shrink-0 text-brand" />
+                    <ArrowRight size={11} className="opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition-[opacity,transform] duration-150 shrink-0 text-brand" />
                     {label}
                   </Link>
                 </li>
@@ -93,7 +93,7 @@ export default function Footer() {
               {FOOTER_COURSES.map(({ to, label }) => (
                 <li key={to}>
                   <Link to={to} className="group flex items-center gap-1.5 text-gray-400 text-sm hover:text-white transition-colors duration-150">
-                    <ArrowRight size={11} className="opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition-all duration-150 shrink-0 text-brand" />
+                    <ArrowRight size={11} className="opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition-[opacity,transform] duration-150 shrink-0 text-brand" />
                     {label}
                   </Link>
                 </li>

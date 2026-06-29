@@ -286,7 +286,7 @@ export default function Home() {
                   className="group relative flex flex-col h-full bg-white border border-gray-200 rounded-2xl overflow-hidden hover-lift focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2"
                 >
                   {/* Red top accent */}
-                  <div className="h-1 bg-brand group-hover:h-1.5 transition-all duration-200" />
+                  <div className="h-1 bg-brand group-hover:h-1.5 transition-[height] duration-200" />
 
                   <div className="p-6 flex flex-col flex-1">
                     <div className="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand/15 transition-colors duration-200">
@@ -311,7 +311,7 @@ export default function Home() {
 
                     <div className="border-t border-gray-100 pt-4 flex items-center justify-between">
                       <span className="text-dark font-display font-bold text-sm">{price}</span>
-                      <span className="inline-flex items-center gap-1 text-brand text-xs font-bold font-display group-hover:gap-2 transition-all duration-200">
+                      <span className="inline-flex items-center gap-1 text-brand text-xs font-bold font-display group-hover:gap-2 transition-[gap] duration-200">
                         Learn more <ArrowRight size={12} />
                       </span>
                     </div>
@@ -492,7 +492,7 @@ export default function Home() {
             <p className="text-gray-500 text-lg leading-relaxed mb-4">
               Trusted by businesses, NHS trusts, public sector organisations, and event companies across Sussex and the South East.
             </p>
-            <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-2">
+            <div className="inline-flex items-center gap-2 bg-brand-light border border-red-100 rounded-full px-4 py-2">
               <div className="flex gap-0.5">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star key={i} size={12} className="fill-amber-400 text-amber-400" />
