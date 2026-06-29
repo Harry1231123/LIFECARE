@@ -80,7 +80,7 @@ const WHY_POINTS = [
   {
     icon: Stethoscope,
     title: 'Still Active on the Frontline',
-    body: 'Our lead instructor works for the ambulance service in both frontline and volunteer roles, bringing current, real-world experience into every session.',
+    body: 'Our founder works for the ambulance service in both frontline and volunteer roles, bringing current, real-world experience into every session.',
   },
   {
     icon: BadgeCheck,
@@ -254,7 +254,7 @@ export default function Home() {
               'Ofqual Regulated Qualifications',
               'HSE Code of Practice',
               'First Aid Awards (FAA)',
-              'Resuscitation Council UK Guideline Aligned',
+              'Resuscitation Council UK (Guideline Aligned)',
               'Enhanced DBS Checked Instructors',
               'AoHT Member',
             ].map(t => (
@@ -349,7 +349,7 @@ export default function Home() {
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                 <div className="font-display font-800 text-4xl text-white tracking-tight mb-2">15–27%</div>
                 <p className="text-gray-400 text-sm leading-snug">
-                  How much less likely women are to survive the safe use of an AED compared to men.{' '}
+                  How much less likely women are to receive bystander CPR compared to men.{' '}
                   <a
                     href="https://www.bhf.org.uk/what-we-do/news-from-the-bhf/news-archive/2019/may/women-less-likely-to-receive-bystander-cpr-than-men-research-shows"
                     target="_blank"

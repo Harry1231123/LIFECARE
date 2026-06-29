@@ -25,14 +25,14 @@ function Btn({ to, href, children, variant = 'primary' }) {
 const CREDENTIALS = [
   { icon: Stethoscope, label: 'Level 5 Diploma in First Response Emergency & Urgent Care (Ambulance Technician)' },
   { icon: BadgeCheck,  label: 'Qualified Trainer & Assessor in Regulated Qualifications Delivery' },
-  { icon: BadgeCheck,  label: 'BLSi Qualified (Basic Life Support Instructor) via Resuscitation Council UK (guidelines aligned)' },
+  { icon: BadgeCheck,  label: 'BLSi Qualified (Basic Life Support Instructor) via Resuscitation Council UK' },
   { icon: BadgeCheck,  label: 'L3 AET · L3 CAVA · Specialist Instructor Status (UK Government)' },
   { icon: Brain,       label: 'LivingWorks ASIST Qualified & Mental Health First Aider (MHFA England)' },
   { icon: Shield,      label: 'TRiM Practitioner (Trauma Risk Management) for NHS & UK Government Organisations' },
   { icon: Shield,      label: '17+ Years in First Aid across Public, Private & Government Sectors' },
   { icon: Building2,   label: 'St John Ambulance: Medical Events & Management' },
   { icon: Users,       label: 'Works for the Ambulance Service in Both Frontline and Volunteer Roles' },
-  { icon: Award,       label: 'Grand Priors Award, St John Ambulance (Highest Equalisation Attainable)' },
+  { icon: Award,       label: 'Grand Priors Award, St John Ambulance (Highest Accolade Attainable)' },
   { icon: Award,       label: 'Resuscitation Certificate, Royal Humane Society' },
   { icon: Award,       label: 'Prison Group Directors Commendation for Bravery, HM Prison Service' },
   { icon: Star,        label: 'ROSC Award (Return of Spontaneous Circulation), South East Coast Ambulance' },
@@ -135,8 +135,8 @@ export default function About() {
               </Reveal>
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
-                  <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives, not just someone without current hands-on experience.</p>
-                  <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care, is BLSi qualified through the Resuscitation Council UK (guidelines aligned), and holds L3 AET, L3 CAVA, and Specialist Instructor status with the UK Government. He works for the ambulance service in both frontline and volunteer roles and is a qualified Trainer and Assessor for regulated qualifications.</p>
+                  <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives, not just someone who's learnt it in a book.</p>
+                  <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care, is BLSi qualified through the Resuscitation Council UK, and holds L3 AET, L3 CAVA, and Specialist Instructor status with the UK Government. He works for the ambulance service in both frontline and volunteer roles and is a qualified Trainer and Assessor for regulated qualifications.</p>
                   <p>With roots in St John Ambulance's medical events and management teams, and over 17 years delivering first aid across NHS trusts, government organisations, corporate businesses, and public events, Harry brings an unmatched depth of real-world experience to every session.</p>
                   <p>Harry is a qualified Mental Health First Aider, a member of the Association of Mental Health First Aiders, and holds ASIST certification. As a TRiM Practitioner he undertakes Trauma Risk Management assessments for ambulance services and UK Government organisations. He has completed additional training with CRUSE in bereavement support and CPD in Breaking Bad News, and is passionate about saving lives and supporting individuals facing mental health challenges.</p>
                   <p>His dedication has been recognised through some of the most prestigious commendations in the sector: a Resuscitation Certificate from the Royal Humane Society, a ROSC Award from South East Coast Ambulance, a Prison Group Directors Commendation for Bravery from HM Prison Service, commendation by the UK Home Office COO, and the Grand Priors Award from St John Ambulance.</p>

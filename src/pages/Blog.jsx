@@ -122,7 +122,7 @@ export default function Blog() {
                 <span className="inline-flex items-center gap-1.5 text-brand text-[11px] font-bold font-display uppercase tracking-wider mb-4">
                   <Tag size={10} /> {featured.category}
                 </span>
-                <h2 className="font-display font-bold text-dark text-2xl lg:text-3xl leading-snug mb-4 group-hover:text-brand transition-colors duration-150">
+                <h2 className="font-display font-bold text-dark text-2xl lg:text-3xl leading-snug mb-4 group-hover:text-brand transition-colors duration-150 break-words">
                   {featured.title}
                 </h2>
                 <p className="text-gray-500 text-sm leading-relaxed mb-6">{featured.excerpt}</p>
