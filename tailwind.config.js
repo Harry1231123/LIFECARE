@@ -10,6 +10,9 @@ export default {
         'brand-light':'#FDF0EC',
         dark:        '#111827',
         'dark-soft': '#1F2937',
+        navy:        '#101827',
+        grey:        '#737373',
+        'light-grey':'#D9D9D9',
       },
       fontFamily: {
         display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],

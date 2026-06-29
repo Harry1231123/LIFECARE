@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Phone, HeartPulse, ChevronDown } from 'lucide-react'
+import { Menu, X, Phone, Mail } from 'lucide-react'
 
 const NAV = [
   { to: '/',         label: 'Home' },
@@ -13,9 +13,9 @@ const NAV = [
 ]
 
 export default function Navbar() {
-  const [open, setOpen]       = useState(false)
+  const [open, setOpen]         = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const location              = useLocation()
+  const location                = useLocation()
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 24)
@@ -34,18 +34,27 @@ export default function Navbar() {
       <div className="brand-strip" />
 
       {/* Top bar */}
-      <div className="hidden lg:block bg-gray-50 border-b border-gray-100">
+      <div className="hidden lg:block bg-grey">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-1.5 flex items-center justify-between">
-          <p className="text-gray-500 text-[11px] font-medium">
+          <p className="text-white/80 text-[11px] font-medium">
             HSE-compliant first aid training · Sussex &amp; South East England
           </p>
-          <a
-            href="tel:+447908783457"
-            className="flex items-center gap-1.5 text-gray-600 text-[11px] font-semibold hover:text-brand transition-colors duration-150"
-          >
-            <Phone size={11} className="text-brand" />
-            07908 783457
-          </a>
+          <div className="flex items-center gap-5">
+            <a
+              href="mailto:LifeCareTraining@Outlook.Com"
+              className="flex items-center gap-1.5 text-white/80 text-[11px] font-semibold hover:text-white transition-colors duration-150"
+            >
+              <Mail size={11} className="text-white/70" />
+              LifeCareTraining@Outlook.Com
+            </a>
+            <a
+              href="tel:+447908783457"
+              className="flex items-center gap-1.5 text-white/80 text-[11px] font-semibold hover:text-white transition-colors duration-150"
+            >
+              <Phone size={11} className="text-white/70" />
+              07908 783457
+            </a>
+          </div>
         </div>
       </div>
 
@@ -55,7 +64,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link to="/" className="group shrink-0" aria-label="LifeCare Training home">
-            <img src="/assets/logo.png" alt="LifeCare Training" className="h-20 w-auto" />
+            <img src="/assets/logo.png" alt="LifeCare Training" className="h-24 w-auto" />
           </Link>
 
           {/* Desktop nav */}

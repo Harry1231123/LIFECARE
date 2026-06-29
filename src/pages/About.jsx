@@ -52,7 +52,7 @@ const VALUES = [
   {
     num: '03',
     title: 'Legal Compliance',
-    body: 'Every qualification is Ofqual regulated and HSE recognised. Your business, your employees, and the people in your care are fully protected from regulatory scrutiny.',
+    body: 'Every first aid qualification is Ofqual regulated and meets HSE requirements.',
   },
   {
     num: '04',
@@ -94,7 +94,7 @@ export default function About() {
             </h1>
             <p className="font-display font-bold text-brand text-xl mb-5">Become a lifesaver with LifeCare Training.</p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              LifeCare Training was founded by Harry Todhunter, an active ambulance technician with 17+ years on the frontline and a mission to create genuine lifesavers, not just certificate holders.
+              LifeCare Training was founded by Harry Todhunter, an active ambulance technician with extensive industry experience and a mission to create genuine lifesavers, not just certificate holders.
             </p>
           </Reveal>
         </div>
@@ -116,9 +116,9 @@ export default function About() {
               </div>
               <div className="absolute -bottom-5 -right-4 lg:-right-8 bg-white rounded-2xl p-5 shadow-card-lg max-w-[185px]">
                 <div className="font-display font-800 text-4xl text-dark tracking-tight mb-1">17+</div>
-                <div className="text-gray-500 text-xs leading-snug">Years of frontline emergency &amp; teaching experience</div>
+                <div className="text-gray-500 text-xs leading-snug">Years industry experience</div>
               </div>
-              <div className="absolute top-6 -left-4 lg:-left-8 bg-dark text-white rounded-2xl px-4 py-3 shadow-card-lg">
+              <div className="absolute top-6 -left-4 lg:-left-8 bg-navy text-white rounded-2xl px-4 py-3 shadow-card-lg">
                 <div className="flex items-center gap-2">
                   <Stethoscope size={13} className="text-brand" />
                   <span className="text-xs font-bold font-display">Active Ambulance Technician</span>
@@ -135,7 +135,7 @@ export default function About() {
               </Reveal>
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
-                  <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives, not someone who last treated a real emergency a decade ago.</p>
+                  <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives, not just someone without current hands-on experience.</p>
                   <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care, is BLSi qualified through the Resuscitation Council UK (guidelines aligned), and holds L3 AET, L3 CAVA, and Specialist Instructor status with the UK Government. He works for the ambulance service in both frontline and volunteer roles and is a qualified Trainer and Assessor for regulated qualifications.</p>
                   <p>With roots in St John Ambulance's medical events and management teams, and over 17 years delivering first aid across NHS trusts, government organisations, corporate businesses, and public events, Harry brings an unmatched depth of real-world experience to every session.</p>
                   <p>Harry is a qualified Mental Health First Aider, a member of the Association of Mental Health First Aiders, and holds ASIST certification. As a TRiM Practitioner he undertakes Trauma Risk Management assessments for ambulance services and UK Government organisations. He has completed additional training with CRUSE in bereavement support and CPD in Breaking Bad News, and is passionate about saving lives and supporting individuals facing mental health challenges.</p>

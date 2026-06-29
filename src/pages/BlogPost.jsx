@@ -375,7 +375,7 @@ export default function BlogPost() {
               />
               <div>
                 <div className="font-display font-bold text-dark text-base">Harry Todhunter</div>
-                <div className="text-gray-500 text-sm">Founder, LifeCare Training · Active Ambulance Technician · 17+ years frontline experience</div>
+                <div className="text-gray-500 text-sm">Founder, LifeCare Training · Active Ambulance Technician · Industry Experience</div>
               </div>
             </div>
           </Reveal>

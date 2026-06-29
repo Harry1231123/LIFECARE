@@ -105,7 +105,7 @@ export default function Services() {
       </div>
 
       {/* ── COURSES ───────────────────────────────────────────────── */}
-      {COURSES.map(({ id, slug, icon: Icon, tag, title, subtitle, price, intro, body, includes, meta, image, addon }, idx) => (
+      {COURSES.map(({ id, slug, icon: Icon, tag, title, subtitle, price, intro, body, includes, meta, image, imagePosition, addon }, idx) => (
         <Fragment key={id}>
           <section id={id} className={`py-16 lg:py-20 ${id === 'efaw' ? 'bg-white ring-2 ring-inset ring-brand/20' : idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
             {id === 'efaw' && (
@@ -152,16 +152,16 @@ export default function Services() {
                 <div className={`space-y-5 ${idx % 2 !== 0 ? 'lg:order-1' : ''}`}>
                   <Reveal variant="scale">
                     <Link to={`/courses/${slug}`} className="block relative rounded-2xl overflow-hidden shadow-card-lg group">
-                      <img src={image} alt={title} className="w-full h-56 object-cover group-hover:scale-[1.03] transition-transform duration-500" />
+                      <img src={image} alt={title} className={`w-full h-56 object-cover group-hover:scale-[1.03] transition-transform duration-500 ${imagePosition || ''}`} />
                       <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent" />
                     </Link>
                   </Reveal>
                   <Reveal delay={80}>
-                    <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-card">
-                      <h4 className="font-display font-bold text-dark text-xs uppercase tracking-widest mb-5">What's Covered</h4>
+                    <div className="bg-navy rounded-2xl p-6 shadow-card-lg">
+                      <h4 className="font-display font-bold text-white text-xs uppercase tracking-widest mb-5">What's Covered</h4>
                       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                         {includes.map(item => (
-                          <li key={item} className="flex items-start gap-2.5 text-gray-600 text-sm">
+                          <li key={item} className="flex items-start gap-2.5 text-gray-300 text-sm">
                             <CheckCircle2 size={13} className="text-brand mt-0.5 shrink-0" />
                             {item}
                           </li>

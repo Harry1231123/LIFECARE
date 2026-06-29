@@ -23,14 +23,6 @@ function Btn({ to, href, children, variant = 'primary' }) {
   return <Link to={to} className={`${base} ${v[variant]}`}>{children}</Link>
 }
 
-function Avatar({ initials, color = 'brand' }) {
-  return (
-    <div className={`w-24 h-24 rounded-2xl flex items-center justify-center shadow-card-lg ${color === 'brand' ? 'bg-brand' : 'bg-dark'}`}>
-      <span className="text-white font-display font-800 text-3xl tracking-tight">{initials}</span>
-    </div>
-  )
-}
-
 const HARRY_CREDS = [
   { icon: Stethoscope, label: 'Level 5 Diploma: First Response Emergency & Urgent Care (Ambulance Technician)' },
   { icon: BadgeCheck,  label: 'Qualified Trainer & Assessor in Regulated Qualifications Delivery' },
@@ -68,6 +60,33 @@ const HILARY_CREDS = [
   { icon: Star,        label: 'BODO Ambassador & FAFF Member' },
 ]
 
+const MOLLY_CREDS = [
+  { icon: Star,       label: 'Founder, Fleur Marketing' },
+  { icon: Users,      label: 'Marketing Manager, LifeCare Training' },
+  { icon: Heart,      label: 'BODO Committee Member' },
+  { icon: BadgeCheck, label: 'Marketing Lead, FAFF' },
+  { icon: Building2,  label: 'Multi-Channel Marketing Strategy' },
+  { icon: Award,      label: 'Community Impact & Public Awareness' },
+]
+
+const STEPHEN_CREDS = [
+  { icon: Shield,     label: 'NEBOSH Diploma in Health & Safety' },
+  { icon: BadgeCheck, label: 'L3 AET & Fire Assessor Qualified' },
+  { icon: Award,      label: 'First Aid Instructor (RSPH Accredited)' },
+  { icon: Building2,  label: 'NHS, HM Prison Service & Education Sectors' },
+  { icon: Users,      label: 'Senior NHS Health & Safety Manager' },
+  { icon: Shield,     label: 'Risk Assessment & Fire Assessment Specialist' },
+]
+
+const CHARLOTTE_CREDS = [
+  { icon: BadgeCheck, label: 'Certified LivingWorks ASIST Trainer' },
+  { icon: Shield,     label: 'Emergency First Aid at Work Instructor' },
+  { icon: Plane,      label: 'Background in Aviation & Emergency Services' },
+  { icon: Heart,      label: 'Passionate About Suicide Prevention' },
+  { icon: Users,      label: 'Clients include British Airways & NHS Ambulance Services' },
+  { icon: Star,       label: 'Corporate, Commercial & Community Delivery' },
+]
+
 export default function Team() {
   return (
     <div className="pt-[141px] lg:pt-[149px]">
@@ -94,7 +113,7 @@ export default function Team() {
       {/* ── HARRY ─────────────────────────────────────────────────── */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start mb-14">
 
             <Reveal variant="scale" className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
@@ -105,7 +124,7 @@ export default function Team() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
               </div>
-              <div className="absolute top-6 -right-4 lg:-right-8 bg-dark text-white rounded-2xl px-4 py-3 shadow-card-lg">
+              <div className="absolute top-6 -right-4 lg:-right-8 bg-navy text-white rounded-2xl px-4 py-3 shadow-card-lg">
                 <div className="flex items-center gap-2">
                   <Stethoscope size={13} className="text-brand" />
                   <span className="text-xs font-bold font-display">Active Ambulance Technician</span>
@@ -113,7 +132,7 @@ export default function Team() {
               </div>
               <div className="absolute -bottom-5 left-6 bg-white rounded-2xl p-4 shadow-card-lg">
                 <div className="font-display font-800 text-3xl text-dark tracking-tight mb-0.5">17+</div>
-                <div className="text-gray-500 text-xs leading-snug">Years frontline experience</div>
+                <div className="text-gray-500 text-xs leading-snug">Years industry experience</div>
               </div>
             </Reveal>
 
@@ -126,23 +145,11 @@ export default function Team() {
               </Reveal>
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
-                  <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives, not someone who last treated a real emergency a decade ago.</p>
+                  <p>LifeCare Training was founded on a simple but powerful belief: the best first aid trainer is someone who has genuinely saved lives, not just someone without current hands-on experience.</p>
                   <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care, is BLSi qualified through the Resuscitation Council UK (guidelines aligned), and holds L3 AET, L3 CAVA, and Specialist Instructor status with the UK Government. He works for the ambulance service in both frontline and volunteer roles and is a qualified Trainer and Assessor for regulated qualifications. With roots in St John Ambulance's medical events and management teams, he has spent over 17 years delivering training across NHS trusts, government organisations, corporate businesses, and public events.</p>
                   <p>Harry is a qualified Mental Health First Aider, a member of the Association of Mental Health First Aiders, and holds ASIST certification. As a TRiM Practitioner he undertakes Trauma Risk Management assessments for ambulance services and UK Government organisations, and has completed additional training with CRUSE in bereavement support and CPD in Breaking Bad News. He is passionate about saving lives and supporting individuals facing mental health challenges.</p>
-                  <p>In the UK, less than 10% of people survive an out-of-hospital cardiac arrest. Harry is committed to changing that, both as a clinician and trainer and as a community volunteer. He is a proud member of FAFF (First Aid Facilitators Forum) and supports the BODO (Bra Off Defib On) campaign, which addresses the fact that women are 27% less likely to have CPR started on them in cardiac arrest.</p>
+                  <p>In the UK, less than 10% of people survive an out-of-hospital cardiac arrest. Harry is committed to changing that, both as a clinician and trainer and as a community volunteer. He is a proud member of FAFF (First Aid Facilitators Forum) and supports the BODO (Bra Off Defib On) campaign, which addresses the fact that women are 15–27% less likely to survive the safe use of an AED compared to men.</p>
                   <p>His dedication has been recognised through some of the most prestigious commendations in the sector: a Resuscitation Certificate from the Royal Humane Society, a ROSC Award from South East Coast Ambulance, a Prison Group Directors Commendation for Bravery from HM Prison Service, commendation by the UK Home Office COO, and the Grand Priors Award from St John Ambulance, the highest equalisation attainable within the organisation.</p>
-                </div>
-              </Reveal>
-              <Reveal delay={120}>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                  {HARRY_CREDS.map(({ icon: Icon, label }) => (
-                    <div key={label} className="flex items-start gap-3 bg-gray-50 border border-gray-100 rounded-xl p-4">
-                      <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
-                        <Icon size={14} className="text-brand" />
-                      </div>
-                      <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
-                    </div>
-                  ))}
                 </div>
               </Reveal>
               <Reveal delay={160} className="flex flex-wrap gap-3">
@@ -150,13 +157,27 @@ export default function Team() {
               </Reveal>
             </div>
           </div>
+
+          {/* Harry credentials - full width */}
+          <Reveal delay={120}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              {HARRY_CREDS.map(({ icon: Icon, label }) => (
+                <div key={label} className="flex items-start gap-3 bg-gray-50 border border-gray-100 rounded-xl p-4">
+                  <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
+                    <Icon size={14} className="text-brand" />
+                  </div>
+                  <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
 
       {/* ── JENNIFER ──────────────────────────────────────────────── */}
       <section className="py-20 lg:py-28 bg-gray-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start mb-14">
 
             <div className="lg:order-2">
               <Reveal variant="scale" className="relative">
@@ -164,11 +185,11 @@ export default function Team() {
                   <img
                     src="/assets/jennifer.png"
                     alt="Jennifer, Paramedic &amp; Clinical Mentor"
-                    className="w-full h-[500px] object-cover object-top"
+                    className="w-full h-[500px] object-cover object-[center_15%]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
                 </div>
-                <div className="absolute top-6 -left-4 lg:-left-8 bg-dark text-white rounded-2xl px-4 py-3 shadow-card-lg">
+                <div className="absolute top-6 -left-4 lg:-left-8 bg-navy text-white rounded-2xl px-4 py-3 shadow-card-lg">
                   <div className="flex items-center gap-2">
                     <Stethoscope size={13} className="text-brand" />
                     <span className="text-xs font-bold font-display">Paramedic &amp; PPED</span>
@@ -195,36 +216,38 @@ export default function Team() {
                   <p>Jennifer's passion is straightforward: she believes that well-supported first aiders and clinicians save more lives. Everything she does in the classroom is shaped by that conviction and by two decades of real-world evidence.</p>
                 </div>
               </Reveal>
-              <Reveal delay={120}>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                  {JENNIFER_CREDS.map(({ icon: Icon, label }) => (
-                    <div key={label} className="flex items-start gap-3 bg-white border border-gray-100 rounded-xl p-4 shadow-card">
-                      <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
-                        <Icon size={14} className="text-brand" />
-                      </div>
-                      <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
-                    </div>
-                  ))}
-                </div>
-              </Reveal>
               <Reveal delay={160} className="flex flex-wrap gap-3">
                 <Btn to="/booking" variant="primary">Book a Course <ArrowRight size={15} /></Btn>
               </Reveal>
             </div>
           </div>
+
+          {/* Jennifer credentials - full width */}
+          <Reveal delay={120}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {JENNIFER_CREDS.map(({ icon: Icon, label }) => (
+                <div key={label} className="flex items-start gap-3 bg-white border border-gray-100 rounded-xl p-4 shadow-card">
+                  <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
+                    <Icon size={14} className="text-brand" />
+                  </div>
+                  <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
 
       {/* ── MOLLY ─────────────────────────────────────────────────── */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start mb-14">
 
             <Reveal variant="scale" className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
                 <img
                   src="/assets/molly.png"
-                  alt="Molly, Instructor at LifeCare Training"
+                  alt="Molly, Marketing Manager at LifeCare Training"
                   className="w-full h-[500px] object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
@@ -241,26 +264,7 @@ export default function Team() {
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
                   <p>Molly is the Founder of Fleur Marketing, a creative marketing agency dedicated to helping brands build a strong and impactful presence. As Marketing Manager at LifeCare Training, she works closely with Harry and the team to develop and deliver a multi-channel marketing strategy that strengthens the brand and connects with its audience.</p>
-                  <p>Alongside her role with LifeCare Training, Molly also leads marketing for FAFF (First Aid Facilitators Forum) and proudly serves on the board for the Bra Off, Defib On charity. Her involvement across the first aid, training, and charitable sectors reflects her passion for community impact, public awareness, and supporting organisations that make a real difference.</p>
-                </div>
-              </Reveal>
-              <Reveal delay={120}>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                  {[
-                    { icon: Star,       label: 'Founder, Fleur Marketing' },
-                    { icon: Users,      label: 'Marketing Manager, LifeCare Training' },
-                    { icon: Heart,      label: 'Board Member, Bra Off Defib On Charity' },
-                    { icon: BadgeCheck, label: 'Marketing Lead, FAFF' },
-                    { icon: Building2,  label: 'Multi-Channel Marketing Strategy' },
-                    { icon: Award,      label: 'Community Impact & Public Awareness' },
-                  ].map(({ icon: Icon, label }) => (
-                    <div key={label} className="flex items-start gap-3 bg-gray-50 border border-gray-100 rounded-xl p-4">
-                      <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
-                        <Icon size={14} className="text-brand" />
-                      </div>
-                      <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
-                    </div>
-                  ))}
+                  <p>Alongside her role with LifeCare Training, Molly also leads marketing for FAFF (First Aid Facilitators Forum) and proudly serves on the committee for the Bra Off, Defib On charity. Her involvement across the first aid, training, and charitable sectors reflects her passion for community impact, public awareness, and supporting organisations that make a real difference.</p>
                 </div>
               </Reveal>
               <Reveal delay={160} className="flex flex-wrap gap-3">
@@ -268,16 +272,33 @@ export default function Team() {
                 <Btn href="https://www.linkedin.com/in/molly-mae-hanson-2494062aa" variant="outline">
                   <ExternalLink size={14} /> LinkedIn
                 </Btn>
+                <Btn href="https://www.fleurmarketing.co.uk" variant="outline">
+                  <ExternalLink size={14} /> Fleur Marketing
+                </Btn>
               </Reveal>
             </div>
           </div>
+
+          {/* Molly credentials - full width */}
+          <Reveal delay={120}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {MOLLY_CREDS.map(({ icon: Icon, label }) => (
+                <div key={label} className="flex items-start gap-3 bg-gray-50 border border-gray-100 rounded-xl p-4">
+                  <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
+                    <Icon size={14} className="text-brand" />
+                  </div>
+                  <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
 
       {/* ── HILARY ────────────────────────────────────────────────── */}
       <section className="py-20 lg:py-28 bg-gray-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start mb-14">
 
             <div className="lg:order-2">
               <Reveal variant="scale" className="relative">
@@ -316,30 +337,32 @@ export default function Team() {
                   <p>Hilary holds multiple respected qualifications including L3AET, L4 IQA, and FREC4. She is also an ambassador for BODO and a proud member of FAFF, organisations dedicated to advancing first aid education and community resilience across the UK.</p>
                 </div>
               </Reveal>
-              <Reveal delay={120}>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                  {HILARY_CREDS.map(({ icon: Icon, label }) => (
-                    <div key={label} className="flex items-start gap-3 bg-white border border-gray-100 rounded-xl p-4 shadow-card">
-                      <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
-                        <Icon size={14} className="text-brand" />
-                      </div>
-                      <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
-                    </div>
-                  ))}
-                </div>
-              </Reveal>
               <Reveal delay={160} className="flex flex-wrap gap-3">
                 <Btn to="/booking" variant="primary">Book a Course <ArrowRight size={15} /></Btn>
               </Reveal>
             </div>
           </div>
+
+          {/* Hilary credentials - full width */}
+          <Reveal delay={120}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {HILARY_CREDS.map(({ icon: Icon, label }) => (
+                <div key={label} className="flex items-start gap-3 bg-white border border-gray-100 rounded-xl p-4 shadow-card">
+                  <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
+                    <Icon size={14} className="text-brand" />
+                  </div>
+                  <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
 
       {/* ── STEPHEN ───────────────────────────────────────────────── */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start mb-14">
 
             <Reveal variant="scale" className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
@@ -366,37 +389,32 @@ export default function Team() {
                   <p>Stephen holds a NEBOSH Diploma, L3 AET, and a Fire Assessor qualification, and is also a first aid instructor delivering accredited qualifications through the Royal Society for Public Health.</p>
                 </div>
               </Reveal>
-              <Reveal delay={120}>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                  {[
-                    { icon: Shield,     label: 'NEBOSH Diploma in Health & Safety' },
-                    { icon: BadgeCheck, label: 'L3 AET & Fire Assessor Qualified' },
-                    { icon: Award,      label: 'First Aid Instructor (RSPH Accredited)' },
-                    { icon: Building2,  label: 'NHS, HM Prison Service & Education Sectors' },
-                    { icon: Users,      label: 'Senior NHS Health & Safety Manager' },
-                    { icon: Shield,     label: 'Risk Assessment & Fire Assessment Specialist' },
-                  ].map(({ icon: Icon, label }) => (
-                    <div key={label} className="flex items-start gap-3 bg-gray-50 border border-gray-100 rounded-xl p-4">
-                      <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
-                        <Icon size={14} className="text-brand" />
-                      </div>
-                      <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
-                    </div>
-                  ))}
-                </div>
-              </Reveal>
               <Reveal delay={160} className="flex flex-wrap gap-3">
                 <Btn to="/booking" variant="primary">Book a Course <ArrowRight size={15} /></Btn>
               </Reveal>
             </div>
           </div>
+
+          {/* Stephen credentials - full width */}
+          <Reveal delay={120}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {STEPHEN_CREDS.map(({ icon: Icon, label }) => (
+                <div key={label} className="flex items-start gap-3 bg-gray-50 border border-gray-100 rounded-xl p-4">
+                  <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
+                    <Icon size={14} className="text-brand" />
+                  </div>
+                  <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
 
       {/* ── CHARLOTTE ─────────────────────────────────────────────── */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-20 lg:py-28 bg-gray-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start mb-14">
 
             <div className="lg:order-2">
               <Reveal variant="scale" className="relative">
@@ -408,7 +426,7 @@ export default function Team() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
                 </div>
-                <div className="absolute top-6 -left-4 lg:-left-8 bg-dark text-white rounded-2xl px-4 py-3 shadow-card-lg">
+                <div className="absolute top-6 -left-4 lg:-left-8 bg-navy text-white rounded-2xl px-4 py-3 shadow-card-lg">
                   <div className="flex items-center gap-2">
                     <Plane size={13} className="text-brand" />
                     <span className="text-xs font-bold font-display">Aviation &amp; Emergency Services</span>
@@ -426,27 +444,8 @@ export default function Team() {
               </Reveal>
               <Reveal delay={60}>
                 <div className="space-y-4 text-gray-500 leading-[1.8] text-[15px] mb-8">
-                  <p>Charlotte is a freelance LivingWorks ASIST trainer and Emergency First Aid at Work instructor with a background spanning aviation and emergency services. She delivers training to a diverse range of corporate, commercial and community clients, including British Airways and South East Coast Ambulance Service.</p>
+                  <p>Charlotte is a freelance LivingWorks ASIST trainer and Emergency First Aid at Work instructor with a background spanning aviation and emergency services. She delivers training to a diverse range of corporate, commercial and community clients, including British Airways and NHS Ambulance Services.</p>
                   <p>Charlotte is passionate about suicide prevention and brings a calm, empathetic approach to ASIST workshops, creating a safe environment where participants feel confident to engage openly. Her varied professional background gives her an ability to connect with learners from all walks of life.</p>
-                </div>
-              </Reveal>
-              <Reveal delay={120}>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                  {[
-                    { icon: BadgeCheck, label: 'Certified LivingWorks ASIST Trainer' },
-                    { icon: Shield,     label: 'Emergency First Aid at Work Instructor' },
-                    { icon: Plane,      label: 'Background in Aviation & Emergency Services' },
-                    { icon: Heart,      label: 'Passionate About Suicide Prevention' },
-                    { icon: Users,      label: 'Clients include British Airways & SECAMB' },
-                    { icon: Star,       label: 'Corporate, Commercial & Community Delivery' },
-                  ].map(({ icon: Icon, label }) => (
-                    <div key={label} className="flex items-start gap-3 bg-white border border-gray-100 rounded-xl p-4 shadow-card">
-                      <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
-                        <Icon size={14} className="text-brand" />
-                      </div>
-                      <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
-                    </div>
-                  ))}
                 </div>
               </Reveal>
               <Reveal delay={160} className="flex flex-wrap gap-3">
@@ -457,6 +456,20 @@ export default function Team() {
               </Reveal>
             </div>
           </div>
+
+          {/* Charlotte credentials - full width */}
+          <Reveal delay={120}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {CHARLOTTE_CREDS.map(({ icon: Icon, label }) => (
+                <div key={label} className="flex items-start gap-3 bg-white border border-gray-100 rounded-xl p-4 shadow-card">
+                  <div className="w-8 h-8 bg-brand-light rounded-lg flex items-center justify-center shrink-0">
+                    <Icon size={14} className="text-brand" />
+                  </div>
+                  <span className="text-dark font-semibold text-xs leading-snug">{label}</span>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
 

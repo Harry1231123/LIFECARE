@@ -38,7 +38,7 @@ const FEATURED_COURSES = [
     id: 'efaw', icon: HeartPulse,
     tag: 'Most Popular',
     title: 'Emergency First Aid at Work',
-    desc: 'The 1-day Ofqual-regulated qualification every UK employer needs. HSE compliant, hands-on, and delivered by an active ambulance technician.',
+    desc: 'The 1-day Ofqual-regulated qualification every UK employer needs. HSE compliant, hands-on, and delivered by active first aid professionals.',
     duration: '1 Day',
     level: 'Level 3 RQF',
     price: 'From £850 per group',
@@ -57,11 +57,11 @@ const FEATURED_COURSES = [
   {
     id: 'mental', icon: Brain,
     tag: 'Workplace Wellbeing',
-    title: 'Mental Health First Aid',
+    title: 'Mental Health Courses',
     desc: 'Give your team the skills to recognise, respond to, and support colleagues experiencing mental health challenges.',
     duration: '1–2 Days',
     level: 'MHFA England',
-    price: 'From £390 per group',
+    price: 'Contact for Pricing',
     href: '/services#mental',
   },
   {
@@ -80,7 +80,7 @@ const WHY_POINTS = [
   {
     icon: Stethoscope,
     title: 'Still Active on the Frontline',
-    body: 'Harry works for the ambulance service in both frontline and volunteer roles. He brings current, real-world experience into every session, not knowledge from a decade ago.',
+    body: 'Our lead instructor works for the ambulance service in both frontline and volunteer roles, bringing current, real-world experience into every session.',
   },
   {
     icon: BadgeCheck,
@@ -89,7 +89,7 @@ const WHY_POINTS = [
   },
   {
     icon: Shield,
-    title: 'Genuinely Competitive Pricing',
+    title: 'Competitive Pricing',
     body: 'LifeCare Training is far more competitively priced than larger national providers, without any compromise on quality, accreditation, or hands-on delivery.',
   },
   {
@@ -100,9 +100,9 @@ const WHY_POINTS = [
 ]
 
 const STATS = [
-  { value: '17+', label: 'Years on the Frontline' },
+  { value: '17+', label: 'Industry Experience' },
   { value: '500+', label: 'Learners Trained' },
-  { value: '100%', label: 'Ofqual Regulated Courses' },
+  { value: '100%', label: 'Accredited Courses' },
   { value: '24hr', label: 'Quote Turnaround' },
 ]
 
@@ -200,20 +200,17 @@ export default function Home() {
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-brand" />
               </span>
               <span className="text-white/85 text-[11px] font-bold font-display tracking-[0.14em] uppercase">
-                Ofqual Regulated · HSE Compliant · Sussex &amp; South East
+                Accredited Courses · HSE Compliant · Sussex &amp; South East
               </span>
             </div>
 
             <h1 className="animate-fade-up font-display font-800 text-display-xl text-white mb-3 text-balance">
-              Become a<br />
-              <span className="text-brand">Lifesaver.</span>
+              Become a Lifesaver<br />
+              <span className="text-brand">with LifeCare Training</span>
             </h1>
-            <p className="animate-fade-up [animation-delay:60ms] font-display font-bold text-display-md text-white/75 mb-6">
-              Stay Compliant.
-            </p>
 
             <p className="animate-fade-up [animation-delay:120ms] text-gray-300 text-lg leading-[1.75] mb-10 max-w-[520px]">
-              Professional first aid training delivered by Harry Todhunter, who works for the ambulance service in both frontline and volunteer roles and brings 17+ years of genuine experience into every session.
+              Professional, Ofqual-regulated first aid training delivered by a team with genuine frontline experience. Whether you need workplace compliance, paediatric qualifications, or mental health support, we have the right course for your organisation.
             </p>
 
             <div className="animate-fade-up [animation-delay:180ms] flex flex-wrap gap-3 mb-16">
@@ -238,22 +235,26 @@ export default function Home() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 opacity-40">
+        <a
+          href="#accred-strip"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 opacity-40 hover:opacity-70 transition-opacity duration-150"
+          aria-label="Scroll down"
+        >
           <div className="w-5 h-8 border-2 border-white/40 rounded-full flex items-start justify-center pt-1.5">
             <div className="w-1 h-2 bg-white rounded-full animate-[bounce_1.5s_ease-in-out_infinite]" />
           </div>
-        </div>
+        </a>
       </section>
 
       {/* ── ACCREDITATION STRIP ───────────────────────────────────── */}
-      <div className="bg-white border-b border-gray-100">
+      <div id="accred-strip" className="bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4">
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-2">
             {[
               'Ofqual Regulated Qualifications',
               'HSE Code of Practice',
               'First Aid Awards (FAA)',
-              'Resuscitation Council UK (guidelines aligned)',
+              'Resuscitation Council UK Guideline Aligned',
               'Enhanced DBS Checked Instructors',
               'AoHT Member',
             ].map(t => (
@@ -265,16 +266,16 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ── FEATURED COURSES ──────────────────────────────────────── */}
+      {/* ── FEATURED SERVICES ─────────────────────────────────────── */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <Reveal className="text-center max-w-2xl mx-auto mb-14">
-            <Label>Our Courses</Label>
+            <Label>Our Services</Label>
             <h2 className="font-display font-800 text-display-lg text-dark mb-4 text-balance">
               Training That Saves Lives
             </h2>
             <p className="text-gray-500 text-lg leading-relaxed">
-              Every course is built around one goal: giving people the real skills and confidence to respond when it matters most.
+              From Ofqual-regulated first aid qualifications to mental health support and professional event cover, every service is built around one goal: giving people the real skills and confidence to respond when it matters most.
             </p>
           </Reveal>
 
@@ -322,13 +323,13 @@ export default function Home() {
 
           <Reveal className="text-center mt-10">
             <Link to="/services" className="inline-flex items-center gap-2 text-brand font-bold font-display text-sm hover:text-brand-dark transition-colors duration-150">
-              View all 9 courses <ChevronRight size={15} />
+              View all courses <ChevronRight size={15} />
             </Link>
           </Reveal>
         </div>
       </section>
 
-      {/* ── CARDIAC ARREST STAT ───────────────────────────────────── */}
+      {/* ── WHY FIRST AID SAVES LIVES ─────────────────────────────── */}
       <section className="py-14 bg-dark">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
           <Reveal>
@@ -346,8 +347,18 @@ export default function Home() {
                 <p className="text-gray-400 text-sm leading-snug">Improvement in survival odds when a trained bystander starts CPR immediately</p>
               </div>
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                <div className="font-display font-800 text-4xl text-white tracking-tight mb-2">27%</div>
-                <p className="text-gray-400 text-sm leading-snug">Less likely women are to receive bystander CPR. The BODO campaign is working to change this.</p>
+                <div className="font-display font-800 text-4xl text-white tracking-tight mb-2">15–27%</div>
+                <p className="text-gray-400 text-sm leading-snug">
+                  How much less likely women are to survive the safe use of an AED compared to men.{' '}
+                  <a
+                    href="https://www.bhf.org.uk/what-we-do/news-from-the-bhf/news-archive/2019/may/women-less-likely-to-receive-bystander-cpr-than-men-research-shows"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand hover:text-brand-dark underline transition-colors duration-150"
+                  >
+                    Source: BHF
+                  </a>
+                </p>
               </div>
             </div>
             <Link to="/services" className="inline-flex items-center gap-2 bg-brand text-white px-7 py-3.5 rounded-xl font-bold font-display text-sm hover:bg-brand-dark active:scale-[0.98] shadow-cta transition-[background-color,transform] duration-150">
@@ -365,16 +376,16 @@ export default function Home() {
             {/* Image */}
             <Reveal variant="scale" className="relative order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
-                <img src="/assets/harry.png" alt="Harry Todhunter, LifeCare Training instructor" className="w-full h-[520px] object-cover" />
+                <img src="/assets/harry.png" alt="Harry Todhunter, LifeCare Training lead instructor" className="w-full h-[520px] object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/55 via-transparent to-transparent" />
               </div>
               {/* Float stat */}
               <div className="absolute -bottom-6 -right-4 lg:-right-8 bg-white rounded-2xl p-5 shadow-card-lg max-w-[180px]">
                 <div className="font-display font-800 text-4xl text-dark tracking-tight mb-1">17+</div>
-                <div className="text-gray-500 text-xs leading-snug">Years of frontline emergency experience</div>
+                <div className="text-gray-500 text-xs leading-snug">Industry experience</div>
               </div>
               {/* Float badge */}
-              <div className="absolute top-6 -left-4 lg:-left-8 bg-dark text-white rounded-2xl px-4 py-3 shadow-card-lg">
+              <div className="absolute top-6 -left-4 lg:-left-8 bg-navy text-white rounded-2xl px-4 py-3 shadow-card-lg">
                 <div className="flex items-center gap-2">
                   <Stethoscope size={13} className="text-brand" />
                   <span className="text-xs font-bold font-display">Active Ambulance Technician</span>
@@ -387,10 +398,10 @@ export default function Home() {
               <Reveal>
                 <Label>Why LifeCare Training</Label>
                 <h2 className="font-display font-800 text-display-lg text-dark mb-5 text-balance">
-                  Taught by Someone Who Does It for Real
+                  Taught by People Who Do It for Real
                 </h2>
                 <p className="text-gray-500 text-lg leading-relaxed mb-8">
-                  Most first aid trainers retired from frontline work years ago. Harry Todhunter is still active, responding to real emergencies, staying current, and bringing that lived experience directly into your training room.
+                  Most first aid trainers retired from frontline work years ago. The LifeCare Training team is still active, responding to real emergencies, staying current, and bringing that lived experience directly into your training room.
                 </p>
               </Reveal>
 
@@ -412,7 +423,7 @@ export default function Home() {
 
               <Reveal delay={320}>
                 <Btn to="/about" variant="outline">
-                  Meet Harry Todhunter <ArrowRight size={15} />
+                  About LifeCare Training <ArrowRight size={15} />
                 </Btn>
               </Reveal>
             </div>
@@ -425,10 +436,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             {[
-              { value: '500+',  label: 'Learners Trained',          sub: 'Across public, private & voluntary sectors' },
-              { value: '17+',   label: 'Years Frontline Experience', sub: 'Active ambulance technician & instructor' },
-              { value: '100%',  label: 'Ofqual Regulated',           sub: 'All qualifications recognised by the HSE' },
-              { value: '24hr',  label: 'Quote Turnaround',           sub: 'Free, no-obligation tailored quote' },
+              { value: '500+',  label: 'Learners Trained',      sub: 'Across public, private & voluntary sectors' },
+              { value: '17+',   label: 'Industry Experience',    sub: 'Active ambulance technician & instructor' },
+              { value: '100%',  label: 'Accredited Courses',     sub: 'All qualifications recognised by the HSE' },
+              { value: '24hr',  label: 'Quote Turnaround',       sub: 'Free, no-obligation tailored quote' },
             ].map(({ value, label, sub }, i) => (
               <Reveal key={label} delay={i * 80}>
                 <div className="text-center lg:text-left">
@@ -601,7 +612,7 @@ export default function Home() {
             </Btn>
           </div>
           <div className="flex flex-wrap justify-center gap-6">
-            {['No obligation', 'Response within 24hrs', 'Fully tailored quote', 'Ofqual regulated courses'].map(t => (
+            {['No obligation', 'Response within 24hrs', 'Fully tailored quote', 'Accredited courses'].map(t => (
               <span key={t} className="flex items-center gap-2 text-white/60 text-xs font-semibold font-display">
                 <CheckCircle2 size={12} className="text-white/80" /> {t}
               </span>

@@ -26,7 +26,7 @@ const FOOTER_COURSES = [
 const ACCRED = [
   'First Aid Awards',
   'Ofqual Regulated',
-  'Resuscitation Council UK (guidelines aligned)',
+  'Resuscitation Council UK Guideline Aligned',
   'AoHT Member',
 ]
 
@@ -149,7 +149,7 @@ export default function Footer() {
             {[
               { abbr: 'FAA', name: 'First Aid Awards' },
               { abbr: 'RQF', name: 'Ofqual Regulated' },
-              { abbr: 'RCUK', name: 'Resuscitation Council UK (guidelines aligned)' },
+              { abbr: 'RCUK', name: 'Resuscitation Council UK Guideline Aligned' },
               { abbr: 'HSE', name: 'HSE Compliant' },
             ].map(({ abbr, name }) => (
               <div key={abbr} className="flex items-center gap-2.5">

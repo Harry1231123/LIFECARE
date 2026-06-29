@@ -12,6 +12,7 @@ export const COURSES = [
     meta: [{ icon: Clock, label: '1 Day (approx. 6 hours)' }, { icon: Users, label: 'Up to 12 learners per group' }, { icon: Award, label: 'FAA Level 3 RQF' }],
     who: ['Offices & admin teams', 'Retail & hospitality businesses', 'Schools & educational settings', 'Sports clubs & community groups', 'Small business owners', 'Any employer seeking legal compliance'],
     image: '/assets/hero.webp',
+    imagePosition: 'object-[center_30%]',
   },
   {
     id: 'faw', slug: 'faw', icon: Shield, tag: 'Comprehensive Cover · Higher-Risk Workplaces',
@@ -47,7 +48,8 @@ export const COURSES = [
     includes: ['Paediatric CPR (infant & child)', 'AED awareness', 'Choking (infants & children)', 'Unconscious child management', 'Seizure response', 'Bleeding & shock in children', 'Anaphylaxis basics', 'EYFS/OFSTED compliant certificate'],
     meta: [{ icon: Clock, label: '1 Day' }, { icon: Users, label: 'Up to 12 learners' }, { icon: Award, label: 'FAA Level 3 RQF' }],
     who: ['Childcare workers & volunteers', 'EYFS settings', 'Babysitters & childminders', 'School support staff', 'Youth group leaders'],
-    image: '/assets/equipment.webp',
+    image: '/assets/epfa.png',
+    imagePosition: 'object-[center_40%]',
   },
   {
     id: 'bls', slug: 'bls', icon: HeartPulse, tag: 'Essential Skills · All Staff',
@@ -60,6 +62,7 @@ export const COURSES = [
     meta: [{ icon: Clock, label: 'Approx. 3 hours' }, { icon: Users, label: 'Up to 12 learners' }, { icon: Award, label: 'FAA Level 2 RQF' }],
     who: ['All staff in any sector', 'Offices & shops', 'Sports & leisure facilities', 'Volunteers', 'CPR refresher for existing first aiders'],
     image: '/assets/equipment.webp',
+    imagePosition: 'object-[center_30%]',
   },
   {
     id: 'mental', slug: 'mental', icon: Brain, tag: 'Workplace Wellbeing',
