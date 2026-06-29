@@ -35,7 +35,7 @@ const HARRY_CREDS = [
   { icon: Building2,   label: 'St John Ambulance: Medical Events & Management' },
   { icon: Users,       label: 'Works for the Ambulance Service in Both Frontline and Volunteer Roles' },
   { icon: Users,       label: 'Member: FAFF (First Aid Facilitators Forum) & BODO Campaign' },
-  { icon: Award,       label: 'Grand Priors Award, St John Ambulance (Highest Qualification Attainable)' },
+  { icon: Award,       label: 'Grand Priors Award, St John Ambulance (Highest Achievement Attainable)' },
   { icon: Award,       label: 'Resuscitation Certificate, Royal Humane Society' },
   { icon: Award,       label: 'Prison Group Directors Commendation for Bravery, HM Prison Service' },
   { icon: Award,       label: 'ROSC Award (Return of Spontaneous Circulation), South East Coast Ambulance' },
@@ -149,7 +149,7 @@ export default function Team() {
                   <p>Harry holds a Level 5 Diploma in First Response Emergency &amp; Urgent Care, is BLSi qualified through the Resuscitation Council UK, and holds L3 AET, L3 CAVA, and Specialist Instructor status with the UK Government. He works for the ambulance service in both frontline and volunteer roles and is a qualified Trainer and Assessor for regulated qualifications. With roots in St John Ambulance's medical events and management teams, he has spent over 17 years delivering training across NHS trusts, government organisations, corporate businesses, and public events.</p>
                   <p>Harry is a qualified Mental Health First Aider, a member of the Association of Mental Health First Aiders, and holds ASIST certification. As a TRiM Practitioner he undertakes Trauma Risk Management assessments for ambulance services and UK Government organisations, and has completed additional training with CRUSE in bereavement support and CPD in Breaking Bad News. He is passionate about saving lives and supporting individuals facing mental health challenges.</p>
                   <p>In the UK, less than 10% of people survive an out-of-hospital cardiac arrest. Harry is committed to changing that, both as a clinician and trainer and as a community volunteer. He is a proud member of FAFF (First Aid Facilitators Forum) and supports the BODO (Bra Off Defib On) campaign, which addresses the fact that women are 15–27% less likely to receive bystander CPR compared to men.</p>
-                  <p>His dedication has been recognised through some of the most prestigious commendations in the sector: a Resuscitation Certificate from the Royal Humane Society, a ROSC Award from South East Coast Ambulance, a Prison Group Directors Commendation for Bravery from HM Prison Service, commendation by the UK Home Office COO, and the Grand Priors Award from St John Ambulance, the highest qualification attainable within the organisation.</p>
+                  <p>His dedication has been recognised through some of the most prestigious commendations in the sector: a Resuscitation Certificate from the Royal Humane Society, a ROSC Award from South East Coast Ambulance, a Prison Group Directors Commendation for Bravery from HM Prison Service, commendation by the UK Home Office COO, and the Grand Priors Award from St John Ambulance, the highest achievement attainable within the organisation.</p>
                 </div>
               </Reveal>
               <Reveal delay={160} className="flex flex-wrap gap-3">

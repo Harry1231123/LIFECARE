@@ -32,7 +32,7 @@ const CREDENTIALS = [
   { icon: Shield,      label: '17+ Years in First Aid across Public, Private & Government Sectors' },
   { icon: Building2,   label: 'St John Ambulance: Medical Events & Management' },
   { icon: Users,       label: 'Works for the Ambulance Service in Both Frontline and Volunteer Roles' },
-  { icon: Award,       label: 'Grand Priors Award, St John Ambulance (Highest Qualification Attainable)' },
+  { icon: Award,       label: 'Grand Priors Award, St John Ambulance (Highest Achievement Attainable)' },
   { icon: Award,       label: 'Resuscitation Certificate, Royal Humane Society' },
   { icon: Award,       label: 'Prison Group Directors Commendation for Bravery, HM Prison Service' },
   { icon: Star,        label: 'ROSC Award (Return of Spontaneous Circulation), South East Coast Ambulance' },
