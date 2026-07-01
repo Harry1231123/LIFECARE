@@ -112,7 +112,7 @@ export default function Blog() {
               className="group grid lg:grid-cols-2 bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-shadow duration-200 focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2"
             >
               <div className="relative overflow-hidden h-72 lg:h-auto">
-                <img src={featured.image} alt={featured.title} className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
+                <img src={featured.image} alt={featured.title} className={`w-full h-full object-cover ${featured.image.includes('equipment.webp') ? 'object-top' : ''} group-hover:scale-[1.03] transition-transform duration-500`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/50 to-transparent" />
                 <span className="absolute top-5 left-5 bg-brand text-white text-[10px] font-bold font-display uppercase tracking-wider px-3 py-1.5 rounded-full">
                   Featured
@@ -147,7 +147,7 @@ export default function Blog() {
                   className="group flex flex-col bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-card hover-lift focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2"
                 >
                   <div className="relative h-44 overflow-hidden">
-                    <img src={image} alt="" className="w-full h-full object-cover group-hover:scale-[1.05] transition-transform duration-500" />
+                    <img src={image} alt="" className={`w-full h-full object-cover ${image.includes('equipment.webp') ? 'object-top' : ''} group-hover:scale-[1.05] transition-transform duration-500`} />
                     <div className="absolute inset-0 bg-gradient-to-t from-dark/45 to-transparent" />
                     <span className={`absolute top-3 left-3 text-[10px] font-bold font-display uppercase tracking-wider px-2.5 py-1 rounded-full ${CATEGORY_STYLE[category] || 'bg-dark text-white'}`}>
                       {category}

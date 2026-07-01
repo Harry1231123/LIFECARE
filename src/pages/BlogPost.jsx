@@ -330,7 +330,7 @@ export default function BlogPost() {
       {/* ── HERO ──────────────────────────────────────────────────── */}
       <section className="relative bg-dark overflow-hidden">
         <div className="absolute inset-0">
-          <img src={post.image} alt="" aria-hidden className="w-full h-full object-cover opacity-25" />
+          <img src={post.image} alt="" aria-hidden className={`w-full h-full object-cover ${post.image.includes('equipment.webp') ? 'object-top' : ''} opacity-25`} />
           <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/80 to-dark/50" />
         </div>
         <div className="relative max-w-4xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
@@ -396,7 +396,7 @@ export default function BlogPost() {
                     className="group flex flex-col bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-card hover-lift focus-visible:outline-2 focus-visible:outline-brand"
                   >
                     <div className="relative h-44 overflow-hidden">
-                      <img src={image} alt="" className="w-full h-full object-cover group-hover:scale-[1.05] transition-transform duration-500" />
+                      <img src={image} alt="" className={`w-full h-full object-cover ${image.includes('equipment.webp') ? 'object-top' : ''} group-hover:scale-[1.05] transition-transform duration-500`} />
                       <div className="absolute inset-0 bg-gradient-to-t from-dark/45 to-transparent" />
                       <span className={`absolute top-3 left-3 text-[10px] font-bold font-display uppercase tracking-wider px-2.5 py-1 rounded-full ${CATEGORY_STYLE[category] || 'bg-dark text-white'}`}>
                         {category}
