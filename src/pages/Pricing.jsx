@@ -63,7 +63,7 @@ const PLANS = [
     href: '/services#mental',
   },
   {
-    icon: Leaf, name: 'Forestry & Agricultural First Aid',
+    icon: Leaf, name: 'Forestry & Agricultural First Aid (+F)',
     tagline: 'Bolt-on qualification · Level 3 RQF',
     price: 'From £300', unit: 'per group (bolt-on to existing FA cert)', popular: false,
     features: ['Approx. 2-hour bolt-on session','Requires existing EFAW or FAW','Forestry-specific hazard response','Chainsaw injury management','Forestry Commission compliant','FAA Level 3 RQF certificate','Individuals or groups'],

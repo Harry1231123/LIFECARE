@@ -20,7 +20,7 @@ const FOOTER_COURSES = [
   { to: '/courses/epfa',       label: 'Emergency Paediatric First Aid' },
   { to: '/courses/bls',        label: 'Basic Life Support' },
   { to: '/courses/mental',     label: 'Mental Health First Aid' },
-  { to: '/courses/forestry',   label: 'Forestry & Agricultural First Aid' },
+  { to: '/courses/forestry',   label: 'Forestry & Agricultural First Aid (+F)' },
 ]
 
 const ACCRED = [

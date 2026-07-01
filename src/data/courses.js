@@ -95,7 +95,7 @@ export const COURSES = [
   },
   {
     id: 'forestry', slug: 'forestry', icon: Leaf, tag: 'Specialist · Forestry Commission',
-    title: 'Forestry & Agricultural First Aid',
+    title: 'Forestry & Agricultural First Aid (+F)',
     subtitle: 'FAA Level 3 RQF | Bolt-On Qualification',
     price: 'From £300 per group',
     intro: 'A specialist bolt-on qualification for those working in forestry, agricultural, and rural environments, required by the Forestry Commission for chainsaw operators and those working in remote outdoor settings.',
