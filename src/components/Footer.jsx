@@ -21,6 +21,7 @@ const FOOTER_COURSES = [
   { to: '/courses/bls',        label: 'Basic Life Support' },
   { to: '/courses/mental',     label: 'Mental Health First Aid' },
   { to: '/courses/forestry',   label: 'Forestry & Agricultural First Aid (+F)' },
+  { to: '/courses/iqa',        label: 'Internal Quality Assurance (IQA)' },
 ]
 
 const ACCRED = [

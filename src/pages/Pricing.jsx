@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, CheckCircle2, HeartPulse, Shield, Baby, Brain, Leaf, MessageCircle, ChevronDown } from 'lucide-react'
+import { ArrowRight, CheckCircle2, HeartPulse, Shield, Baby, Brain, Leaf, ClipboardCheck, MessageCircle, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 import Reveal from '../components/Reveal'
 
@@ -68,6 +68,13 @@ const PLANS = [
     price: 'From £300', unit: 'per group (bolt-on to existing FA cert)', popular: false,
     features: ['Approx. 2-hour bolt-on session','Requires existing EFAW or FAW','Forestry-specific hazard response','Chainsaw injury management','Forestry Commission compliant','FAA Level 3 RQF certificate','Individuals or groups'],
     href: '/courses/forestry',
+  },
+  {
+    icon: ClipboardCheck, name: 'Internal Quality Assurance (IQA)',
+    tagline: 'Assessment sampling & verification',
+    price: 'Price on application', unit: 'remote or on-site, tailored to your centre', popular: false,
+    features: ['Assessment sampling & verification','Standardisation of assessor decisions','Awarding body & Ofqual compliance checks','Trainer & assessor feedback and CPD','Audit-ready documentation','Remote or on-site delivery'],
+    href: '/courses/iqa',
   },
 ]
 

@@ -1,4 +1,4 @@
-import { HeartPulse, Brain, Clock, Users, Award, Baby, Shield, Leaf } from 'lucide-react'
+import { HeartPulse, Brain, Clock, Users, Award, Baby, Shield, Leaf, ClipboardCheck } from 'lucide-react'
 
 export const COURSES = [
   {
@@ -104,5 +104,17 @@ export const COURSES = [
     meta: [{ icon: Clock, label: 'Approx. 2 hours (bolt-on)' }, { icon: Users, label: 'Individuals or groups' }, { icon: Award, label: 'FAA Level 3 RQF' }],
     who: ['Chainsaw operators', 'Forestry & woodland workers', 'Agricultural & farm workers', 'Gamekeepers & estate workers', 'Rural outdoor pursuits instructors'],
     image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'iqa', slug: 'iqa', icon: ClipboardCheck, tag: 'Trainer & Assessor Standards',
+    title: 'Internal Quality Assurance (IQA)',
+    subtitle: 'Assessment Sampling & Verification | Remote or On-Site',
+    price: 'Price on application',
+    intro: 'IQA support for training providers and centres, verifying that assessment and training delivery meets awarding body and Ofqual standards, so every certificate issued stands up to scrutiny.',
+    body: 'Working as your Internal Quality Assurer, we sample assessment decisions, standardise trainer and assessor judgement, and provide the audit-ready documentation your awarding organisation expects. Delivered remotely or on-site depending on what your centre needs.',
+    includes: ['Assessment sampling & verification', 'Standardisation of assessor decisions', 'Awarding body & Ofqual compliance checks', 'Trainer & assessor feedback and CPD', 'Audit-ready documentation', 'Remote or on-site delivery'],
+    meta: [{ icon: Clock, label: 'Flexible scheduling' }, { icon: Users, label: 'Training providers & centres' }, { icon: Award, label: 'Ofqual compliant' }],
+    who: ['First aid training providers', 'Awarding body approved centres', 'Trainers & assessors seeking verification', 'Organisations delivering regulated qualifications'],
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
   },
 ]
