@@ -236,7 +236,7 @@ export default function Services() {
               'Fire Safety',
               'First Aid for Mental Health',
               'Suicide Prevention',
-              'Catastrophic Bleeding',
+              'Life Threatening Bleeding',
               'Bespoke First Aid Awareness',
               'COSHH',
             ].map(course => (
