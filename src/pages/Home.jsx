@@ -61,7 +61,7 @@ const FEATURED_COURSES = [
     desc: 'Give your team the skills to recognise, respond to, and support colleagues experiencing mental health challenges.',
     duration: '1–2 Days',
     level: 'Accredited Training',
-    price: 'Contact for Pricing',
+    price: 'Contact for pricing',
     href: '/services#mental',
   },
   {

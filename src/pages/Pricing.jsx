@@ -51,7 +51,7 @@ const PLANS = [
   {
     icon: Brain, name: 'Mental Health Training',
     tagline: '1 or 2-day · Accredited Training',
-    price: 'From £390', unit: 'per group (based on 6 learners)', popular: false,
+    price: 'Contact for pricing', unit: 'tailored to group size and course length', popular: false,
     features: ['1-day or full 2-day option', 'Nationally accredited', 'Up to 16 learners per group', 'Nationally recognised certificate', 'Course manual included', 'All staff levels welcome', 'On or off-site delivery', 'Follow-up digital resources'],
     href: '/courses/mental',
   },

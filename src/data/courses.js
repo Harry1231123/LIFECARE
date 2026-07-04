@@ -68,7 +68,7 @@ export const COURSES = [
     id: 'mental', slug: 'mental', icon: Brain, tag: 'Workplace Wellbeing',
     title: 'Mental Health Training',
     subtitle: 'Accredited Training | 1 or 2-Day',
-    price: 'From £390 per group (based on 6 learners)',
+    price: 'Contact for pricing',
     intro: "Mental health conditions affect 1 in 4 people in the UK every year, yet most workplaces remain completely unprepared to recognise or respond. This training equips your team with the knowledge, skills, and confidence to provide first-line mental health support.",
     body: "This isn't about turning employees into therapists. It's about giving them the awareness to spot early signs of mental health challenges, the skills to have a supportive conversation, and the knowledge of when and how to signpost someone to professional help.",
     includes: ['Recognising mental health conditions', 'Depression and anxiety awareness', 'Suicidal crisis response protocols', 'Supportive conversation skills', 'Active listening techniques', 'Signposting to professional support', 'Reducing workplace stigma', 'Self-care strategies', 'Nationally recognised certificate'],
