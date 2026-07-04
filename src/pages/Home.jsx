@@ -60,7 +60,7 @@ const FEATURED_COURSES = [
     title: 'Mental Health Courses',
     desc: 'Give your team the skills to recognise, respond to, and support colleagues experiencing mental health challenges.',
     duration: '1–2 Days',
-    level: 'MHFA England',
+    level: 'Accredited Training',
     price: 'Contact for Pricing',
     href: '/services#mental',
   },

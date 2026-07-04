@@ -19,7 +19,7 @@ const COURSES = [
   { id: 'paeds',    icon: Baby,           label: 'Paediatric First Aid',             sub: '2 days · Level 3 RQF' },
   { id: 'epfa',     icon: Baby,           label: 'Emergency Paediatric First Aid',   sub: '1 day · Level 3 RQF' },
   { id: 'bls',      icon: HeartPulse,     label: 'Basic Life Support',               sub: 'Half day · Level 2 RQF' },
-  { id: 'mental',   icon: Brain,          label: 'Mental Health First Aid',          sub: '1–2 days · MHFA England' },
+  { id: 'mental',   icon: Brain,          label: 'Mental Health Training',           sub: '1–2 days · Accredited Training' },
   { id: 'events',   icon: Calendar,       label: 'Community Events First Aid',       sub: 'On-site medical cover' },
   { id: 'forestry', icon: Leaf,           label: 'Forestry & Agricultural FA (+F)',  sub: '2 hrs · Bolt-on qualification' },
   { id: 'iqa',      icon: ClipboardCheck, label: 'IQA: Internal Quality Assurance', sub: 'Remote or on-site' },

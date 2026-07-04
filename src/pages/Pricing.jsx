@@ -49,10 +49,10 @@ const PLANS = [
     href: '/courses/bls',
   },
   {
-    icon: Brain, name: 'Mental Health First Aid',
-    tagline: '1 or 2-day · MHFA England',
+    icon: Brain, name: 'Mental Health Training',
+    tagline: '1 or 2-day · Accredited Training',
     price: 'From £390', unit: 'per group (based on 6 learners)', popular: false,
-    features: ['1-day or full 2-day option', 'MHFA England accredited', 'Up to 16 learners per group', 'Nationally recognised certificate', 'MHFA manual included', 'All staff levels welcome', 'On or off-site delivery', 'Follow-up digital resources'],
+    features: ['1-day or full 2-day option', 'Nationally accredited', 'Up to 16 learners per group', 'Nationally recognised certificate', 'Course manual included', 'All staff levels welcome', 'On or off-site delivery', 'Follow-up digital resources'],
     href: '/courses/mental',
   },
   {
@@ -85,7 +85,7 @@ const FAQS = [
   },
   {
     q: 'How many people can attend each course?',
-    a: 'EFAW and most courses accommodate up to 12 learners. Mental Health First Aid can accommodate up to 16. For larger organisations, we can run multiple groups on the same day.',
+    a: 'EFAW and most courses accommodate up to 12 learners. Mental Health Training can accommodate up to 16. For larger organisations, we can run multiple groups on the same day.',
   },
   {
     q: 'Are the qualifications recognised by the HSE?',
