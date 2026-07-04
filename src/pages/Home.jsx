@@ -343,8 +343,18 @@ export default function Home() {
                 <p className="text-gray-400 text-sm leading-snug">Current UK survival rate from out-of-hospital cardiac arrest without bystander intervention</p>
               </div>
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                <div className="font-display font-800 text-4xl text-white tracking-tight mb-2">2–3×</div>
-                <p className="text-gray-400 text-sm leading-snug">Improvement in survival odds when a trained bystander starts CPR immediately</p>
+                <div className="font-display font-800 text-4xl text-white tracking-tight mb-2">2–4×</div>
+                <p className="text-gray-400 text-sm leading-snug">
+                  Increase in survival chances when bystanders perform CPR and use an AED.{' '}
+                  <a
+                    href="https://www.resus.org.uk/library/2021-resuscitation-guidelines/adult-basic-life-support-guidelines"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand hover:text-brand-dark underline transition-colors duration-150"
+                  >
+                    Source: Resuscitation Council UK
+                  </a>
+                </p>
               </div>
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                 <div className="font-display font-800 text-4xl text-white tracking-tight mb-2">15–27%</div>
