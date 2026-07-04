@@ -1,0 +1,20 @@
+{
+  "order": 6,
+  "id": "mental",
+  "slug": "mental",
+  "icon": "Brain",
+  "tag": "Workplace Wellbeing",
+  "title": "Mental Health Training",
+  "subtitle": "Accredited Training | 1 or 2-Day",
+  "price": "Contact for pricing",
+  "intro": "Mental health conditions affect 1 in 4 people in the UK every year, yet most workplaces remain completely unprepared to recognise or respond. This training equips your team with the knowledge, skills, and confidence to provide first-line mental health support.",
+  "body": "This isn't about turning employees into therapists. It's about giving them the awareness to spot early signs of mental health challenges, the skills to have a supportive conversation, and the knowledge of when and how to signpost someone to professional help.",
+  "includes": ["Recognising mental health conditions", "Depression and anxiety awareness", "Suicidal crisis response protocols", "Supportive conversation skills", "Active listening techniques", "Signposting to professional support", "Reducing workplace stigma", "Self-care strategies", "Nationally recognised certificate"],
+  "meta": [
+    { "icon": "Clock", "label": "1 or 2-day course" },
+    { "icon": "Users", "label": "Up to 16 learners" },
+    { "icon": "Award", "label": "Accredited Training" }
+  ],
+  "who": ["HR & people managers", "Line managers & team leads", "Teachers & educators", "NHS & healthcare staff", "Voluntary & community workers", "Anyone wanting to support others"],
+  "image": "https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?auto=format&fit=crop&w=800&q=80"
+}

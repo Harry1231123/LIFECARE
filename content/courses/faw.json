@@ -1,0 +1,20 @@
+{
+  "order": 2,
+  "id": "faw",
+  "slug": "faw",
+  "icon": "Shield",
+  "tag": "Comprehensive Cover · Higher-Risk Workplaces",
+  "title": "First Aid at Work",
+  "subtitle": "FAA Award, Level 3 RQF | 3-Day Course",
+  "price": "From £1,850 (based on 6 learners)",
+  "intro": "For higher-risk workplaces and organisations requiring the deepest level of first aid provision, the full First Aid at Work qualification is the HSE's gold standard. Valid for 3 years and recognised across all sectors.",
+  "body": "Over three days, learners build advanced competency across a wide spectrum of medical emergencies. Ideal for businesses with multiple first aiders, higher-risk environments, or organisations wanting the highest possible standard of internal first aid provision.",
+  "includes": ["All EFAW content", "Anatomy & physiology overview", "Head, neck & back injuries", "Chest injuries & pneumothorax", "Sprains, strains & fractures", "Eye & ear injuries", "Poisoning & substance exposure", "Medical conditions management", "Hands-on practical scenario training", "Ofqual certificate (3 years)"],
+  "meta": [
+    { "icon": "Clock", "label": "3 Days" },
+    { "icon": "Users", "label": "Up to 12 learners per group" },
+    { "icon": "Award", "label": "FAA Level 3 RQF" }
+  ],
+  "who": ["Construction & trades", "Manufacturing & warehousing", "Healthcare support roles", "Large organisations (50+ staff)", "Higher-risk workplaces", "Organisations requiring maximum provision"],
+  "image": "/assets/team.webp"
+}

@@ -1,0 +1,21 @@
+{
+  "order": 5,
+  "id": "bls",
+  "slug": "bls",
+  "icon": "HeartPulse",
+  "tag": "Essential Skills · All Staff",
+  "title": "Basic Life Support",
+  "subtitle": "FAA Award, Level 2 RQF | Half-Day",
+  "price": "From £650 (based on 6 learners)",
+  "intro": "A focused, high-impact course covering the fundamentals of emergency response. Ideal for organisations that want all staff to have a baseline level of first aid awareness without the full-day commitment of EFAW.",
+  "body": "In just 3 hours, learners gain the core skills to respond to the most critical emergencies: cardiac arrest, choking, and unconsciousness. Using real AEDs and manikins, the training builds genuine confidence and muscle memory.",
+  "includes": ["Primary survey", "Adult CPR to Resuscitation Council UK guidelines", "AED use (automated defibrillator)", "Recovery position", "Choking management", "Level 2 RQF certificate"],
+  "meta": [
+    { "icon": "Clock", "label": "Approx. 3 hours" },
+    { "icon": "Users", "label": "Up to 12 learners" },
+    { "icon": "Award", "label": "FAA Level 2 RQF" }
+  ],
+  "who": ["All staff in any sector", "Offices & shops", "Sports & leisure facilities", "Volunteers", "CPR refresher for existing first aiders"],
+  "image": "/assets/equipment.webp",
+  "imagePosition": "object-[center_30%]"
+}

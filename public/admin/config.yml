@@ -1,0 +1,116 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "public/assets"
+public_folder: "/assets"
+
+site_url: https://lifecaretraining.co.uk
+
+collections:
+  - name: "courses"
+    label: "Courses"
+    label_singular: "Course"
+    folder: "content/courses"
+    format: "json"
+    create: true
+    delete: true
+    identifier_field: "title"
+    fields:
+      - { label: "Display order (lower shows first)", name: "order", widget: "number", value_type: "int" }
+      - { label: "ID (must be unique, lowercase, no spaces — e.g. 'efaw'. Do not change on an existing course, it will break its page.)", name: "id", widget: "string", pattern: ['^[a-z0-9-]+$', "Lowercase letters, numbers and hyphens only"] }
+      - { label: "URL slug (usually the same as ID — do not change on an existing course, it will break its links)", name: "slug", widget: "string", pattern: ['^[a-z0-9-]+$', "Lowercase letters, numbers and hyphens only"] }
+      - label: "Icon"
+        name: "icon"
+        widget: "select"
+        options: ["HeartPulse", "Brain", "Baby", "Shield", "Leaf", "ClipboardCheck"]
+      - { label: "Small tag above the title (e.g. 'Most Popular · HSE Required')", name: "tag", widget: "string" }
+      - { label: "Course title", name: "title", widget: "string" }
+      - { label: "Subtitle (qualification & duration)", name: "subtitle", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - { label: "Intro paragraph", name: "intro", widget: "text" }
+      - { label: "Body paragraph", name: "body", widget: "text" }
+      - label: "What's included (list)"
+        name: "includes"
+        widget: "list"
+      - label: "Quick facts (the 3 icons row: duration, group size, qualification)"
+        name: "meta"
+        widget: "list"
+        fields:
+          - { label: "Icon", name: "icon", widget: "select", options: ["Clock", "Users", "Award"] }
+          - { label: "Label", name: "label", widget: "string" }
+      - label: "Who it's for (list)"
+        name: "who"
+        widget: "list"
+      - { label: "Image URL (paste a link, or an /assets/... path)", name: "image", widget: "string" }
+      - { label: "Image position (advanced — leave blank unless the photo is cropped oddly)", name: "imagePosition", widget: "string", required: false }
+
+  - name: "course_addons"
+    label: "Course Add-ons"
+    label_singular: "Add-on"
+    files:
+      - name: "mental_asist"
+        label: "Mental Health Training add-on (LivingWorks ASIST)"
+        file: "content/course-addons/mental.json"
+        fields:
+          - { label: "Belongs to course (do not change)", name: "forCourse", widget: "hidden" }
+          - { label: "Add-on title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Description paragraph", name: "description", widget: "text" }
+          - { label: "Body paragraph", name: "body", widget: "text" }
+          - label: "What's included (list)"
+            name: "includes"
+            widget: "list"
+          - { label: "Meta line (short summary shown under the heading)", name: "meta", widget: "string" }
+
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "content/blog"
+    format: "json"
+    create: true
+    delete: true
+    identifier_field: "title"
+    fields:
+      - { label: "Display order (lower = shows first/more recent. Give a new post a number lower than any existing post.)", name: "order", widget: "number", value_type: "int" }
+      - { label: "URL slug (must be unique, lowercase, no spaces — do not change once published, it will break the article's link)", name: "slug", widget: "string", pattern: ['^[a-z0-9-]+$', "Lowercase letters, numbers and hyphens only"] }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["Legal Compliance", "Mental Health", "Training Advice", "Events"]
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt (shown on blog list & preview cards)", name: "excerpt", widget: "text" }
+      - { label: "Date (e.g. 11 Mar 2026)", name: "date", widget: "string" }
+      - { label: "Read time (e.g. 6 min)", name: "readTime", widget: "string" }
+      - { label: "Image URL (paste a link, or an /assets/... path)", name: "image", widget: "string" }
+      - label: "Article content"
+        name: "content"
+        widget: "list"
+        types:
+          - label: "Intro paragraph (large lead paragraph)"
+            name: "intro"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "text" }
+          - label: "Heading"
+            name: "h2"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+          - label: "Paragraph"
+            name: "p"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "text" }
+          - label: "Bullet list"
+            name: "ul"
+            widget: "object"
+            fields:
+              - label: "Items"
+                name: "items"
+                widget: "list"
+          - label: "Callout (highlighted box)"
+            name: "callout"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "text" }

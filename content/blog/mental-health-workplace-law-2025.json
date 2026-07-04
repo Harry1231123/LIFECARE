@@ -1,0 +1,41 @@
+{
+  "order": 4,
+  "slug": "mental-health-workplace-law-2025",
+  "category": "Mental Health",
+  "title": "Mental Health at Work: What the Law Actually Says in 2025",
+  "excerpt": "Mental health first aid is no longer just best practice. Here's what current HSE guidance means for your organisation, and how to protect yourself.",
+  "date": "3 Apr 2025",
+  "readTime": "4 min",
+  "image": "https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?auto=format&fit=crop&w=1200&q=80",
+  "content": [
+    { "type": "intro", "text": "There is a lot of confusion, and some deliberate misinformation, circulating about mental health first aid and what the law requires. This article sets out the actual legal position as of 2025, distinguishes between legal duty and best practice, and explains why the distinction matters for your organisation." },
+    { "type": "h2", "text": "Is Mental Health First Aid Training Legally Required?" },
+    { "type": "p", "text": "As of 2025, there is no specific legal requirement for employers to provide Mental Health First Aid (MHFA) training. The Mental Health First Aid (Minimum Standards) Bill, which would have created such a requirement, has not yet passed into law despite multiple readings in Parliament." },
+    { "type": "p", "text": "However, and this is the critical point, the absence of a specific MHFA requirement does not mean employers have no legal duties around mental health. They do. Those duties arise from existing legislation, and they are significant." },
+    { "type": "h2", "text": "The Legal Duties That Do Exist" },
+    { "type": "p", "text": "Several pieces of existing legislation create enforceable duties around mental health at work:" },
+    { "type": "ul", "items": [
+      "Management of Health and Safety at Work Regulations 1999: Employers must carry out suitable and sufficient risk assessments covering all work-related risks, including psychosocial risks such as stress, burnout, and poor management practices. Where risks are identified, they must be controlled.",
+      "Health and Safety at Work etc. Act 1974: Employers must ensure, so far as is reasonably practicable, the health, safety and welfare of all employees. 'Health' explicitly includes mental health.",
+      "Equality Act 2010: Many mental health conditions, including depression, anxiety disorders, PTSD, and bipolar disorder, may constitute a disability under the Act. Employers must make reasonable adjustments and must not discriminate.",
+      "Working Time Regulations 1998: Excessive working hours and failure to provide adequate rest periods can contribute to mental health deterioration. Enforcing rest break entitlements is a legal duty."
+    ]},
+    { "type": "h2", "text": "The HSE's Work-Related Stress Management Standards" },
+    { "type": "p", "text": "The HSE has published Management Standards for work-related stress. While these are not legally binding in themselves, they represent the HSE's view of what good practice looks like and form the basis for what an inspector would expect to see. The six standard areas are: Demands, Control, Support, Relationships, Role, and Change." },
+    { "type": "p", "text": "An employer who has not considered these standards and has not assessed stress-related risks in their workplace may find it difficult to demonstrate they have met their duty under the 1999 Regulations if a claim or enforcement action arises." },
+    { "type": "callout", "text": "The HSE's position is clear: stress is a health and safety issue, not simply a personal or HR matter. It falls within the scope of your existing risk assessment duties, not outside them." },
+    { "type": "h2", "text": "What Is MHFA and Why Does It Matter?" },
+    { "type": "p", "text": "Mental Health First Aid is a structured training programme accredited by MHFA England. It trains individuals to recognise the signs of mental health difficulties, provide initial support, and signpost to professional help. A Mental Health First Aider is not a therapist or counsellor. Their role is analogous to a physical first aider: initial response and appropriate escalation." },
+    { "type": "p", "text": "Although not currently mandated by law, MHFA training is increasingly referenced by employment tribunals, personal injury claims, and HSE inspectors as evidence of whether an employer took reasonable steps to address known mental health risks. In sectors with high stress prevalence, such as healthcare, education, emergency services, and hospitality, the absence of MHFA provision may be difficult to justify if a claim is brought." },
+    { "type": "h2", "text": "Practical Steps for Employers" },
+    { "type": "ul", "items": [
+      "Update your risk assessment to explicitly address psychosocial and stress-related risks",
+      "Review your workload management, line management quality, and absence data for indicators of stress",
+      "Ensure managers are trained to have supportive conversations about mental health",
+      "Consider MHFA training, especially in higher-risk environments or for larger teams",
+      "Have a clear signposting pathway to your EAP, occupational health service, or GP",
+      "Document everything: your assessments, your control measures, and your training records"
+    ]},
+    { "type": "p", "text": "The law may not yet require a named Mental Health First Aider in every workplace, but it already requires you to take mental health risks seriously. The direction of travel is clear." }
+  ]
+}

@@ -1,120 +1,20 @@
 import { HeartPulse, Brain, Clock, Users, Award, Baby, Shield, Leaf, ClipboardCheck } from 'lucide-react'
 
-export const COURSES = [
-  {
-    id: 'efaw', slug: 'efaw', icon: HeartPulse, tag: 'Most Popular · HSE Required',
-    title: 'Emergency First Aid at Work',
-    subtitle: 'FAA Award, Level 3 RQF | 1-Day Course',
-    price: 'From £850 (based on 6 learners)',
-    intro: 'The Health and Safety (First-Aid) Regulations 1981 require every employer to make adequate first aid provision. EFAW is the benchmark qualification for lower-risk workplaces and the most direct route to protecting your team and satisfying your legal duty of care.',
-    body: "Delivered by an active ambulance technician, this isn't a passive classroom experience. Learners practise hands-on skills in realistic scenarios, leaving genuinely capable of managing a cardiac arrest, severe bleeding, choking, or an unconscious casualty. Not just able to recite the theory.",
-    includes: ['First aider responsibilities', 'Situation & scene assessment', 'First aid hygiene & infection control', 'Managing an unresponsive casualty', 'CPR and AED use (adult)', 'Anatomy overview', 'Severe bleeding control', 'Choking (adults)', 'Shock recognition & management', 'Epilepsy & seizure response', 'Minor injury management', 'Primary survey', 'Ofqual certificate (3 years)'],
-    meta: [{ icon: Clock, label: '1 Day (approx. 6 hours)' }, { icon: Users, label: 'Up to 12 learners per group' }, { icon: Award, label: 'FAA Level 3 RQF' }],
-    who: ['Offices & admin teams', 'Retail & hospitality businesses', 'Schools & educational settings', 'Sports clubs & community groups', 'Small business owners', 'Any employer seeking legal compliance'],
-    image: '/assets/hero.webp',
-    imagePosition: 'object-[center_12%]',
-  },
-  {
-    id: 'faw', slug: 'faw', icon: Shield, tag: 'Comprehensive Cover · Higher-Risk Workplaces',
-    title: 'First Aid at Work',
-    subtitle: 'FAA Award, Level 3 RQF | 3-Day Course',
-    price: 'From £1,850 (based on 6 learners)',
-    intro: "For higher-risk workplaces and organisations requiring the deepest level of first aid provision, the full First Aid at Work qualification is the HSE's gold standard. Valid for 3 years and recognised across all sectors.",
-    body: "Over three days, learners build advanced competency across a wide spectrum of medical emergencies. Ideal for businesses with multiple first aiders, higher-risk environments, or organisations wanting the highest possible standard of internal first aid provision.",
-    includes: ['All EFAW content', 'Anatomy & physiology overview', 'Head, neck & back injuries', 'Chest injuries & pneumothorax', 'Sprains, strains & fractures', 'Eye & ear injuries', 'Poisoning & substance exposure', 'Medical conditions management', 'Hands-on practical scenario training', 'Ofqual certificate (3 years)'],
-    meta: [{ icon: Clock, label: '3 Days' }, { icon: Users, label: 'Up to 12 learners per group' }, { icon: Award, label: 'FAA Level 3 RQF' }],
-    who: ['Construction & trades', 'Manufacturing & warehousing', 'Healthcare support roles', 'Large organisations (50+ staff)', 'Higher-risk workplaces', 'Organisations requiring maximum provision'],
-    image: '/assets/team.webp',
-  },
-  {
-    id: 'paediatric', slug: 'paediatric', icon: Baby, tag: 'EYFS & OFSTED Required',
-    title: 'Paediatric First Aid',
-    subtitle: 'FAA Award, Level 3 RQF | 2-Day Course',
-    price: 'From £965 (based on 6 learners)',
-    intro: 'A legal requirement for many childcare settings under EYFS and OFSTED standards. This course equips learners with the specific, specialist skills needed to respond to emergencies involving babies and young children.',
-    body: "Paediatric first aid is fundamentally different from adult first aid. Dosages, techniques, equipment, and conditions all require specialist knowledge. This course ensures your team is fully equipped for the unique challenges of caring for children in an emergency.",
-    includes: ['Paediatric CPR (infant & child)', 'Paediatric AED awareness', 'Choking (infants & children)', 'Seizures & febrile convulsions', 'Diabetic emergencies in children', 'Asthma attacks', 'Anaphylaxis & adrenaline auto-injectors', 'Meningitis recognition', 'Head, neck & back injuries', 'EYFS/OFSTED compliant certificate'],
-    meta: [{ icon: Clock, label: '2 Days' }, { icon: Users, label: 'Up to 12 learners' }, { icon: Award, label: 'FAA Level 3 RQF' }],
-    who: ['Nursery & childcare staff', 'Teaching assistants', 'After-school & holiday club staff', 'Childminders & foster carers', 'EYFS registered settings', 'Nannies & au pairs'],
-    image: 'https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'epfa', slug: 'epfa', icon: Baby, tag: 'Childcare · Condensed Format',
-    title: 'Emergency Paediatric First Aid',
-    subtitle: 'FAA Award, Level 3 RQF | 1-Day Course',
-    price: 'From £850 (based on 6 learners)',
-    intro: 'The one-day version of the Paediatric First Aid qualification for those who need to satisfy EYFS/OFSTED requirements in a condensed format. Covers all life-threatening emergency scenarios for children and infants.',
-    body: 'Ideal as an initial qualification or as a stepping stone to the full 2-day course. Learners receive an Ofqual-regulated certificate that satisfies childcare regulatory requirements.',
-    includes: ['Paediatric CPR (infant & child)', 'AED awareness', 'Choking (infants & children)', 'Unconscious child management', 'Seizure response', 'Bleeding & shock in children', 'Anaphylaxis basics', 'EYFS/OFSTED compliant certificate'],
-    meta: [{ icon: Clock, label: '1 Day' }, { icon: Users, label: 'Up to 12 learners' }, { icon: Award, label: 'FAA Level 3 RQF' }],
-    who: ['Childcare workers & volunteers', 'EYFS settings', 'Babysitters & childminders', 'School support staff', 'Youth group leaders'],
-    image: '/assets/epfa.png',
-    imagePosition: 'object-[center_40%]',
-  },
-  {
-    id: 'bls', slug: 'bls', icon: HeartPulse, tag: 'Essential Skills · All Staff',
-    title: 'Basic Life Support',
-    subtitle: 'FAA Award, Level 2 RQF | Half-Day',
-    price: 'From £650 (based on 6 learners)',
-    intro: 'A focused, high-impact course covering the fundamentals of emergency response. Ideal for organisations that want all staff to have a baseline level of first aid awareness without the full-day commitment of EFAW.',
-    body: "In just 3 hours, learners gain the core skills to respond to the most critical emergencies: cardiac arrest, choking, and unconsciousness. Using real AEDs and manikins, the training builds genuine confidence and muscle memory.",
-    includes: ['Primary survey', 'Adult CPR to Resuscitation Council UK guidelines', 'AED use (automated defibrillator)', 'Recovery position', 'Choking management', 'Level 2 RQF certificate'],
-    meta: [{ icon: Clock, label: 'Approx. 3 hours' }, { icon: Users, label: 'Up to 12 learners' }, { icon: Award, label: 'FAA Level 2 RQF' }],
-    who: ['All staff in any sector', 'Offices & shops', 'Sports & leisure facilities', 'Volunteers', 'CPR refresher for existing first aiders'],
-    image: '/assets/equipment.webp',
-    imagePosition: 'object-[center_30%]',
-  },
-  {
-    id: 'mental', slug: 'mental', icon: Brain, tag: 'Workplace Wellbeing',
-    title: 'Mental Health Training',
-    subtitle: 'Accredited Training | 1 or 2-Day',
-    price: 'Contact for pricing',
-    intro: "Mental health conditions affect 1 in 4 people in the UK every year, yet most workplaces remain completely unprepared to recognise or respond. This training equips your team with the knowledge, skills, and confidence to provide first-line mental health support.",
-    body: "This isn't about turning employees into therapists. It's about giving them the awareness to spot early signs of mental health challenges, the skills to have a supportive conversation, and the knowledge of when and how to signpost someone to professional help.",
-    includes: ['Recognising mental health conditions', 'Depression and anxiety awareness', 'Suicidal crisis response protocols', 'Supportive conversation skills', 'Active listening techniques', 'Signposting to professional support', 'Reducing workplace stigma', 'Self-care strategies', 'Nationally recognised certificate'],
-    meta: [{ icon: Clock, label: '1 or 2-day course' }, { icon: Users, label: 'Up to 16 learners' }, { icon: Award, label: 'Accredited Training' }],
-    who: ['HR & people managers', 'Line managers & team leads', 'Teachers & educators', 'NHS & healthcare staff', 'Voluntary & community workers', 'Anyone wanting to support others'],
-    image: 'https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?auto=format&fit=crop&w=800&q=80',
-    addon: {
-      title: 'LivingWorks ASIST',
-      subtitle: 'Applied Suicide Intervention Skills Training | 2-Day In-Person Workshop',
-      description: "LivingWorks ASIST is a two-day, in-person workshop that equips you with the practical, life-saving skills to provide support when someone is thinking about suicide. You will learn how to recognise invitations for help, respond with confidence, and work collaboratively to create a SafePlan that helps keep someone safe. By completing this training, you become a Suicide First-Aid Helper — someone ready, willing and able to step forward when someone is struggling and guide them toward safety.",
-      body: "ASIST is open to anyone aged 16 and over. No prior experience or training is required. Whether you are a friend, parent, teacher, co-worker, caregiver or community member, you have a role to play in suicide prevention. More than 1.5 million people worldwide are LivingWorks ASIST Helpers, creating ripples of hope and safety in schools, workplaces, families and communities. Participants also gain access to LivingWorks Connect, a digital platform and app providing ongoing resources and a growing community of Helpers.",
-      includes: [
-        'Recognise when someone may be thinking about suicide and approach with care and confidence',
-        'Build a SafePlan that keeps the person safe and connects them with ongoing support',
-        'Apply a safety framework to guide your actions with empathy, structure and hope',
-        'Understand how personal and community attitudes about suicide affect openness to seek help',
-        'Build confidence and readiness to provide Suicide First-Aid in real-world situations',
-        'Hands-on skills practice through trainer-facilitated small groups',
-        'Access to LivingWorks Connect digital platform and mobile app',
-        'Internationally recognised LivingWorks ASIST certificate',
-      ],
-      meta: '2-Day In-Person Workshop · Open to anyone 16+ · No prior experience required',
-    },
-  },
-  {
-    id: 'forestry', slug: 'forestry', icon: Leaf, tag: 'Specialist · Forestry Commission',
-    title: 'Forestry & Agricultural First Aid (+F)',
-    subtitle: 'FAA Level 3 RQF | Bolt-On Qualification',
-    price: 'From £300 per group',
-    intro: 'A specialist bolt-on qualification for those working in forestry, agricultural, and rural environments, required by the Forestry Commission for chainsaw operators and those working in remote outdoor settings.',
-    body: 'This 2-hour qualification adds the specialist content needed to manage first aid incidents specific to forestry and agricultural work: chainsaw injuries, remote location response, crush injuries, and limited access to emergency services.',
-    includes: ['Forestry-specific hazard awareness', 'Chainsaw injury management', 'Remote location emergency response', 'Crush injury & limb entrapment', 'Major haemorrhage control in rural settings', 'Forestry Commission compliant certificate'],
-    meta: [{ icon: Clock, label: 'Approx. 2 hours (bolt-on)' }, { icon: Users, label: 'Individuals or groups' }, { icon: Award, label: 'FAA Level 3 RQF' }],
-    who: ['Chainsaw operators', 'Forestry & woodland workers', 'Agricultural & farm workers', 'Gamekeepers & estate workers', 'Rural outdoor pursuits instructors'],
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'iqa', slug: 'iqa', icon: ClipboardCheck, tag: 'Trainer & Assessor Standards',
-    title: 'Internal Quality Assurance (IQA)',
-    subtitle: 'Assessment Sampling & Verification | Remote or On-Site',
-    price: 'Price on application',
-    intro: 'IQA support for training providers and centres, verifying that assessment and training delivery meets awarding body and Ofqual standards, so every certificate issued stands up to scrutiny.',
-    body: 'Working as your Internal Quality Assurer, we sample assessment decisions, standardise trainer and assessor judgement, and provide the audit-ready documentation your awarding organisation expects. Delivered remotely or on-site depending on what your centre needs.',
-    includes: ['Assessment sampling & verification', 'Standardisation of assessor decisions', 'Awarding body & Ofqual compliance checks', 'Trainer & assessor feedback and CPD', 'Audit-ready documentation', 'Remote or on-site delivery'],
-    meta: [{ icon: Clock, label: 'Flexible scheduling' }, { icon: Users, label: 'Training providers & centres' }, { icon: Award, label: 'Ofqual compliant' }],
-    who: ['First aid training providers', 'Awarding body approved centres', 'Trainers & assessors seeking verification', 'Organisations delivering regulated qualifications'],
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
-  },
-]
+const ICONS = { HeartPulse, Brain, Clock, Users, Award, Baby, Shield, Leaf, ClipboardCheck }
+
+const courseModules = import.meta.glob('/content/courses/*.json', { eager: true })
+const addonModules = import.meta.glob('/content/course-addons/*.json', { eager: true })
+
+const addonsByCourseId = Object.fromEntries(
+  Object.entries(addonModules).map(([path, m]) => [path.match(/([^/]+)\.json$/)[1], m.default])
+)
+
+export const COURSES = Object.values(courseModules)
+  .map(m => m.default)
+  .sort((a, b) => a.order - b.order)
+  .map(course => ({
+    ...course,
+    icon: ICONS[course.icon],
+    meta: course.meta.map(m => ({ ...m, icon: ICONS[m.icon] })),
+    ...(addonsByCourseId[course.id] ? { addon: addonsByCourseId[course.id] } : {}),
+  }))

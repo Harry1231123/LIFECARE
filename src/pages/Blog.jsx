@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Clock, Tag } from 'lucide-react'
 import Reveal from '../components/Reveal'
+import { POSTS } from '../data/blog'
 
 function Label({ children }) {
   return (
@@ -10,51 +11,6 @@ function Label({ children }) {
     </div>
   )
 }
-
-const POSTS = [
-  {
-    slug: 'saving-lives-is-not-enough',
-    category: 'Training Advice',
-    title: '#SavingLivesIsNotEnough: Pre-Hospital Management of Paediatric Burns',
-    excerpt: 'A clinical case study from the frontline. A 12-year-old girl. A chip pan fire. And a simple intervention, cool running water, that can be the difference between a full recovery and a lifetime of scarring.',
-    date: '11 Mar 2026', readTime: '6 min', image: '/assets/hero.webp', featured: true,
-  },
-  {
-    slug: 'business-legally-required-first-aider',
-    category: 'Legal Compliance',
-    title: 'Is Your Business Legally Required to Have a Qualified First Aider?',
-    excerpt: "The Health and Safety (First-Aid) Regulations 1981 require every employer to make adequate first aid provision. But what does 'adequate' actually mean, and what happens if you don't comply?",
-    date: '12 May 2025', readTime: '5 min', image: '/assets/equipment.webp', featured: false,
-  },
-  {
-    slug: 'hse-first-aid-regulations-guide',
-    category: 'Legal Compliance',
-    title: "The HSE First Aid Regulations: A Plain-English Guide for Employers",
-    excerpt: "The legislation is over 40 years old but it's more relevant than ever. We break down exactly what the Regulations require, and what the penalties are for non-compliance.",
-    date: '28 Apr 2025', readTime: '6 min', image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80', featured: false,
-  },
-  {
-    slug: 'mental-health-workplace-law-2025',
-    category: 'Mental Health',
-    title: 'Mental Health at Work: What the Law Actually Says in 2025',
-    excerpt: "Mental health first aid is no longer just best practice. Here's what current HSE guidance means for your organisation, and how to protect yourself.",
-    date: '3 Apr 2025', readTime: '4 min', image: 'https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?auto=format&fit=crop&w=1200&q=80', featured: false,
-  },
-  {
-    slug: 'event-first-aid-cover-guide',
-    category: 'Events',
-    title: 'Community Events: How Much First Aid Cover Does Your Event Actually Need?',
-    excerpt: 'Every event organiser has a duty of care. But the required level of cover depends on your specific event, and here\'s how to assess it.',
-    date: '5 Mar 2025', readTime: '5 min', image: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=80', featured: false,
-  },
-  {
-    slug: 'what-happens-hse-inspection',
-    category: 'Legal Compliance',
-    title: "What Happens When the HSE Inspects and You're Not Compliant?",
-    excerpt: 'Improvement notices, prohibition notices, prosecution, and unlimited fines. Here\'s the real-world consequence of HSE non-compliance.',
-    date: '19 Feb 2025', readTime: '7 min', image: 'https://images.unsplash.com/photo-1542626991-cbc4e32524cc?auto=format&fit=crop&w=1200&q=80', featured: false,
-  },
-]
 
 const CATEGORIES = ['All', 'Legal Compliance', 'Mental Health', 'Training Advice', 'Events']
 

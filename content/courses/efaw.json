@@ -1,0 +1,21 @@
+{
+  "order": 1,
+  "id": "efaw",
+  "slug": "efaw",
+  "icon": "HeartPulse",
+  "tag": "Most Popular · HSE Required",
+  "title": "Emergency First Aid at Work",
+  "subtitle": "FAA Award, Level 3 RQF | 1-Day Course",
+  "price": "From £850 (based on 6 learners)",
+  "intro": "The Health and Safety (First-Aid) Regulations 1981 require every employer to make adequate first aid provision. EFAW is the benchmark qualification for lower-risk workplaces and the most direct route to protecting your team and satisfying your legal duty of care.",
+  "body": "Delivered by an active ambulance technician, this isn't a passive classroom experience. Learners practise hands-on skills in realistic scenarios, leaving genuinely capable of managing a cardiac arrest, severe bleeding, choking, or an unconscious casualty. Not just able to recite the theory.",
+  "includes": ["First aider responsibilities", "Situation & scene assessment", "First aid hygiene & infection control", "Managing an unresponsive casualty", "CPR and AED use (adult)", "Anatomy overview", "Severe bleeding control", "Choking (adults)", "Shock recognition & management", "Epilepsy & seizure response", "Minor injury management", "Primary survey", "Ofqual certificate (3 years)"],
+  "meta": [
+    { "icon": "Clock", "label": "1 Day (approx. 6 hours)" },
+    { "icon": "Users", "label": "Up to 12 learners per group" },
+    { "icon": "Award", "label": "FAA Level 3 RQF" }
+  ],
+  "who": ["Offices & admin teams", "Retail & hospitality businesses", "Schools & educational settings", "Sports clubs & community groups", "Small business owners", "Any employer seeking legal compliance"],
+  "image": "/assets/hero.webp",
+  "imagePosition": "object-[center_12%]"
+}

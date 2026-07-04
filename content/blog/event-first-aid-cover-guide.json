@@ -1,0 +1,41 @@
+{
+  "order": 6,
+  "slug": "event-first-aid-cover-guide",
+  "category": "Events",
+  "title": "Community Events: How Much First Aid Cover Does Your Event Actually Need?",
+  "excerpt": "Every event organiser has a duty of care. But the required level of cover depends on your specific event, and here's how to assess it.",
+  "date": "5 Mar 2025",
+  "readTime": "5 min",
+  "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=80",
+  "content": [
+    { "type": "intro", "text": "Whether you're organising a 50-person charity quiz night or a 5,000-person outdoor festival, you have a legal duty of care to everyone who attends. But the level of first aid provision required is not fixed. It depends on a range of factors specific to your event. Here's how to think about it." },
+    { "type": "h2", "text": "Your Legal Duty of Care" },
+    { "type": "p", "text": "Event organisers owe a duty of care to attendees under the Occupiers' Liability Act 1957 and the Health and Safety at Work etc. Act 1974. If someone is injured at your event and you failed to provide adequate first aid provision, you may face civil liability, HSE enforcement action, and in serious cases prosecution." },
+    { "type": "p", "text": "There is no single piece of legislation that specifies exactly how many first aiders you need per hundred attendees. Instead, you are required to make a reasonable assessment of the risks involved in your specific event and provide proportionate first aid cover. The principal guidance document is the Purple Guide, published by the Production Services Association." },
+    { "type": "h2", "text": "Factors That Determine the Level of Cover Required" },
+    { "type": "ul", "items": [
+      "Attendance numbers: the larger the crowd, the more first aiders you need. But attendance alone doesn't determine risk.",
+      "Nature of the event: a contact sports tournament carries a very different risk profile from an outdoor cinema screening, even at the same attendance level.",
+      "Demographics of attendees: events attracting older participants, young children, or people with known health conditions require additional provision.",
+      "Alcohol and substance use: events where alcohol is served have a statistically higher rate of first aid incidents, including head injuries, cardiac events, and medical emergencies.",
+      "Physical activity: events involving running, cycling, obstacle courses, or sports carry a higher rate of musculoskeletal and cardiovascular incidents.",
+      "Duration: a 12-hour event in summer heat creates hydration, heat exhaustion, and fatigue risks that a 2-hour indoor event does not.",
+      "Remoteness: if emergency services take more than 8 minutes to reach your site, your first aid provision must be able to sustain life for longer. In remote locations, this may mean having a dedicated paramedic on site.",
+      "Site characteristics: crowded, poorly lit, or physically complex sites increase the difficulty of reaching casualties quickly."
+    ]},
+    { "type": "h2", "text": "The Purple Guide: Indicative Ratios" },
+    { "type": "p", "text": "The Purple Guide provides guidance rather than enforceable ratios, but the following are widely used as a starting point:" },
+    { "type": "ul", "items": [
+      "Up to 500 attendees, low risk: 1 first aider, first aid kit, clear communication with local ambulance service",
+      "500–3,000 attendees, medium risk: 2 first aiders, first aid post with basic equipment, ambulance service notification",
+      "3,000–10,000 attendees, higher risk: first aider ratio of approximately 1 per 250 attendees, a dedicated first aid post, senior first aider or paramedic on site",
+      "Over 10,000 attendees: formal medical team with paramedic or nurse in charge, multiple first aid posts, event medical plan submitted to ambulance service and local authority"
+    ]},
+    { "type": "callout", "text": "At events over 5,000 people, most local authorities and ambulance services require a formal Event Medical Plan. This should be submitted as part of your event licence application, often 28 days or more before the event." },
+    { "type": "h2", "text": "What Your First Aid Plan Should Include" },
+    { "type": "p", "text": "A properly documented event first aid plan covers: the number and qualifications of all first aid personnel on site; the location of first aid posts and how they will be communicated to attendees; the equipment available at each post; the communication plan between first aiders and on-site management; how the team will interface with the ambulance service; and the maximum time it will take to reach any part of the site." },
+    { "type": "h2", "text": "Working With a Professional Provider" },
+    { "type": "p", "text": "For events over a few hundred people, working with a professional first aid provider rather than relying on volunteers or in-house staff significantly reduces your risk exposure. A qualified provider will help you complete the risk assessment, write the medical plan, and ensure the cover you have in place would satisfy scrutiny from a licensing authority or, in a worst case, a coroner's inquest." },
+    { "type": "p", "text": "The cost of professional event first aid cover is almost always less than the excess on a public liability claim, the fine from a licensing authority, or the reputational damage from an incident that was poorly managed." }
+  ]
+}

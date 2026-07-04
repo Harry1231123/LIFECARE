@@ -1,0 +1,20 @@
+{
+  "order": 3,
+  "id": "paediatric",
+  "slug": "paediatric",
+  "icon": "Baby",
+  "tag": "EYFS & OFSTED Required",
+  "title": "Paediatric First Aid",
+  "subtitle": "FAA Award, Level 3 RQF | 2-Day Course",
+  "price": "From £965 (based on 6 learners)",
+  "intro": "A legal requirement for many childcare settings under EYFS and OFSTED standards. This course equips learners with the specific, specialist skills needed to respond to emergencies involving babies and young children.",
+  "body": "Paediatric first aid is fundamentally different from adult first aid. Dosages, techniques, equipment, and conditions all require specialist knowledge. This course ensures your team is fully equipped for the unique challenges of caring for children in an emergency.",
+  "includes": ["Paediatric CPR (infant & child)", "Paediatric AED awareness", "Choking (infants & children)", "Seizures & febrile convulsions", "Diabetic emergencies in children", "Asthma attacks", "Anaphylaxis & adrenaline auto-injectors", "Meningitis recognition", "Head, neck & back injuries", "EYFS/OFSTED compliant certificate"],
+  "meta": [
+    { "icon": "Clock", "label": "2 Days" },
+    { "icon": "Users", "label": "Up to 12 learners" },
+    { "icon": "Award", "label": "FAA Level 3 RQF" }
+  ],
+  "who": ["Nursery & childcare staff", "Teaching assistants", "After-school & holiday club staff", "Childminders & foster carers", "EYFS registered settings", "Nannies & au pairs"],
+  "image": "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80"
+}

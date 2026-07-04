@@ -6,6 +6,7 @@ import {
   BadgeCheck, Stethoscope, AlertTriangle
 } from 'lucide-react'
 import Reveal from '../components/Reveal'
+import { POSTS } from '../data/blog'
 
 /* ── Shared atoms ─────────────────────────────────────────────── */
 function Btn({ to, href, children, variant = 'primary', size = 'md', className = '' }) {
@@ -151,32 +152,8 @@ const TESTIMONIALS = [
   },
 ]
 
-const BLOG_POSTS = [
-  {
-    category: 'Legal Compliance',
-    title: 'Is Your Business Legally Required to Have a First Aider?',
-    excerpt: 'The HSE is clear: every employer must make adequate first aid provision. Here\'s exactly what the law requires, and what the consequences are if you don\'t.',
-    date: '12 May 2025',
-    readTime: '5 min',
-    image: '/assets/equipment.webp',
-  },
-  {
-    category: 'Mental Health',
-    title: 'Mental Health First Aid at Work: What the Law Says in 2025',
-    excerpt: 'Mental health is now firmly on the workplace health and safety agenda. Here\'s what current HSE guidance means for your organisation.',
-    date: '3 Apr 2025',
-    readTime: '4 min',
-    image: 'https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    category: 'Events',
-    title: 'Community Events: How Much First Aid Cover Does Your Event Actually Need?',
-    excerpt: 'Every event organiser has a duty of care. Here\'s how to assess the right level of cover for your specific event.',
-    date: '5 Mar 2025',
-    readTime: '5 min',
-    image: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80',
-  },
-]
+const HOMEPAGE_BLOG_SLUGS = ['business-legally-required-first-aider', 'mental-health-workplace-law-2025', 'event-first-aid-cover-guide']
+const BLOG_POSTS = HOMEPAGE_BLOG_SLUGS.map(slug => POSTS.find(p => p.slug === slug)).filter(Boolean)
 
 /* ── Page ────────────────────────────────────────────────────────── */
 export default function Home() {
@@ -569,9 +546,9 @@ export default function Home() {
           </Reveal>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {BLOG_POSTS.map(({ category, title, excerpt, date, readTime, image }, i) => (
-              <Reveal key={title} delay={i * 80}>
-                <Link to="/blog"
+            {BLOG_POSTS.map(({ slug, category, title, excerpt, date, readTime, image }, i) => (
+              <Reveal key={slug} delay={i * 80}>
+                <Link to={`/blog/${slug}`}
                   className="group flex flex-col bg-white border border-gray-200 rounded-2xl overflow-hidden hover-lift focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2"
                 >
                   <div className="relative h-48 overflow-hidden">

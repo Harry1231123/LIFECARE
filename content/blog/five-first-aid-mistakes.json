@@ -1,0 +1,32 @@
+{
+  "order": 5,
+  "slug": "five-first-aid-mistakes",
+  "category": "Training Advice",
+  "title": "5 First Aid Mistakes That Could Cost Lives: From an EMT Who's Seen Them",
+  "excerpt": "From incorrect CPR depth to missing early signs of cardiac events, our frontline ambulance instructor shares the most common errors made under pressure.",
+  "date": "18 Mar 2025",
+  "readTime": "6 min",
+  "image": "/assets/hero.webp",
+  "content": [
+    { "type": "intro", "text": "I've been working as an ambulance technician for over 17 years. I've attended thousands of emergency calls. And after all those years on the road, I can tell you with certainty: most of the first aid mistakes that cost lives are not made by untrained bystanders. They're made by people who've had training but not enough of it, or not recently enough. Here are the five I see most often." },
+    { "type": "h2", "text": "1. Starting CPR Without Completing the Primary Survey" },
+    { "type": "p", "text": "The instinct when someone collapses is to immediately start CPR. I understand it. You want to help, the adrenaline kicks in, and CPR is the most visible, dramatic thing you can do. But starting CPR without first checking for Danger, confirming the casualty is unResponsive, shouting for help, opening the Airway, and checking for Breathing can lead to serious errors." },
+    { "type": "p", "text": "I've attended incidents where bystanders started CPR on someone who was breathing but unconscious, such as a diabetic emergency, a seizure postictal phase, or a stroke. Starting chest compressions on a person who is breathing can cause significant internal injury. The primary survey takes less than ten seconds. It cannot be skipped." },
+    { "type": "h2", "text": "2. Incorrect CPR Technique: Specifically Compression Depth" },
+    { "type": "p", "text": "This one is universal. Almost everyone who hasn't practised on a manikin recently compresses too shallowly. The Resuscitation Council UK guidelines are clear: compress the chest 5–6cm deep at a rate of 100–120 compressions per minute, with a 30:2 ratio of compressions to rescue breaths (or hands-only if you're untrained or unwilling to give breaths)." },
+    { "type": "p", "text": "Five to six centimetres is deeper than most people expect. On a real person, it takes significant force. People frequently compress 2–3cm and believe they're doing it correctly. This is why hands-on manikin practice is essential. You cannot build muscle memory from a classroom lecture or a YouTube video." },
+    { "type": "callout", "text": "Every minute without effective CPR and defibrillation reduces the chance of survival from cardiac arrest by approximately 10%. Effective technique isn't a detail. It's the difference between survival and death." },
+    { "type": "h2", "text": "3. Failing to Use the AED Immediately" },
+    { "type": "p", "text": "AEDs are now in shopping centres, train stations, gyms, schools, offices, and public places across the UK. They are designed to be used by bystanders with no medical training. They are extraordinarily safe: they will not deliver a shock unless a shockable rhythm is present." },
+    { "type": "p", "text": "Yet at call-outs where an AED was present and accessible, my crew regularly arrives to find it still in its cabinet. The most common reason? People were worried about using it incorrectly, or thought CPR alone was sufficient. In cardiac arrest caused by ventricular fibrillation, the most common initial rhythm, CPR alone can only buy time. Only defibrillation can restore a normal heart rhythm. If there's an AED, you use it. Immediately." },
+    { "type": "h2", "text": "4. Moving a Casualty with a Suspected Spinal Injury" },
+    { "type": "p", "text": "The guidance on spinal injury management has evolved, and there is now more emphasis on keeping the airway open than on strict spinal immobilisation by untrained bystanders. However, the core principle remains: if a casualty has been involved in a mechanism that could cause spinal injury, such as a fall from height, a road traffic collision, a diving accident, or a direct blow to the head or neck, do not unnecessarily move them." },
+    { "type": "p", "text": "I have attended incidents where well-meaning bystanders moved a casualty 'to make them more comfortable' or 'out of danger' in situations where the danger had passed and the movement was unnecessary. The exception is if the casualty is in immediate danger from fire, water, or structural collapse. In that case, you move them using the best technique available. Otherwise, you hold the head in a neutral position and wait for the ambulance." },
+    { "type": "h2", "text": "5. Leaving an Unconscious Casualty on Their Back" },
+    { "type": "p", "text": "An unconscious person who is breathing must be placed in the recovery position: on their side, with the mouth angled downward. This is one of the most important and most frequently neglected skills in basic first aid." },
+    { "type": "p", "text": "An unconscious casualty left lying on their back is at serious risk of aspirating vomit, blood, or secretions. The tongue can also fall back and obstruct the airway. Every year, people survive the initial emergency, whether a head injury, a seizure, or an overdose, only to die from airway obstruction because nobody placed them in the recovery position. It takes seconds. It saves lives." },
+    { "type": "h2", "text": "The Common Thread" },
+    { "type": "p", "text": "What links all five of these mistakes? They are all errors made by people who have either never been properly trained, or who trained years ago and haven't refreshed. First aid skills decay rapidly without practice. The Resuscitation Council recommends CPR refreshers every 12 months. EFAW and FAW certificates are valid for three years, but the skills deteriorate long before the certificate expires." },
+    { "type": "p", "text": "The best investment you can make in your team's first aid capability isn't just the initial course. It's regular, hands-on practice with feedback from someone who knows what effective technique actually looks like under pressure." }
+  ]
+}

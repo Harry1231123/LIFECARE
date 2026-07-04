@@ -1,0 +1,41 @@
+{
+  "order": 3,
+  "slug": "hse-first-aid-regulations-guide",
+  "category": "Legal Compliance",
+  "title": "The HSE First Aid Regulations: A Plain-English Guide for Employers",
+  "excerpt": "The legislation is over 40 years old but it's more relevant than ever. We break down exactly what the Regulations require, and what the penalties are for non-compliance.",
+  "date": "28 Apr 2025",
+  "readTime": "6 min",
+  "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+  "content": [
+    { "type": "intro", "text": "The Health and Safety (First-Aid) Regulations 1981 have been in force for over four decades, but many employers still don't fully understand what they require. This guide cuts through the legal language and tells you exactly what you need to do, who it applies to, and what the consequences are for getting it wrong." },
+    { "type": "h2", "text": "Who Do the Regulations Apply To?" },
+    { "type": "p", "text": "The Regulations apply to every employer in Great Britain, regardless of the size or type of business. There are no exemptions based on the number of employees, the nature of the work, or whether the business operates from a fixed location. A sole trader with one part-time employee is covered. A multinational with ten thousand staff is covered. The scale of your obligations differs but the obligation itself does not." },
+    { "type": "h2", "text": "The Core Legal Duties" },
+    { "type": "p", "text": "Under Regulation 3, every employer must:" },
+    { "type": "ul", "items": [
+      "Provide, or ensure that there are provided, such equipment and facilities as are adequate and appropriate in the circumstances for enabling first aid to be rendered to employees who are injured or become ill at work",
+      "Provide, or ensure that there are provided, such number of suitable persons as is adequate and appropriate in the circumstances for rendering first aid to employees who are injured or become ill at work",
+      "Inform employees of the arrangements that have been made in connection with the provision of first aid, including the location of equipment, facilities and personnel"
+    ]},
+    { "type": "p", "text": "That third duty, informing employees, is one of the most commonly overlooked. It's not enough to have a trained first aider if nobody knows who they are or where the first aid kit is kept." },
+    { "type": "h2", "text": "What Is a 'Suitable Person'?" },
+    { "type": "p", "text": "A 'suitable person' means someone who has received training and has a qualification appropriate to the circumstances. For most workplaces, this means holding a current Emergency First Aid at Work (EFAW) or First Aid at Work (FAW) certificate from an HSE-compliant training provider delivering an Ofqual-regulated qualification." },
+    { "type": "p", "text": "Qualifications are valid for three years. After that, they must be renewed. An employer cannot continue to count an expired certificate as valid provision, even if the person still remembers their training. Renewals must take place before the expiry date, not after." },
+    { "type": "h2", "text": "How Many First Aiders Do You Need?" },
+    { "type": "p", "text": "There is no single statutory ratio of first aiders to employees. The number required depends on your First Aid Needs Assessment. However, HSE guidance in L74 provides indicative benchmarks:" },
+    { "type": "ul", "items": [
+      "Low-hazard workplaces (offices, shops): fewer than 25 employees, an Appointed Person may suffice. 25–50 employees, at least one EFAW-qualified first aider. Over 50 employees, one first aider per 100 employees.",
+      "Higher-hazard workplaces (construction, manufacturing, warehousing): fewer than 5 employees, at least one EFAW-qualified first aider. 5–50 employees, at least one FAW-qualified first aider. Over 50 employees, one FAW-qualified first aider per 50 employees.",
+      "These are minimum benchmarks, not fixed rules. Your needs assessment may determine you need more."
+    ]},
+    { "type": "callout", "text": "L74 guidance is clear: if your lone first aider is absent, whether on holiday, off sick, or on a different shift, you must have arrangements in place to cover their absence. This often means training additional personnel." },
+    { "type": "h2", "text": "First Aid Kits: What Must They Contain?" },
+    { "type": "p", "text": "There is no statutory list of items that must be in a first aid kit. However, HSE guidance recommends a minimum kit for a low-hazard workplace should include: individually wrapped sterile plasters, sterile eye pads, triangular bandages, safety pins, medium and large sterile wound dressings, disposable gloves, and guidance leaflets. The kit should be clearly identified by a white cross on a green background." },
+    { "type": "p", "text": "Medications, including aspirin, must not be included in a first aid kit provided under these Regulations. There is an important distinction between first aid provision and the dispensing of medication." },
+    { "type": "h2", "text": "The Fee for Intervention Scheme" },
+    { "type": "p", "text": "Since 2012, the HSE has operated the Fee for Intervention (FFI) scheme. Under this scheme, if an HSE inspector identifies a material breach of health and safety law during an inspection, the duty holder is charged for the HSE's time at the current rate (£198/hour as of 2024/25). A single inspection resulting in a first aid compliance issue can therefore generate a bill of several hundred pounds before any enforcement action is considered." },
+    { "type": "h2", "text": "Getting It Right" },
+    { "type": "p", "text": "Compliance starts with a documented First Aid Needs Assessment. From that assessment, you determine the right number of trained first aiders, ensure their qualifications are current, stock the appropriate first aid kit, and inform all employees of the arrangements. It is not a one-time exercise. Your assessment should be reviewed whenever anything material changes in your workplace." }
+  ]
+}

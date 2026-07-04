@@ -1,0 +1,20 @@
+{
+  "order": 7,
+  "id": "forestry",
+  "slug": "forestry",
+  "icon": "Leaf",
+  "tag": "Specialist · Forestry Commission",
+  "title": "Forestry & Agricultural First Aid (+F)",
+  "subtitle": "FAA Level 3 RQF | Bolt-On Qualification",
+  "price": "From £300 per group",
+  "intro": "A specialist bolt-on qualification for those working in forestry, agricultural, and rural environments, required by the Forestry Commission for chainsaw operators and those working in remote outdoor settings.",
+  "body": "This 2-hour qualification adds the specialist content needed to manage first aid incidents specific to forestry and agricultural work: chainsaw injuries, remote location response, crush injuries, and limited access to emergency services.",
+  "includes": ["Forestry-specific hazard awareness", "Chainsaw injury management", "Remote location emergency response", "Crush injury & limb entrapment", "Major haemorrhage control in rural settings", "Forestry Commission compliant certificate"],
+  "meta": [
+    { "icon": "Clock", "label": "Approx. 2 hours (bolt-on)" },
+    { "icon": "Users", "label": "Individuals or groups" },
+    { "icon": "Award", "label": "FAA Level 3 RQF" }
+  ],
+  "who": ["Chainsaw operators", "Forestry & woodland workers", "Agricultural & farm workers", "Gamekeepers & estate workers", "Rural outdoor pursuits instructors"],
+  "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80"
+}
