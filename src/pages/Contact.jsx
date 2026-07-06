@@ -14,12 +14,31 @@ function Label({ children }) {
 
 const inputCls = 'w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-sm text-dark placeholder-gray-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-[border-color,box-shadow] duration-150'
 
+const encode = data =>
+  Object.keys(data).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k])).join('&')
+
 export default function Contact() {
   const [sent, setSent] = useState(false)
+  const [status, setStatus] = useState('idle') // idle | submitting | error
   const [form, setForm] = useState({ name: '', company: '', email: '', phone: '', message: '' })
 
   const handleChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const handleSubmit = e => { e.preventDefault(); setSent(true) }
+
+  const handleSubmit = async e => {
+    e.preventDefault()
+    setStatus('submitting')
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', ...form }),
+      })
+      if (!res.ok) throw new Error(`Request failed (${res.status})`)
+      setSent(true)
+    } catch {
+      setStatus('error')
+    }
+  }
 
   return (
     <div className="pt-[99px] lg:pt-[128px]">
@@ -151,7 +170,14 @@ export default function Contact() {
                     <p className="text-gray-500 text-sm leading-relaxed max-w-sm">Thank you for getting in touch. We'll review your message and respond within 24 hours.</p>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="bg-white border border-gray-200 rounded-2xl p-8 lg:p-10 shadow-card space-y-5" noValidate>
+                  <form
+                    name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
+                    onSubmit={handleSubmit} className="bg-white border border-gray-200 rounded-2xl p-8 lg:p-10 shadow-card space-y-5" noValidate
+                  >
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p hidden>
+                      <label>Don't fill this out if you're human: <input name="bot-field" onChange={handleChange} /></label>
+                    </p>
                     <div>
                       <Label>Send a Message</Label>
                       <p className="text-gray-500 text-sm">Fill in the form below and we'll be in touch shortly.</p>
@@ -186,15 +212,21 @@ export default function Contact() {
                         className={`${inputCls} resize-none`}
                       />
                     </div>
-                    <button type="submit"
+                    <button type="submit" disabled={status === 'submitting'}
                       className="w-full flex items-center justify-center gap-2 bg-brand text-white px-6 py-4 rounded-xl font-bold font-display text-sm
                         hover:bg-brand-dark active:scale-[0.98]
                         shadow-cta hover:shadow-[0_6px_24px_rgba(210,74,37,0.45)]
                         transition-[background-color,box-shadow,transform] duration-150
-                        focus-visible:outline-2 focus-visible:outline-brand"
+                        focus-visible:outline-2 focus-visible:outline-brand
+                        disabled:opacity-60 disabled:cursor-not-allowed disabled:active:scale-100"
                     >
-                      <Send size={15} /> Send Message
+                      <Send size={15} /> {status === 'submitting' ? 'Sending…' : 'Send Message'}
                     </button>
+                    {status === 'error' && (
+                      <p className="text-center text-brand text-xs font-semibold">
+                        Something went wrong sending your message. Please try again, or email us directly at LifeCareTraining@Outlook.Com.
+                      </p>
+                    )}
                     <p className="text-center text-gray-400 text-xs">We respond within 24 hours, Monday to Friday</p>
                   </form>
                 )}

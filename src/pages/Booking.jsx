@@ -32,8 +32,12 @@ const DELIVERY = [
   { value: 'unsure',  label: 'Not sure yet, happy to discuss' },
 ]
 
+const encode = data =>
+  Object.keys(data).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k])).join('&')
+
 export default function Booking() {
   const [sent, setSent]       = useState(false)
+  const [status, setStatus]   = useState('idle') // idle | submitting | error
   const [selected, setSelected] = useState([])
   const [form, setForm]       = useState({
     firstName: '', lastName: '', company: '', email: '', phone: '',
@@ -42,7 +46,24 @@ export default function Booking() {
 
   const toggle = id => setSelected(p => p.includes(id) ? p.filter(c => c !== id) : [...p, id])
   const handleChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const handleSubmit = e => { e.preventDefault(); setSent(true) }
+
+  const handleSubmit = async e => {
+    e.preventDefault()
+    setStatus('submitting')
+    const courses = COURSES.filter(c => selected.includes(c.id)).map(c => c.label).join(', ')
+    const delivery = DELIVERY.find(d => d.value === form.delivery)?.label || form.delivery
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'booking', ...form, delivery, courses }),
+      })
+      if (!res.ok) throw new Error(`Request failed (${res.status})`)
+      setSent(true)
+    } catch {
+      setStatus('error')
+    }
+  }
 
   return (
     <div className="pt-[99px] lg:pt-[128px]">
@@ -134,7 +155,14 @@ export default function Booking() {
                     </p>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="bg-white border border-gray-200 rounded-2xl p-8 lg:p-10 shadow-card space-y-8" noValidate>
+                  <form
+                    name="booking" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
+                    onSubmit={handleSubmit} className="bg-white border border-gray-200 rounded-2xl p-8 lg:p-10 shadow-card space-y-8" noValidate
+                  >
+                    <input type="hidden" name="form-name" value="booking" />
+                    <p hidden>
+                      <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
 
                     {/* Contact details */}
                     <div>
@@ -236,15 +264,21 @@ export default function Booking() {
                       />
                     </div>
 
-                    <button type="submit"
+                    <button type="submit" disabled={status === 'submitting'}
                       className="w-full flex items-center justify-center gap-2 bg-brand text-white px-6 py-4 rounded-xl font-bold font-display text-base
                         hover:bg-brand-dark active:scale-[0.98]
                         shadow-cta hover:shadow-[0_6px_24px_rgba(210,74,37,0.45)]
                         transition-[background-color,box-shadow,transform] duration-150
-                        focus-visible:outline-2 focus-visible:outline-brand"
+                        focus-visible:outline-2 focus-visible:outline-brand
+                        disabled:opacity-60 disabled:cursor-not-allowed disabled:active:scale-100"
                     >
-                      Request My Free Quote <ArrowRight size={17} />
+                      {status === 'submitting' ? 'Sending…' : <>Request My Free Quote <ArrowRight size={17} /></>}
                     </button>
+                    {status === 'error' && (
+                      <p className="text-center text-brand text-xs font-semibold">
+                        Something went wrong sending your request. Please try again, or email us directly at LifeCareTraining@Outlook.Com.
+                      </p>
+                    )}
                     <p className="text-center text-gray-400 text-xs">No obligation · No hard sell · Harry responds within 24 hours</p>
                   </form>
                 )}
