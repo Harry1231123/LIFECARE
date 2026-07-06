@@ -42,7 +42,7 @@ collections:
       - label: "Who it's for (list)"
         name: "who"
         widget: "list"
-      - { label: "Image URL (paste a link, or an /assets/... path)", name: "image", widget: "string" }
+      - { label: "Image (upload a photo or choose one from the media library)", name: "image", widget: "image", choose_url: true }
       - { label: "Image vertical position (optional — e.g. 'center 0px' shows the top of the photo; use a negative number like 'center -80px' to slide the photo up and reveal lower parts. Leave blank to centre it.)", name: "imagePosition", widget: "string", required: false }
 
   - name: "course_addons"
@@ -82,7 +82,7 @@ collections:
       - { label: "Excerpt (shown on blog list & preview cards)", name: "excerpt", widget: "text" }
       - { label: "Date (e.g. 11 Mar 2026)", name: "date", widget: "string" }
       - { label: "Read time (e.g. 6 min)", name: "readTime", widget: "string" }
-      - { label: "Image URL (paste a link, or an /assets/... path)", name: "image", widget: "string" }
+      - { label: "Image (upload a photo or choose one from the media library)", name: "image", widget: "image", choose_url: true }
       - label: "Article content"
         name: "content"
         widget: "list"

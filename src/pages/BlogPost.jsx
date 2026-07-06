@@ -85,7 +85,7 @@ export default function BlogPost() {
       <div className="bg-white py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <Reveal>
-            {post.content.map((block, i) => (
+            {(post.content || []).map((block, i) => (
               <ContentBlock key={i} block={block} />
             ))}
           </Reveal>
