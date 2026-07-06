@@ -100,7 +100,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact + Newsletter */}
+          {/* Contact */}
           <div>
             <h4 className="text-white font-display font-bold text-[11px] uppercase tracking-[0.15em] mb-5">Get in Touch</h4>
             <ul className="space-y-3.5 mb-7">
@@ -123,19 +123,6 @@ export default function Footer() {
                 Mon–Fri: 08:00–17:00 · Sat–Sun: Appointment only
               </li>
             </ul>
-
-            <h4 className="text-white font-display font-bold text-[11px] uppercase tracking-[0.15em] mb-3">Newsletter</h4>
-            <p className="text-gray-500 text-xs leading-relaxed mb-3">Compliance tips, first aid guides, and course updates.</p>
-            <form onSubmit={e => e.preventDefault()} className="flex gap-2">
-              <input
-                type="email" placeholder="Your email" required
-                className="flex-1 min-w-0 bg-white/8 border border-white/12 rounded-lg px-3 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-brand transition-colors duration-150"
-              />
-              <button type="submit"
-                className="bg-brand text-white px-3.5 py-2.5 rounded-lg text-xs font-bold font-display uppercase tracking-wide hover:bg-brand-dark active:scale-[0.97] transition-[background-color,transform] duration-150 shrink-0 focus-visible:outline-2 focus-visible:outline-white">
-                Join
-              </button>
-            </form>
           </div>
         </div>
       </div>
