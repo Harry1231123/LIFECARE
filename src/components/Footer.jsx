@@ -183,6 +183,9 @@ export default function Footer() {
             <Link to="/contact" className="text-gray-600 text-xs hover:text-white transition-colors duration-150">Privacy Policy</Link>
             <Link to="/contact" className="text-gray-600 text-xs hover:text-white transition-colors duration-150">Terms &amp; Conditions</Link>
             <span className="text-gray-600 text-xs">Ofqual Regulated</span>
+            <a href="https://zylem.io" target="_blank" rel="noopener" className="text-gray-600 text-xs hover:text-white transition-colors duration-150">
+              Website by Zylem
+            </a>
           </div>
         </div>
       </div>
