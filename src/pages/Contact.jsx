@@ -14,8 +14,6 @@ function Label({ children }) {
 
 const inputCls = 'w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-sm text-dark placeholder-gray-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-[border-color,box-shadow] duration-150'
 
-const encode = data =>
-  Object.keys(data).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k])).join('&')
 
 export default function Contact() {
   const [sent, setSent] = useState(false)
@@ -28,10 +26,10 @@ export default function Contact() {
     e.preventDefault()
     setStatus('submitting')
     try {
-      const res = await fetch('/', {
+      const res = await fetch('/.netlify/functions/send-email', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({ 'form-name': 'contact', ...form }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ formType: 'contact', ...form }),
       })
       if (!res.ok) throw new Error(`Request failed (${res.status})`)
       setSent(true)
@@ -171,10 +169,8 @@ export default function Contact() {
                   </div>
                 ) : (
                   <form
-                    name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
                     onSubmit={handleSubmit} className="bg-white border border-gray-200 rounded-2xl p-8 lg:p-10 shadow-card space-y-5" noValidate
                   >
-                    <input type="hidden" name="form-name" value="contact" />
                     <p hidden>
                       <label>Don't fill this out if you're human: <input name="bot-field" onChange={handleChange} /></label>
                     </p>

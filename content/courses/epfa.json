@@ -17,5 +17,5 @@
   ],
   "who": ["Childcare workers & volunteers", "EYFS settings", "Babysitters & childminders", "School support staff", "Youth group leaders"],
   "image": "/assets/epfa.png",
-  "imagePosition": "object-[center_40%]"
+  "imagePosition": "center -275px"
 }

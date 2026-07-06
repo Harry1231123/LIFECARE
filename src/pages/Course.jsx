@@ -86,7 +86,7 @@ export default function Course() {
             <div className="space-y-5">
               <Reveal variant="scale">
                 <div className="relative rounded-2xl overflow-hidden shadow-card-lg">
-                  <img src={image} alt={title} className={`w-full h-56 object-cover ${imagePosition || ''}`} />
+                  <img src={image} alt={title} className="w-full h-56 object-cover" style={imagePosition ? { objectPosition: imagePosition } : undefined} />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent" />
                 </div>
               </Reveal>

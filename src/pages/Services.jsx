@@ -152,7 +152,7 @@ export default function Services() {
                 <div className={`space-y-5 ${idx % 2 !== 0 ? 'lg:order-1' : ''}`}>
                   <Reveal variant="scale">
                     <Link to={`/courses/${slug}`} className="block relative rounded-2xl overflow-hidden shadow-card-lg group">
-                      <img src={image} alt={title} className={`w-full h-56 object-cover group-hover:scale-[1.03] transition-transform duration-500 ${imagePosition || ''}`} />
+                      <img src={image} alt={title} className="w-full h-56 object-cover group-hover:scale-[1.03] transition-transform duration-500" style={imagePosition ? { objectPosition: imagePosition } : undefined} />
                       <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent" />
                     </Link>
                   </Reveal>

@@ -32,8 +32,6 @@ const DELIVERY = [
   { value: 'unsure',  label: 'Not sure yet, happy to discuss' },
 ]
 
-const encode = data =>
-  Object.keys(data).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k])).join('&')
 
 export default function Booking() {
   const [sent, setSent]       = useState(false)
@@ -53,10 +51,10 @@ export default function Booking() {
     const courses = COURSES.filter(c => selected.includes(c.id)).map(c => c.label).join(', ')
     const delivery = DELIVERY.find(d => d.value === form.delivery)?.label || form.delivery
     try {
-      const res = await fetch('/', {
+      const res = await fetch('/.netlify/functions/send-email', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({ 'form-name': 'booking', ...form, delivery, courses }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ formType: 'booking', ...form, delivery, courses }),
       })
       if (!res.ok) throw new Error(`Request failed (${res.status})`)
       setSent(true)
@@ -156,12 +154,10 @@ export default function Booking() {
                   </div>
                 ) : (
                   <form
-                    name="booking" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
                     onSubmit={handleSubmit} className="bg-white border border-gray-200 rounded-2xl p-8 lg:p-10 shadow-card space-y-8" noValidate
                   >
-                    <input type="hidden" name="form-name" value="booking" />
                     <p hidden>
-                      <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                      <label>Don't fill this out if you're human: <input name="bot-field" value={form['bot-field'] || ''} onChange={handleChange} /></label>
                     </p>
 
                     {/* Contact details */}

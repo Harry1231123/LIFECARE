@@ -8,34 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!-- Netlify Identity: completes the CMS invite/login redirect flow -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <!--
-      Hidden static forms so Netlify's build bot can detect them.
-      The real, visible forms are rendered by React and submit via AJAX.
-      These must list every field name that gets submitted.
-    -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="text" name="company" />
-      <input type="email" name="email" />
-      <input type="tel" name="phone" />
-      <textarea name="message"></textarea>
-    </form>
-    <form name="booking" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="firstName" />
-      <input type="text" name="lastName" />
-      <input type="text" name="company" />
-      <input type="email" name="email" />
-      <input type="tel" name="phone" />
-      <input type="text" name="courses" />
-      <input type="text" name="learners" />
-      <input type="text" name="delivery" />
-      <input type="date" name="date" />
-      <textarea name="notes"></textarea>
-    </form>
-
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // After an invited user confirms/logs in on the site root, send them to the CMS.
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', (user) => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/';
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>

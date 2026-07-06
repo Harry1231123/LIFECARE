@@ -43,7 +43,7 @@ collections:
         name: "who"
         widget: "list"
       - { label: "Image URL (paste a link, or an /assets/... path)", name: "image", widget: "string" }
-      - { label: "Image position (advanced — leave blank unless the photo is cropped oddly)", name: "imagePosition", widget: "string", required: false }
+      - { label: "Image vertical position (optional — e.g. 'center 0px' shows the top of the photo; use a negative number like 'center -80px' to slide the photo up and reveal lower parts. Leave blank to centre it.)", name: "imagePosition", widget: "string", required: false }
 
   - name: "course_addons"
     label: "Course Add-ons"

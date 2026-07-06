@@ -17,5 +17,5 @@
   ],
   "who": ["All staff in any sector", "Offices & shops", "Sports & leisure facilities", "Volunteers", "CPR refresher for existing first aiders"],
   "image": "/assets/equipment.webp",
-  "imagePosition": "object-[center_30%]"
+  "imagePosition": "center -50px"
 }

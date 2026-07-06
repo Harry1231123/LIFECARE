@@ -17,5 +17,5 @@
   ],
   "who": ["Offices & admin teams", "Retail & hospitality businesses", "Schools & educational settings", "Sports clubs & community groups", "Small business owners", "Any employer seeking legal compliance"],
   "image": "/assets/hero.webp",
-  "imagePosition": "object-[center_12%]"
+  "imagePosition": "center -125px"
 }
