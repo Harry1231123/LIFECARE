@@ -158,7 +158,7 @@ export default function Course() {
                 <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-card">
                   <h4 className="font-display font-bold text-dark text-xs uppercase tracking-widest mb-5">What's Covered</h4>
                   <ul className="space-y-2.5">
-                    {addon.includes.map(item => (
+                    {(addon.includes || []).map(item => (
                       <li key={item} className="flex items-start gap-2.5 text-gray-600 text-sm">
                         <CheckCircle2 size={13} className="text-brand mt-0.5 shrink-0" />
                         {item}

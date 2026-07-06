@@ -191,7 +191,7 @@ export default function Services() {
                   <div className="bg-white/6 border border-white/10 rounded-2xl p-6 mb-8">
                     <h4 className="font-display font-bold text-white text-xs uppercase tracking-widest mb-5">What's Covered</h4>
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                      {addon.includes.map(item => (
+                      {(addon.includes || []).map(item => (
                         <li key={item} className="flex items-start gap-2.5 text-gray-300 text-sm">
                           <CheckCircle2 size={13} className="text-brand mt-0.5 shrink-0" />
                           {item}

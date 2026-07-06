@@ -15,6 +15,8 @@ export const COURSES = Object.values(courseModules)
   .map(course => ({
     ...course,
     icon: ICONS[course.icon],
-    meta: course.meta.map(m => ({ ...m, icon: ICONS[m.icon] })),
+    includes: course.includes || [],
+    who: course.who || [],
+    meta: (course.meta || []).map(m => ({ ...m, icon: ICONS[m.icon] })),
     ...(addonsByCourseId[course.id] ? { addon: addonsByCourseId[course.id] } : {}),
   }))
