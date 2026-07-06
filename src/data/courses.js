@@ -6,7 +6,10 @@ const courseModules = import.meta.glob('/content/courses/*.json', { eager: true 
 const addonModules = import.meta.glob('/content/course-addons/*.json', { eager: true })
 
 const addonsByCourseId = Object.fromEntries(
-  Object.entries(addonModules).map(([path, m]) => [path.match(/([^/]+)\.json$/)[1], m.default])
+  Object.values(addonModules)
+    .map(m => m.default)
+    .filter(a => a && a.forCourse)
+    .map(a => [a.forCourse, a])
 )
 
 export const COURSES = Object.values(courseModules)

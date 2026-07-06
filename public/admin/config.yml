@@ -48,20 +48,27 @@ collections:
   - name: "course_addons"
     label: "Course Add-ons"
     label_singular: "Add-on"
-    files:
-      - name: "mental_asist"
-        label: "Mental Health Training add-on (LivingWorks ASIST)"
-        file: "content/course-addons/mental.json"
-        fields:
-          - { label: "Belongs to course (do not change)", name: "forCourse", widget: "hidden" }
-          - { label: "Add-on title", name: "title", widget: "string" }
-          - { label: "Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Description paragraph", name: "description", widget: "text" }
-          - { label: "Body paragraph", name: "body", widget: "text" }
-          - label: "What's included (list)"
-            name: "includes"
-            widget: "list"
-          - { label: "Meta line (short summary shown under the heading)", name: "meta", widget: "string" }
+    folder: "content/course-addons"
+    format: "json"
+    create: true
+    delete: true
+    identifier_field: "title"
+    fields:
+      - label: "Belongs to course (choose which course this add-on appears on)"
+        name: "forCourse"
+        widget: "relation"
+        collection: "courses"
+        search_fields: ["title"]
+        value_field: "id"
+        display_fields: ["title"]
+      - { label: "Add-on title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Description paragraph", name: "description", widget: "text" }
+      - { label: "Body paragraph", name: "body", widget: "text" }
+      - label: "What's included (list)"
+        name: "includes"
+        widget: "list"
+      - { label: "Meta line (short summary shown under the heading)", name: "meta", widget: "string" }
 
   - name: "blog"
     label: "Blog Posts"
