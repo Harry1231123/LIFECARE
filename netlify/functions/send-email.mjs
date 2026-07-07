@@ -62,6 +62,11 @@ export default async (req) => {
       </table>
     </div>`
 
+  // Only set reply-to when the submitter gave a valid-looking email,
+  // otherwise Resend rejects the whole send with a 422.
+  const isEmail = (v) => typeof v === 'string' && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim())
+  const replyTo = isEmail(data.email) ? data.email.trim() : undefined
+
   try {
     const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
@@ -72,7 +77,7 @@ export default async (req) => {
       body: JSON.stringify({
         from: fromEmail,
         to: [toEmail],
-        reply_to: data.email || undefined,
+        ...(replyTo ? { reply_to: replyTo } : {}),
         subject: `${formType}${data.name ? ` — ${data.name}` : ''}`,
         html,
       }),
