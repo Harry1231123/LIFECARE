@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, CheckCircle2, HeartPulse, Shield, Baby, Brain, Leaf, ClipboardCheck, MessageCircle, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 import Reveal from '../components/Reveal'
+import Seo from '../components/Seo'
 
 function Label({ children }) {
   return (
@@ -132,6 +133,7 @@ function FAQItem({ q, a }) {
 export default function Pricing() {
   return (
     <div className="pt-[99px] lg:pt-[128px]">
+      <Seo title="Course Pricing | LifeCare Training" description="Transparent, competitive pricing for first aid training across Sussex and the South East. Get a free, no-obligation quote for your team." />
 
       {/* ── PAGE HERO ─────────────────────────────────────────────── */}
       <section className="relative bg-dark py-20 lg:py-24 overflow-hidden">

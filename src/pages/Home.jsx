@@ -6,6 +6,7 @@ import {
   BadgeCheck, Stethoscope, AlertTriangle
 } from 'lucide-react'
 import Reveal from '../components/Reveal'
+import Seo from '../components/Seo'
 import { POSTS } from '../data/blog'
 
 /* ── Shared atoms ─────────────────────────────────────────────── */
@@ -159,6 +160,7 @@ const BLOG_POSTS = HOMEPAGE_BLOG_SLUGS.map(slug => POSTS.find(p => p.slug === sl
 export default function Home() {
   return (
     <div className="pt-[99px] lg:pt-[128px]">
+      <Seo title="LifeCare Training | First Aid Courses in Sussex & South East" description="HSE-compliant, Ofqual-regulated first aid training across Sussex and the South East — EFAW, First Aid at Work, Paediatric, Mental Health and more. Taught by an active ambulance technician with 17+ years' experience." />
 
       {/* ── HERO ──────────────────────────────────────────────────── */}
       <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-dark">

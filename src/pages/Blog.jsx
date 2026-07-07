@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Clock, Tag } from 'lucide-react'
 import Reveal from '../components/Reveal'
+import Seo from '../components/Seo'
 import { POSTS } from '../data/blog'
 
 function Label({ children }) {
@@ -27,6 +28,7 @@ export default function Blog() {
 
   return (
     <div className="pt-[99px] lg:pt-[128px]">
+      <Seo title="First Aid Blog & Guides | LifeCare Training" description="First aid advice, compliance guides and workplace safety insights from LifeCare Training's frontline instructors." />
 
       {/* ── PAGE HERO ─────────────────────────────────────────────── */}
       <section className="relative bg-dark py-20 lg:py-24 overflow-hidden">

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Brain } from 'lucide-react'
 import { useRef, useState, useEffect, Fragment } from 'react'
 import Reveal from '../components/Reveal'
+import Seo from '../components/Seo'
 import { COURSES } from '../data/courses'
 
 function Label({ children }) {
@@ -76,6 +77,7 @@ function CourseNav({ services }) {
 export default function Services() {
   return (
     <div className="pt-[99px] lg:pt-[128px]">
+      <Seo title="First Aid Courses | LifeCare Training" description="Explore our HSE-compliant, Ofqual-regulated first aid courses — Emergency First Aid at Work, First Aid at Work, Paediatric, Basic Life Support, Mental Health and more." />
 
       {/* ── PAGE HERO ─────────────────────────────────────────────── */}
       <section className="relative bg-dark py-20 lg:py-24 overflow-hidden">

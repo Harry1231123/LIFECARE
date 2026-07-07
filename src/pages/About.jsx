@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, CheckCircle2, Award, Shield, Users, Building2, Stethoscope, BadgeCheck, Heart, Star, PhoneCall, Brain } from 'lucide-react'
 import Reveal from '../components/Reveal'
+import Seo from '../components/Seo'
 
 function Label({ children }) {
   return (
@@ -79,6 +80,7 @@ const SECTORS = [
 export default function About() {
   return (
     <div className="pt-[99px] lg:pt-[128px]">
+      <Seo title="About Us | LifeCare Training" description="Learn about LifeCare Training — first aid courses delivered by frontline-experienced, Ofqual-regulated instructors across Sussex and the South East." />
 
       {/* ── PAGE HERO ─────────────────────────────────────────────── */}
       <section className="relative bg-dark py-20 lg:py-28 overflow-hidden">

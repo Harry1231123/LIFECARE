@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Phone, Mail, MapPin, Send, CheckCircle2, Clock, MessageSquare } from 'lucide-react'
 import { FacebookIcon, InstagramIcon, LinkedInIcon } from '../components/SocialIcons'
 import Reveal from '../components/Reveal'
+import Seo from '../components/Seo'
 
 function Label({ children }) {
   return (
@@ -40,6 +41,7 @@ export default function Contact() {
 
   return (
     <div className="pt-[99px] lg:pt-[128px]">
+      <Seo title="Contact Us | LifeCare Training" description="Get in touch with LifeCare Training for first aid course enquiries and bookings across Sussex and the South East." />
 
       {/* ── PAGE HERO ─────────────────────────────────────────────── */}
       <section className="relative bg-dark py-20 lg:py-24 overflow-hidden">

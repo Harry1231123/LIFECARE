@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Stethoscope, BadgeCheck, Shield, Users, Award, Heart, Star, CheckCircle2, Building2, BookOpen, Activity, Plane, ExternalLink, Brain } from 'lucide-react'
 import Reveal from '../components/Reveal'
+import Seo from '../components/Seo'
 
 function Label({ children }) {
   return (
@@ -90,6 +91,7 @@ const CHARLOTTE_CREDS = [
 export default function Team() {
   return (
     <div className="pt-[99px] lg:pt-[128px]">
+      <Seo title="Meet the Team | LifeCare Training" description="The instructors behind LifeCare Training — paramedics, ambulance technicians and specialist trainers bringing genuine frontline experience to every first aid course." />
 
       {/* ── PAGE HERO ─────────────────────────────────────────────── */}
       <section className="relative bg-dark py-20 lg:py-28 overflow-hidden">

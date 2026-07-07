@@ -1,6 +1,7 @@
 import { Link, useParams, Navigate } from 'react-router-dom'
 import { ArrowLeft, ArrowRight, Clock, Calendar } from 'lucide-react'
 import Reveal from '../components/Reveal'
+import Seo from '../components/Seo'
 import { POSTS } from '../data/blog'
 
 const CATEGORY_STYLE = {
@@ -51,6 +52,7 @@ export default function BlogPost() {
 
   return (
     <div className="pt-[99px] lg:pt-[128px]">
+      <Seo title={`${post.title} | LifeCare Training`} description={post.excerpt} />
 
       {/* ── HERO ──────────────────────────────────────────────────── */}
       <section className="relative bg-dark overflow-hidden">

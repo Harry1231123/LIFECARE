@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ArrowRight, CheckCircle2, HeartPulse, Calendar, Brain, ClipboardCheck, Shield, Clock, Users, Baby, Leaf, PhoneCall } from 'lucide-react'
 import Reveal from '../components/Reveal'
+import Seo from '../components/Seo'
 
 function Label({ children }) {
   return (
@@ -65,6 +66,7 @@ export default function Booking() {
 
   return (
     <div className="pt-[99px] lg:pt-[128px]">
+      <Seo title="Get a Free Quote | LifeCare Training" description="Request a free, no-obligation quote for first aid training. Tell us your team size and location and Harry will respond within 24 hours." />
 
       {/* ── PAGE HERO ─────────────────────────────────────────────── */}
       <section className="relative bg-dark py-20 lg:py-24 overflow-hidden">

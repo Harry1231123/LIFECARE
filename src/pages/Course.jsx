@@ -1,6 +1,7 @@
 import { Link, useParams, Navigate } from 'react-router-dom'
 import { ArrowRight, ArrowLeft, CheckCircle2, Users } from 'lucide-react'
 import Reveal from '../components/Reveal'
+import Seo from '../components/Seo'
 import { COURSES } from '../data/courses'
 
 function Label({ children }) {
@@ -33,6 +34,7 @@ export default function Course() {
 
   return (
     <div className="pt-[99px] lg:pt-[128px]">
+      <Seo title={`${title} | LifeCare Training`} description={intro} />
 
       {/* ── HERO ──────────────────────────────────────────────────── */}
       <section className="relative bg-dark py-20 lg:py-28 overflow-hidden">
